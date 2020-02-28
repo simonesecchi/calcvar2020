@@ -1,0 +1,253 @@
+\input ctuslides2
+
+
+\def\R{{\bbchar R}}
+
+\slideshow 
+
+\tit Calcolo delle Variazioni\nl 
+     a.a. 2019-2020\nl
+
+\subtit\bf Simone Secchi\nl simone.secchi@unimib.it
+
+\subtit\rm \url{http://elearning.unimib.it}
+
+\pg;
+
+\sec Prerequisiti e strumenti
+
+* Calcolo differenziale in spazi euclidei di dimensione finita
+* Teoria della misura e dell'integrazione secondo Lebesgue
+* Principi di Analisi Funzionale Lineare
+* Teoria elementare degli spazi di Sobolev (almeno il caso hilbertiano $p=2$)
+
+
+\pg;
+
+\sec Strumenti: il calcolo differenziale in dimensione infinita
+
+{\bf Notazione.} Se $X$ \`e uno spazio di Banach (reale), il suo duale
+topologico sar\`a denotato con il simbolo $X^\*$. Se $A \in X^\*$, il
+simbolo $A[v]$ indicher\`a il valore di $A$ nel punto $v$; talvolta
+semplificheremo la notazione e scriveremo $Av$ al posto di $A[v]$.
+
+\bigskip
+
+{\bf Definizione.} Siano $X$ uno spazio di Banach, e $U \subset X$ un
+suo aperto. Un funzionale su $U$ \`e un'applicazione $I \colon U \to
+\R$. Si noti che i ``nostri'' funzionali {\bf non} sono
+necessariamente {\bf lineari}!
+
+\pg;
+
+{\bf Definizione.} Sia $I \colon U \to \R$ un funzionale. Diremo che
+$I$ \`e derivabile secondo Fr\'echet nel punto $u \in U$ se esiste un
+elemento $A \in X^\*$ tale che
+$$
+\lim_{\|v\| \to 0} {I(u+v)-I(u)-Av \over \|v\|} =0, \eqmark
+$$
+o, equivalentemente, se
+$$
+I(u+v)=I(u)+Av+o(\|v\|) \quad\hbox{per $v \to 0$}.
+$$
+
+\medskip
+
+Si osservi che questa \`e la definizione di funzione differenziabile
+quando $X=\R^n$.
+
+\pg;
+
+{\bf Lemma.} Se $I$ \`e derivabile nel punto $u \in U$, allora
+l'elemento $A$ che soddisfa (1) \`e univocamente determinato.
+
+\smallskip
+
+{\em Dim.} Infatti, supponiamo che $A$ e $B$ siano due elementi di
+$X^\*$ che soddisfano (1). Per sottrazione,
+$$
+\lim_{\|v\| \to 0} {(A-B)v \over \|v\|} =0.
+$$
+Fissiamo $u \in X$ con $\|u\|=1$, e scegliamo $v=tu$, $t \to
+0^+$. Allora
+$$
+(A-B)u=\lim_{t \to 0+} {t(A-B)u \over t\|u\|} =0.
+$$
+Per l'arbitrariet\`a di $u$, concludiamo che $A=B$.
+
+\pg;
+
+{\bf Definizione.} Se $I$ \`e un funzionale derivabile secondo
+Fr\'echet nel punto $u \in U$, la derivata (talvolta: il
+differenziale) di Fr\'echet di $I$ in $u$ \`e l'unico elemento $I'(u)
+\in X^\*$ (talvolta: $dI(u)$) tale che
+$$
+I(u+v)=I(u)+I'(u)[v]+o(\|v\|)
+$$
+per $v \to 0$.
+
+\bigskip
+
+{\bf Definizione.} Se $I \colon U \to \R$ \`e derivabile secondo
+Fr\'echet in ogni punto $u \in U$, diremo che $I$ \`e
+Fr\'echet-derivabile in $U$. La derivata di Fr\'echet di $I$ \`e
+allora la mappa $I' \colon U \to X^\*$ che ad $u \in U$ associa $I'(u)
+\in X^\*$. Si tratta --- in generale --- di una mappa {\em non
+  lineare}.
+
+Se $I'$ \`e una mappa continua da $U$ in $X^\*$, diremo che $I \in C^1(U)$.
+
+\pg;
+
+\sec Il caso hilbertiano
+
+Se $H$ \`e uno spazio di Hilbert (reale), \`e noto che gli elementi
+del duale $H^\*$ sono isometricamente identificati con vettori di $H$
+attraverso l'isomorfismo di Riesz. In particolare, un funzionale $I$
+definito su $U \subset H$ \`e derivabile in $u \in U$ se e solo esiste
+un vettore, detto d'ora in poi {\em gradiente} di $I$ in $u$ e
+denotato $\nabla I(u)$, tale che
+$$
+I(u+v) = I(u) + \langle \nabla I(u) \mid v \rangle + o(\|v\|)
+$$
+per $v\to 0$.
+
+\pg;
+
+{\bf Proposizione.} Siano $I$ e $J$ due funzionali derivabili nel
+punto $u \in X$. Allora valgono le seguenti affermazioni.
+\begitems
+\style n
+* Se $a$ e $b$ sono numeri reali, allora $aI+bJ$ \`e derivabile in
+$u$, e vale $(aI+bJ)'(u)=aI'(u)+bJ'(u)$.
+* Il prodotto $IJ$ \`e derivabile in $u$, e vale $(IJ)'(u) =
+J(u)I'(u)+I(u)J'(u)$.
+* Se $\gamma \colon \R \to U$ \`e una curva derivabile in $t_0$ e
+$u=\gamma(t_0)$, allora la composizione $\eta \colon \R \to \R$
+definita da $\eta(t)=I(\gamma(t))$ \`e derivabile in $t_0$, e vale
+$\eta'(t_0)=I'(u)[\gamma'(t_0)]$.
+* Se $A \subset R$ \`e un aperto, $f \colon A \to R$ \`e derivabile in
+$I(u) \in A$, allora la composizione $K(u)=f(I(u))$ \`e definita in un
+intorno $V$ di $u$, \`e derivabile in $u$ e vale $K'(u)=f'(I(u))I'(u)$.
+\enditems
+
+\pg;
+
+{\em Dim.} La prima affermazione \`e banale (esercizio!). Per quanto
+riguarda la seconda, quando $v \to 0$ in $X$, abbiamo
+$$
+\eqalign{%
+I(u+v)J(u+v) &= \left( I(u)+I'(u)[v]+o(\|v\|) \right) \left(
+  J(u)+J'(u)[v]+o(\|v\|) \right) \cr
+&= I(u)J(u) + J(u)I'(u)[v] + I(u)J'(u)[v] + I'(u)[v] J'(u)[v] \cr
+&\quad {} + o(\|v\|) \left( I(u)+I'(u)[v]+J(u)+J'(u)[v]+o(\|v\|)
+\right). \cr
+}%
+$$
+Concludiamo osservando che
+$$
+I'(u)[v] J'(u)[v]
++ o(\|v\|) \left( I(u)+I'(u)[v]+J(u)+J'(u)[v]+o(\|v\|) \right)
+$$
+\`e $o(\|v\|)$ per $v \to 0$. La terza affermazione \`e simile,
+infatti per $h \to 0$ in $\R$
+$$
+\eqalign{%
+  \eta(t_0+h) &= I(\gamma (t_0+h)) = I(\gamma(t_0)+\gamma'(t_0)h +
+  o(|h|)) \cr
+  &= I(u) + I'(u)[\gamma'(t_0)h+o(|h|)] + o(\|\gamma'(t_0)h+o(|h|)\|)
+  \cr
+  &= \eta(t_0) +I'(u)[\gamma'(t_0)h] +I'(u)[o(|h|)] +
+  o(\|\gamma'(t_0)h+o(|h|)\|). \cr
+}%
+$$
+Poich\'e gli ultimi due addendi sono $o(|h|)$, otteniamo che
+$$
+\eta(t_0+h) = \eta(t_0)+I'(u)[\gamma'(t_0)h]+o(|h|).
+$$
+
+\pg;
+
+Infine, quando $v \to 0$ in $X$, si verifica come prima che
+$$
+\eqalign{%
+  K(u+v)&= f(I(u+v)) = f(I(u)+I'(u)[v]+o(\|v\|)) \cr
+  &= f(I(u))+f'(I(u))(I'(u)[v]+o(\|v\|))+o(I'(u)[v]+o(\|v\|)) \cr
+  &= f(I(u)) + f'(I(u))I'(u)[v]+o(\|v\|).
+}%
+$$
+
+\bigskip
+
+{\bf Osservazione.} \`E possibile introdurre il concetto di derivata
+per applicazioni tra due spazi di Banach $X$ e $Y$. Solo in questo
+contesto pu\`o essere enunciata una formulazione completa della regola
+di derivazione delle funzioni composte.
+
+Poich\'e non ne faremo uso in queste lezioni, rimandiamo al testo di
+Ambrosetti e Prodi per ulteriori approfondimenti.
+
+\pg;
+
+{\bf Definizione.} Sia $I$ un funzionale definito nell'aperto $U$ di
+$X$, e sia $u \in U$. Diremo che $I$ \`e derivabile secondo G\^ateaux
+in $u$ se esiste un elemento $A \in X^\*$ tale che
+$$
+\lim_{t \to 0} {I(u+tv)-I(u) \over t} = Av \eqmark
+$$
+per ogni $v \in X$. In tal caso, l'unico (esercizio!) elemento
+siffatto prende il nome di derivata secondo G\^ateaux di $I$ in $u$, e
+si denota con $I'_G(u)$ o con $d_GI(u)$.
+
+\bigskip
+
+Osserviamo che questa nuova derivata riprende la cosiddetta {\em
+  derivata direzionale} gi\`a nota nell'ambito del calcolo
+differenziale in dimensione finita.
+
+In particolare, ricordando i ``soliti'' esempi in $\R^2$, deduciamo
+che esistono funzionali (non lineari) derivabili secondo G\^ateaux ma
+non derivabili secondo Fr\'echet.
+
+\pg;
+
+\sec Condizione sufficiente per la derivabilit\`a secondo Fr\'echet
+
+{\bf Proposizione.} Supponiamo che $U \subset X$ sia un aperto, che
+$I$ sia G\^ateaux-derivabile in $U$, e che $I'_G$ sia continua in un
+punto $u \in U$. Allora $I$ \`e Fr\'echet-derivabile in $u$, e
+(ovviamente) $I'(u)=I'_G(u)$.
+
+\bigskip
+
+Omettiamo la dimostrazione, che \`e probabilmente stata proposta nel
+caso $X=\R^2$ nel corso di Analisi Matematica 2.
+
+\pg;
+
+\sec Punti critici
+
+{\bf Definizione.} Siano $X$ uno spazio di Banach, $U$ un aperto di
+$X$, e $I$ un funzionale definito su $U$. Diremo che $u \in U$ \`e un
+punto critico di $I$ se $I$ \`e derivabile in $u$ e
+$$
+I'(u)=0.
+$$
+Pi\`u esplicitamente, questo significa che $I'(u)[v]=0$ per ogni $v
+\in  X$.
+
+Se $u$ \`e un punto critico di $I$ e $I(u)=c$, diremo che $u$ \`e un
+punto critico (di $I$) al livello $c$. Se, per qualche $c \in \R$,
+l'insieme $I^{-1}(\{c\})\subset X$ contiene almeno un elemento, diremo
+che $c$ \`e un valore critico per $I$.
+
+\bigskip
+
+L'equazione $I'(u)=0$ \`e nota come equazione di Eulero (o di
+Eulero-Lagrange) associata al funzionale $I$.
+
+
+
+
+\pg. %------------------------------FINE-------------------------------
+
