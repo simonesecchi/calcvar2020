@@ -246,7 +246,270 @@ che $c$ \`e un valore critico per $I$.
 L'equazione $I'(u)=0$ \`e nota come equazione di Eulero (o di
 Eulero-Lagrange) associata al funzionale $I$.
 
+\pg;
 
+\sec Esempi
+
+{\bf Esempio 1.} Ogni $A \in X^\*$ \`e derivabile. Infatti, basta
+scrivere
+$$
+A[u+v]=Au+Av
+$$
+per dedurre che $A'(u)=A$ per qualsiasi $u \in X$.
+
+\medskip
+
+{\bf Esempio 2.} Sia $X$ uno spazio di Banach, e sia $a \colon X
+\times X \to \R$ una forma bilineare continua. Denotiamo con $J \colon
+X \to \R$ il funzionale definito da $J(u)=a(u,u)$ per ogni $u \in
+X$. Allora $J$ \`e derivabile in $X$. Infatti
+$$
+\eqalign{%
+J(u+v) &=a(u+v,u+v) = a(u,u)+a(u,v)+a(v,u)+a(v,v) \cr
+&= J(u) +
+a(u,u)+a(u,v)+a(v,u)+a(v,v).
+}%
+$$
+Poich\'e $|a(v,v)| \leq M \|v\|^2$ per l'ipotesi di continuit\`a di
+$a$ come forma bilineare, deduciamo che $a(v,v)=o(\|v\|)$ per $v \to
+0$, e dunque che
+$$
+J'(u)[v]=a(u,v)+a(v,u).
+$$
+
+\pg;
+
+{\bf Esempio 3.} (esercizio) Sia $H$ uno spazio di Hilbert con norma $\| \cdot
+\|$. Il funzionale $J(u)=\|u\|$ \`e derivabile in ogni punto $u \neq
+0$, e risulta
+$$
+\nabla J(u) = {u \over \|u\|}.
+$$
+
+\medskip
+
+{\bf Esempio 4.} Sia $X$ uno spazio di Banach, e siano $I$, $J$ due
+funzionali derivabili in $X$. Definiamo
+$$
+Q(u) = {I(u) \over J(u)}
+$$
+sul sottoinsieme (aperto) $\{u \in  X \mid J(u) \neq 0\}$. Per la
+Proposizione sulle regole di calcolo dimostrata sopra, possiamo
+affermare che $Q$ \`e derivabile e che
+$$
+Q'(u) = {J(u) I'(u)[v] - I(u) J'(u)[v] \over J(u)^2}
+$$
+per ogni $u\ in X$ tale che $J(u) \neq 0$.
+
+\pg;
+
+\sec Esempi in spazi concreti
+
+{\bf Esempio 5.} Sia $\Omega \subset \R^N$, $N \geq 1$, un insieme
+aperto e limitato. Definiamo i funzionali
+$$
+I \colon L^2(\Omega) \to \R, \quad I(u) = \int_\Omega |u(x)|^2 \, dx,
+$$
+$$
+J \colon H_0^1(\Omega) \to \R, \quad J(u) = \int_\Omega |\nabla
+u(x)|^2 \, dx,
+$$
+$$
+K \colon H^1(\Omega) \to \R, \quad K(u) = \int_\Omega |\nabla
+u(x)|^2 \, dx,
+$$
+$$
+L \colon H^1(\Omega) \to \R, \quad L(u) = \int_\Omega |\nabla
+u(x)|^2 \, dx + \int_\Omega |u(x)|^2 \, dx.
+$$
+Trattandosi di forme quadratiche associate a forme bilineari continue,
+sappiamo gi\`a che i quattro funzionali sono derivabili.
+
+\pg;
+
+Esplicitamente, valgono le relazioni
+$$
+\eqalign{%
+\nabla I(u) &= 2u \cr
+\nabla L(u) &= 2u \cr
+\nabla J(u) &= 2u.
+}
+$$
+Un
+calcolo diretto mostra che
+$$
+K'(u)[v] = 2 \int_\Omega \nabla u(x) \cdot \nabla v(x) \, dx
+$$
+per ogni $u$, $v \in H^1(\Omega)$, ma non siamo autorizzati ad
+affermare che $\nabla K(u)=2u$ (perch\'e?)
+
+\pg;
+
+\sec Inversione della Convergenza Dominata
+
+{\bf Teorema di Lebesgue.} Sia $\Omega$ un aperto di $\R^N$, e sia
+$\{u_k\}_k$ una successione in $L^1(\Omega)$ tale che
+\begitems
+\style n
+* $u_k(x) \to u(x)$ per q.o $x \in \Omega$;
+* esiste $v \in L^1(\Omega)$ tale che $|u_k(x)| \leq v(x)$ per q.o. $x
+\in \Omega$ e ogni $k$.
+\enditems
+Allora $u \in L^1(\Omega)$ e $u_k \to u$ nella norma di $L^1(\Omega)$.
+
+\bigskip
+
+Questo risultato fondamentale di Teoria della Misura pu\`o essere {\em
+parzialmente} invertito, come mostra il seguente teorema. Per la
+dimostrazione, rimandiamo al libro di H. Brezis, Analisi funzionale.
+
+\pg;
+
+{\bf Teorema.} Sia $\Omega$ un aperto di $\R^N$, e sia $\{u_k\}_k$ una
+successione di $L^p(\Omega)$, $p \in [1,+\infty]$, tale che $u_k \to
+u$ in $L^p(\Omega)$. Allora esistono una sottosuccessione
+$\{u_{k_j}\}_j$ ed una funzione $v \in L^p(\Omega)$ tali che
+\begitems
+\style n
+* $u_{k_j}(x) \to u(x)$ per q.o. $x \in \Omega$;
+* per ogni $j$, $|u_{k_j}(x)| \leq v(x)$ per q.o. $x \in \Omega$.
+\enditems
+
+\bigskip
+
+Questo teorema mostra che la convergenza forte in $L^p$ implica --- a
+meno di sottosuccessioni --- l'esistenza di una funzione dominante.
+
+\pg;
+
+\sec Operatori di Nemitskii
+
+Siano $\Omega$ un aperto limitato di $\R^N$, $N \geq 3$, con frontiera
+regolare, e sia $f \colon \R \to \R$ una funzione continua. Supponiamo
+che esistano $a>0$ e $b>0$ tali che
+$$
+|f(t)| \leq a+b|t|^{2^\*-1},
+$$
+dove $2^\* = 2N/(N-2)$ \`e l'esponente critico di Sobolev. Definiamo
+$$
+F(t) = \int_0^t f(x) \, dx
+$$
+e consideriamo il funzionale $J \colon H^1(\Omega) \to \R$ dato da
+$$
+J(u) = \int_\Omega F(u(x))\, dx.
+$$
+
+\pg;
+
+{\bf Proposizione.} Sotto le ipotesi precedenti, $J$ \`e un funzionale
+derivabile in $H^1(\Omega)$, e vale
+$$
+J'(u)[v] = \int_\Omega f(u(x))v(x)\, dx
+$$
+per ogni $u$, $v \in H^1(\Omega)$.
+
+\bigskip
+
+La dimostrazione non \`e immediata: mostriamo prima che $J$ \`e
+G\^a\-te\-aux-derivabile, e poi che la derivata di G\^ateaux \`e
+continua. Come abbiamo visto sopra, ci\`o implica che $J$ \`e
+Fr\'echet-derivabile.
+
+\pg;
+
+* Derivata di G\^ateaux
+
+Per q.o. $x\in\Omega$, risulta
+$$
+\lim_{t \to 0} {F(u(x)+t(v(x)) - F(u(x)) \over t} = f(u(x))v(x).
+$$
+Per il teorema di Lagrange, esiste un numero reale $\theta$ tale che
+$|\theta| \leq |t|$ e
+$$
+\eqalign{%
+\left| {F(u(x)+t(v(x)) - F(u(x)) \over t} \right| &= \left|
+f(u(x)+\theta v(x))v(x) \right| \cr
+&\leq \left( a+b|u(x)+\theta v(x)|^{2^\*-1} \right) |v(x)| \cr
+&\leq C \left( |v(x)|+|u(x)|^{2^\*-1}|v(x)|+|v(x)|^{2^\*} \right).
+}
+$$
+Per Convergenza Dominata,
+$$
+\lim_{t \to 0} \int_\Omega {F(u(x)+t(v(x)) - F(u(x)) \over t}\, dx =
+\int_\Omega f(u(x))v(x)\, dx.
+$$
+
+\pg;
+
+Poich\'e $v \mapsto \int_\Omega f(u(x))v(x)\, dx$ \`e un operatore
+lineare e continuo  in $H^1(\Omega)$ (disuguaglianza di H\"older e di
+Sobolev), abbiamo individuato la derivata secondo G\^ateaux di $J$:
+$$
+J'_G(u)[v] = \int_\Omega f(u(x))v(x)\, dx.
+$$
+
+* Derivata di Fr\'echet
+
+Mostriamo che $J'_G \colon H^1(\Omega) \to (H^1(\Omega))^\*$ \`e
+un'applicazione continua. A tal fine, sia $\{u_k\}_k$ una successione
+che converge a $u$ in $H^1(\Omega)$. Per il teorema di convergenza
+dominata inversa, possiamo supporre che --- a meno di sottosuccessioni
+---
+\begitems
+* $u_k \to u$ in $L^{2^\*}(\Omega)$;
+* $u_k(x) \to u(x)$ per q.o. $x \in \Omega$;
+* esiste $w \in L^{2^\*}(\Omega)$ tale che $|u_k(x)| \leq w(x)$ per
+q.o. $x \in \Omega$ e ogni $k$.
+\enditems
+
+\pg;
+
+Usiamo la disuguaglianza di H\"older:
+$$
+\eqalign{%
+\left| (J'_G(u_k)-J'_G(u))[v] \right| &\leq \int_\Omega
+|f(u_k(x))-f(u(x))| |v(x)| \, dx \cr
+&\leq \left( \int_\Omega |f(u_k(x))-f(u(x))|^{2^\* \over 2^\*-1}\, dx
+\right)^{2^\*-1 \over 2^\*} \times \cr
+&\quad \times \left( \int_\Omega |v(x)|^{2^\*}\, dx
+\right)^{1/2^\*}.
+}
+$$
+La continuit\`a di $f$ implica $\lim_{k \to +\infty}
+|f(u_k(x))-f(u(x))|=0$ per q.o. $x\in\Omega$, e inoltre
+$$
+\eqalign{%
+|f(u_k(x))-f(u(x))|^{2^\* \over 2^\* -1} &\leq C \left(
+1+|u_k(x)|^{2^\*-1} + |u(x)|^{2^\* -1} \right)^{2^\* \over 2^\* -1} \cr
+&\leq C \left(
+1+|w(x)|^{2^\*-1} + |w(x)|^{2^\* -1} \right)^{2^\* \over 2^\* -1} \cr
+&\leq C \left(
+1+|w(x)|^{2^\*} + |w(x)|^{2^\* } \right) \in L^1(\Omega).  \cr
+}
+$$
+Per Convergenza Dominata,
+$$
+\lim_{k \to +\infty} \int_\Omega |f(u_k(x))-f(u(x))|^{2^\* \over 2^\*
+-1} \, dx =0.
+$$
+
+\pg;
+
+Perci\`o
+$$
+\eqalign{%
+\|J'_G(u_k)-J'_G(u)\| &= \sup \{ (J'_G(u_k)-J'_G(u))[v] \mid v \in
+H^1(\Omega),\ \|v\|=1 \} \cr
+&\leq C \left( \int_\Omega |f(u_k(x))-f(u(x))|^{2^\* \over 2^\*
+-1} \, dx \right)^{2^\* -1 \over 2^\*} \to 0.
+}
+$$
+Riassumendo: abbiamo dimostrato che da ogni successione $\{u_k\}_k$
+convergente a $u$ \`e possibile estrarre una sottosuccessione tale che
+$J'_G(u_k) \to J'_G(u)$ in $(H^1(\Omega))^\*$. \`E ora un esercizio di
+Topologia Generale dedurre che l'intera successione $\{u_k\}_k$ gode
+di questa propriet\`a (perch\'e il limite \`e indipendente dalla
+sottosuccessione scelta).
 
 
 \pg. %------------------------------FINE-------------------------------
