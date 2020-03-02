@@ -3,6 +3,10 @@
 
 \def\R{{\bbchar R}}
 
+\def\ge{{\varepsilon}}
+
+\def\frac#1#2{{#1 \over #2}}
+
 \slideshow 
 
 \tit Calcolo delle Variazioni\nl 
@@ -510,6 +514,382 @@ $J'_G(u_k) \to J'_G(u)$ in $(H^1(\Omega))^\*$. \`E ora un esercizio di
 Topologia Generale dedurre che l'intera successione $\{u_k\}_k$ gode
 di questa propriet\`a (perch\'e il limite \`e indipendente dalla
 sottosuccessione scelta).
+
+\pg;
+
+\`E possibile estendere quanto dimostrato al caso in cui $\Omega$ sia
+un aperto qualunque, anche illimitato. Il prezzo da pagare \`e un
+rafforzamento delle ipotesi sulla funzione $f$
+
+\pg+
+
+Sia dunque $\Omega$ un aperto di $\R^N$ con frontiera regolare, e sia
+$f \colon \R \to \R$ una funzione continua e tale che
+$$
+|f(t)| \leq a|t| + b |t|^{2^\*-1}.
+$$
+Dimostriamo che il funzionale $J(u)=\int_\Omega F(u(x))\, dx$ \`e
+derivabile in $H^1(\Omega)$.
+
+\pg+
+
+* Derivata di G\^ateaux
+
+Per q.o. $x \in \Omega$ e per ogni $v \in H^1(\Omega)$,
+$$
+\lim_{t \to 0} { F(u(x)+tv(x)) - F(u(x)) \over t} = f(u(x))v(x).
+$$
+
+
+\pg;
+
+Per il teorema di Lagrange, esiste $\theta=\theta(x)$ tale che
+$|\theta| \leq |t|$ e
+$$
+\eqalign{%
+\left| { F(u(x)+tv(x)) - F(u(x)) \over t}\right| &= \left|
+f(u(x)+\theta v(x))v(x) \right| \cr
+&\leq C \left( |u(x)+\theta v(x)| + |u(x)+\theta v(x)|^{2^\*} \right)
+\cr
+&\leq C \left( |u(x)| |v(x)| + |v(x)|^{2^\*} + |u(x)|^{2^\* -1} |v(x)|
++ |v(x)|^{2^\*} \right) \cr
+&\in L^{1}(\Omega). \cr
+}
+$$
+Concludiamo ancora per Convergenza Dominata.
+
+\pg+
+
+Se poi $\{u_k\}_k$ \`e una successione che tende a $u$ in
+$H^1(\Omega)$, a meno di sottosuccessioni possiamo anche supporre che
+\begitems
+* $u_k(x) \to u(x)$ per q.o. $x\in \Omega$
+* $u_k \to u$ in $L^2(\Omega)$ e in $L^{2^\*}(\Omega)$
+* esistono $w_1 \in L^{2^\*}(\Omega)$ e $w_2 \in L^2(\Omega)$ tali che
+$|u_k(x)| \leq w_i(x)$, $i=1$, $2$, per q.o. $x \in \Omega$.
+\enditems
+
+\pg;
+
+Sia $\varepsilon>0$, e scegliamo $R_\varepsilon>0$ tale che
+$$
+\|u\|_{L^2(\Omega_\ge)} + \|u\|_{L^{2^\*}(\Omega_\ge)}^{2^\* -1} +
+\|w_1\|_{L^{2^\*}(\Omega_\ge)}^{2^\* -1} + \|w_2\|_{L^2(\Omega_\ge)}
+\leq \ge,
+$$
+dove $\Omega_\ge = \{x \in \Omega \mid |x| > R_\ge \}$. Ora,
+$$
+\eqalign{%
+\left| (J'_G(u_k)-J'_G(u))[v] \right| &\leq \int_\Omega |f(u_k)-f(u)|
+|v| \, dx \cr
+&= \int_{\Omega \cap B(0,R_\ge)} |f(u_k)-f(u)|
+|v| \, dx + \int_{\Omega_\ge} |f(u_k)-f(u)|
+|v| \, dx. \cr 
+}
+$$
+Trattiamo separatamente gli ultimi due integrali.
+
+\pg;
+
+Innanzitutto
+$$
+\eqalign{%
+&\int_{\Omega_\ge} |f(u_k)-f(u)|
+|v| \, dx \cr
+&\leq C \int_{\Omega_\ge} \left( |u_k|+|u|+|u_k|^{2^\* -1} + |u|^{2^\*
+-1} \right)|v| \, dx \cr
+&\leq C \left( \int_{\Omega_\ge} |w_2| |v| \, dx + \int_{\Omega_\ge}
+|u| |v| \, dx  + \int_{\Omega_\ge} |w_1|^{2^\* -1} |v| \, dx +
+\int_{\Omega_\ge} |u|^{2^\* -1} |v| \, dx \right) \cr
+&\leq C \|v\| \left( \|u\|_{L^2(\Omega_\ge)} + \|u\|_{L^{2^\*}(\Omega_\ge)}^{2^\* -1} +
+\|w_1\|_{L^{2^\*}(\Omega_\ge)}^{2^\* -1} + \|w_2\|_{L^2(\Omega_\ge)}
+\right) \cr
+&\leq C \|v\| \ge.
+}
+$$
+
+\pg;
+
+D'altra parte,
+$$
+\int_{\Omega \cap B(0,R_\ge)} |f(u_k)-f(u)| |v| \, dx 
+\leq C \left( \int_{\Omega \cap B(0,R_\ge)} |f(u_k)-f(u)|^{2^\* \over
+2^\* -1} \, dx \right)^{2^\* -1 \over 2^\*} \|v\|.
+$$
+Sui sottoinsiemi limitati di $\R$, la funzione $f$ soddisfa una
+maggiorazione del tipo $|f(t)| \leq C (1+|t|^{2^\* -1} )$, e come
+sopra concludiamo che
+$$
+\lim_{k \to +\infty} \int_{\Omega \cap B(0,R_\ge)} |f(u_k)-f(u)|^{2^\* \over
+2^\* -1} \, dx =0.
+$$
+Ricapitolando,
+$$
+\eqalign{%
+\| (J'_G(u_k)-J'_G(u))\| &= \sup \left\{ (J'_G(u_k)-J'_G(u))[v] \mid v \in H^1(\Omega),\ \|v\|=1
+\right\} \cr
+&\leq C \left( \int_{\Omega \cap B(0,R_\ge)} |f(u_k)-f(u)|^{2^\* \over
+2^\* -1} \, dx \right)^{2^\* -1 \over 2^\*} + C \ge \cr
+&= o(1) + C \ge.
+}
+$$
+Per l'arbitrariet\`a di $\ge>0$, concludiamo che $J'_G(u_K) \to
+J'_G(u)$.
+
+\pg;
+
+{\bf Osservazione.} La regolarit\`a della frontiera di $\Omega$ \`e
+stata utilizzata solo {\em implicitamente} per garantire la validit\`a
+di tutte le immersioni di Sobolev. Ne consegue che gli stessi
+risultati sussistono, senza alcuna ipotesi su $\partial \Omega$, se
+restringiamo il funzionale $J$ al sottospazio $H_0^1(\Omega)$.
+
+\pg;
+
+\sec Un problema lineare ellittico
+
+Prenderemo a modello di applicazione
+un'equazione alle derivate parziali del secondo ordine, avente la
+forma
+$$
+\left\{
+\matrix{ -\Delta u + q(x) u = h(x), \hfill &x \in \Omega \cr
+u(x)=0, \hfill &x \in \partial \Omega \cr}
+\right. \eqno(P)
+$$
+dove
+\begitems
+* $\Omega$ \`e un aperto limitato di $\R^N$
+* $q\in C(\Omega)$, $h \in C(\Omega)$.
+\enditems
+
+\pg+
+
+Il problema (P) prende il nome di {\em problema di Dirichlet
+omogeneo}. L'aggettivo {\em omogeneo} si riferisce qui alla condizione
+{\em al bordo} $u=0$ su $\partial\Omega$. Osserviamo che il problema
+\`e {\em lineare}.
+
+\pg;
+
+* Una {\em soluzione classica} di (P) \`e una funzione $u \in
+  C^2(\overline{\Omega})$ tale che (P) sia soddisfatto puntualmente in
+  $\overline{\Omega}$.
+
+\pg+
+
+Fissiamo $v \in C_0^1(\Omega)$ e moltiplichiamo l'equazione in (P) per
+$v$. Integrando su $\Omega$ con l'ausilio del Teorema di Stokes
+(versione nota anche come {\em formula di Gauss-Green}), otteniamo che
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x) u v \, dx
+= \int_\Omega h(x)v \, dx.
+$$
+Questa uguaglianza ha senso sotto ipotesi ben pi\`u deboli di quelle
+finora assunte. Ad esempio gli integrali sono finiti quando $u$, $v$
+sono funzioni di $L^2(\Omega)$ tali che $\partial u / \partial x_i$ e
+$\partial v / \partial x_i$ appartengano ad $L^2(\Omega)$ per ogni
+indice $i$. La continuit\`a di $q$ e $h$ \`e allora eccessiva, e
+possiamo sostituirla con $q \in L^\infty(\Omega)$, $h \in
+L^2(\Omega)$.
+
+\pg;
+
+* Siano dunque $q \in L^\infty(\Omega)$, $h \in
+L^2(\Omega)$. Una {\em soluzione debole} di (P) \`e una funzione $u
+\in H_0^1(\Omega)$ tale che
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x) u v \, dx
+= \int_\Omega h(x) v \, dx
+$$
+per ogni $v \in H_0^1(\Omega)$.
+
+\pg+
+
+{\bf Osservazione.} Ogni soluzione classica \`e anche soluzione
+debole.
+
+Infatti, $u \in C^2(\overline{\Omega})$ implica $u \in
+H^1(\Omega)$. Per una nota propriet\`a degli spazi di Sobolev,
+poich\'e $u$ \`e continua in $\overline{\Omega}$ e $u=0$ su
+$\partial\Omega$, abbiamo $u \in H_0^1(\Omega)$.
+
+Sappiamo che, per ogni $v \in C_0^1(\Omega)$,
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x) u v \, dx
+= \int_\Omega h(x)v \, dx.
+$$
+Poich\'e $C_0^1(\Omega)$ \`e un sottospazio denso di $H_0^1(\Omega)$,
+ad ogni $v \in H_0^1(\Omega)$ facciamo corrispondere una successione
+$\{v_n\}_n \subset C_0^1(\Omega)$ tale che $v_n \to v$ in
+$H_0^1(\Omega)$.
+
+\pg;
+
+Facendo tendere $n \to +\infty$ nella relazione
+$$
+\int_\Omega \nabla u \cdot \nabla v_n \, dx + \int_\Omega q(x) u v_n \, dx
+= \int_\Omega h(x)v_n \, dx,
+$$
+deduciamo che $u$ \`e una soluzione debole di (P).
+
+\pg+
+
+\`E ragionevole chiedersi se ogni soluzione debole sia anche una
+soluzione classica. Vediamo che cosa possiamo dire.
+
+\pg+
+
+Sia $u \in H_0^1(\Omega)$ una soluzione debole di (P). {\em Se} \`e
+noto, per qualche motivo, che $u \in C^2(\Omega)$, allora possiamo
+dedurre che $u=0$ su $\partial\Omega$.
+
+\pg;
+
+Scegliendo in particolare $v \in C_0^1(\Omega)$ nella definizione di
+soluzione debole, otteniamo che, per ogni $v \in C_0^1(\Omega)$,
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x) u v \, dx
+= \int_\Omega h(x)v \, dx.
+$$
+
+\pg+
+
+Usando nel senso contrario la formula di Stokes, arriviamo alla
+relazione
+$$
+\int_\Omega \left( -\Delta u + q(x) u -h(x) \right) v\, dx=0
+$$
+per ogni $v \in C_0^1(\Omega)$.
+
+\pg+
+
+Per densit\`a di $C_0^1(\Omega)$ in $L^2(\Omega)$, concludiamo che
+$-\Delta u + q(x) u -h(x)=0$ quasi ovunque, e che $u=0$ quasi ovunque
+in $\partial\Omega$.
+
+\pg+
+
+* Morale della favola: abbiamo bisogno di una {\em teoria della
+regolarit\`a} per le soluzioni deboli di (P).
+
+\pg;
+
+\sec Soluzioni deboli e punti critici
+
+Definiamo il funzionale $J \colon H_0^1(\Omega) \to \R$ mediante la formula
+$$
+J(u) = \frac{1}{2} \int_\Omega |\nabla u|^2 \, dx + \frac{1}{2}
+\int_\Omega q(x) |u|^2 \, dx - \int_\Omega h(x) u \, dx.
+$$
+
+\pg+
+
+Segue dagli esempi sulla derivabilit\`a che $J$ \`e derivabile secondo
+Fr\'echet e che
+$$
+J'(u)[v] = \int_\Omega \nabla u \cdot \nabla v\, dx + \int_\Omega q(x)
+u v \, dx - \int_\Omega h(x) v \, dx
+$$
+per ogni $u$, $v \in H_0^1(\Omega)$.
+
+\pg+
+
+Quindi le soluzioni deboli di (P) sono esattamente i punti critici del
+funzionale $J$.
+
+\pg+
+
+Il funzionale $J$ \`e chiamato {\em funzionale dell'energia} associato
+a (P), anche se dovremmo chiamarlo pi\`u propriamente funzionale di
+azione o di Eulero-Lagrange.
+
+\pg;
+
+\sec Un problema non lineare
+
+Molti modelli della Fisica Moderna conducono ad equazioni {\em non
+lineari}. Vediamo come la discussione precedente possa essere estesa
+ad un prototipo di equazione alle derivate parziali {\em semilineare}.
+
+\pg+
+
+Sia $\Omega$ un aperto limitato di $\R^N$. Supponiamo che $q \in
+L^\infty(\Omega)$ e che $f \colon \R \to \R$ sia una funzione continua
+e tale che
+$$
+|f(t)| \leq a + b |t|^{2^\* -1}.
+$$
+\pg+
+Consideriamo il problema
+$$
+\left\{
+\matrix{-\Delta u + q(x) u = f(u), \hfill &x \in \Omega \cr
+u=0, \hfill &x \in \partial \Omega \cr}
+\right. \eqno(SP)
+$$
+
+\pg;
+
+{\bf Definizione.} Una soluzione debole di (SP) \`e una funzione $u
+\in H_0^1(\Omega)$ tale che
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x) uv \, dx
+= \int_\Omega f(u)v \, dx
+$$
+per ogni $v \in H_0^1(\Omega)$.
+
+\pg+
+
+Sia $F(t) = \int_0^t f(x)\, dx$, e definiamo un funzionale $J \colon
+H_0^1(\Omega) \to \R$ mediante la formula
+$$
+J(u) = \frac{1}{2} \int_\Omega |\nabla u|^2 \, dx + \frac12
+\int_\Omega q(x)|u|^2 \, dx - \int_\Omega F(u)\, dx.
+$$
+
+\pg+
+
+Sappiamo che $J$ \`e derivabile e che
+$$
+J'(u)[v] = \int_\Omega \nabla u \cdot \nabla v \, dx - \int_\Omega
+q(x) uv\, dx - \int_\Omega f(u)v\, dx
+$$
+per ogni $v \in H_0^1(\Omega)$.
+
+\pg+
+
+* Ancora una volta, le soluzioni deboli di (SP) corrispondono ai punti
+  critici del funzionale dell'energia $J$.
+
+\pg;
+
+\sec Riassunto
+
+* Abbiamo visto che \`e possibile estendere il calcolo differenziale
+elementare (cio\`e quello delle funzioni di pi\`u variabili) alle
+funzioni di {\em infinite} variabili.
+
+* Con questo linguaggio, abbiamo messo in corrispondenza biunivoca
+  opportune soluzioni di equazioni differenziali con gli zeri della
+  derivata di opportuni funzionali (non lineari).
+
+\pg;
+
+\sec Prospettive
+
+* Ci prefiggiamo ora di... andare a caccia dei punti critici, al fine
+  di {\em risolvere} equazioni differenziali.
+
+* Per far ci\`o, vedremo che occorrono strumenti nuovi, e che la {\em
+  topologia} dello spazio di riferimento avr\`a un ruolo fondamentale.
+
+
+
+
+
+
+
 
 
 \pg. %------------------------------FINE-------------------------------

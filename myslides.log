@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  29 FEB 2020 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.18)  2 MAR 2020 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -78,25 +78,463 @@ FONT: Latin Modern - {\caps \sans \ttset \slant \nbold \ttprop \ttlight \ttcond
 ) [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2.1] [3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1]
 [14.1] [15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1]
-[25.1] ){/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/
-local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texl
-ive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/t
-exmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/font
-s/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/pu
-blic/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
-ex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
-e1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
-m/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pf
-b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (25 pages, 202686 bytes).
+[25.1] [26.1] [26.2] [26.3]
+Overfull \hbox (34.83157pt too wide) detected at line 561
+[] [] |
+
+\hbox(59.91228+51.91226)x540.60237
+.\hbox(0.0+0.0)x0.0
+.\glue 2.66666
+.\vbox(59.91228+51.91226)x570.10063
+..\hbox(23.2002+15.2002)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(23.2002+15.2002)x190.55743
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(23.2002+15.2002)x190.55743
+.....\hbox(23.2002+15.2002)x190.55743
+......\vbox(0.0+38.40039)x5.33334, shifted -23.2002
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+......\hbox(22.80931+10.97522)x179.89075
+.......\hbox(22.80931+10.97522)x179.89075 []
+......\vbox(0.0+38.40039)x5.33334, shifted -23.2002
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(23.2002+15.2002)x379.5432, glue set 219.84395fil
+....\mathon
+....\hbox(12.0+4.0)x159.69925
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF =
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\hbox(12.0+4.0)x139.2928
+......\hbox(12.0+4.0)x4.44446
+.......\mF j
+......\tenit f
+......\kern2.77388
+......\mF (
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF ^^R
+......\kern0.43518
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF )
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\hbox(12.0+4.0)x4.44446
+.......\mF j
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(14.39287+5.6001)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x379.5432, glue set 113.02443fil
+....\mathon
+....\hbox(14.39287+5.6001)x266.51877
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF ^^T
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit C
+.....\kern1.99644
+.....\glue(\thinmuskip) 2.66666
+.....\hbox(14.39287+5.6001)x229.32233
+......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
+.......\mF ^^@
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF ^^R
+......\kern0.43518
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......etc.
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(14.39287+5.6001)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x379.5432
+....\mathon
+....\hbox(14.39287+5.6001)x379.5432
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF ^^T
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit C
+.....\kern1.99644
+.....\glue(\thinmuskip) 2.66666
+.....\hbox(14.39287+5.6001)x342.34676
+......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
+.......\mF ^^@
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\mF j
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF j
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\hbox(7.78659+0.0)x11.33345, shifted -6.60628
+.......\tenrm 2
+.......\hbox(3.72223+0.0)x5.05011, shifted -4.06436 []
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......etc.
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(13.65921+5.529)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(13.65921+5.529)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(13.65921+5.529)x379.5432, glue set 317.12915fil
+....\mathon
+....\hbox(13.65921+3.98657)x62.41405
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF 2
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit L
+.....\kern0.39479
+.....\hbox(7.05293+0.0)x6.28334, shifted -6.60628
+......\tenrm 1
+.....\mF (
+.....\mF ^^J
+.....\mF )
+.....\mF :
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+.\glue 2.66666
+.\rule(*+*)x5.0
+
+[27.1]
+Overfull \hbox (34.83157pt too wide) detected at line 572
+[] [] |
+
+\hbox(59.91228+51.91226)x540.60237
+.\hbox(0.0+0.0)x0.0
+.\glue 2.66666
+.\vbox(59.91228+51.91226)x570.10063
+..\hbox(23.2002+15.2002)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(23.2002+15.2002)x190.55743
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(23.2002+15.2002)x190.55743
+.....\hbox(23.2002+15.2002)x190.55743
+......\vbox(0.0+38.40039)x5.33334, shifted -23.2002
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+......\hbox(22.80931+10.97522)x179.89075
+.......\hbox(22.80931+10.97522)x179.89075 []
+......\vbox(0.0+38.40039)x5.33334, shifted -23.2002
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+.......\hbox(0.0+9.6001)x5.33334 []
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(23.2002+15.2002)x379.5432, glue set 219.84395fil
+....\mathon
+....\hbox(12.0+4.0)x159.69925
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF =
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\hbox(12.0+4.0)x139.2928
+......\hbox(12.0+4.0)x4.44446
+.......\mF j
+......\tenit f
+......\kern2.77388
+......\mF (
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF ^^R
+......\kern0.43518
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF )
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\hbox(12.0+4.0)x4.44446
+.......\mF j
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(14.39287+5.6001)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x379.5432, glue set 113.02443fil
+....\mathon
+....\hbox(14.39287+5.6001)x266.51877
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF ^^T
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit C
+.....\kern1.99644
+.....\glue(\thinmuskip) 2.66666
+.....\hbox(14.39287+5.6001)x229.32233
+......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
+.......\mF ^^@
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF ^^R
+......\kern0.43518
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......etc.
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(14.39287+5.6001)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(14.39287+5.6001)x379.5432
+....\mathon
+....\hbox(14.39287+5.6001)x379.5432
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF ^^T
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit C
+.....\kern1.99644
+.....\glue(\thinmuskip) 2.66666
+.....\hbox(14.39287+5.6001)x342.34676
+......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
+.......\mF ^^@
+......\mF j
+......\tenit u
+......\kern0.80446
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\mF j
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF +
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......\mF j
+......\tenit v
+......\kern0.99089
+......\mF (
+......\tenit x
+......\kern1.31645
+......\mF )
+......\mF j
+......\hbox(7.78659+0.0)x11.33345, shifted -6.60628
+.......\tenrm 2
+.......\hbox(3.72223+0.0)x5.05011, shifted -4.06436 []
+......\glue(\medmuskip) 3.55554 plus 1.77777 minus 3.55554
+......etc.
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+..\glue(\lineskip) 4.75
+..\hbox(13.65921+5.529)x570.10063
+...\glue(\tabskip) 0.0
+...\hbox(13.65921+5.529)x190.55743, glue set 190.55743fil
+....\rule(13.471+5.529)x0.0
+....\glue 0.0 plus 1.0fil
+....\mathon
+....\hbox(0.0+0.0)x0.0
+....\mathoff
+...\glue(\tabskip) 0.0
+...\hbox(13.65921+5.529)x379.5432, glue set 317.12915fil
+....\mathon
+....\hbox(13.65921+3.98657)x62.41405
+.....\hbox(0.0+0.0)x0.0
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\mF 2
+.....\glue(\thickmuskip) 4.44443 plus 4.44443
+.....\tenit L
+.....\kern0.39479
+.....\hbox(7.05293+0.0)x6.28334, shifted -6.60628
+......\tenrm 1
+.....\mF (
+.....\mF ^^J
+.....\mF )
+.....\mF :
+....\mathoff
+....\glue 0.0 plus 1.0fil
+...\glue(\tabskip) 0.0
+.\glue 2.66666
+.\rule(*+*)x5.0
+
+[27.2] [28.1] [29.1] [30.1] [31.1] [32.1] [32.2] [33.1] [33.2] [34.1] [34.2]
+[35.1] [35.2] [35.3] [36.1] [36.2] [36.3] [36.4] [37.1] [37.2] [37.3] [37.4]
+[38.1] [38.2] [38.3] [39.1] [39.2] [39.3] [39.4] [40.1] [41.1] ){/usr/local/tex
+live/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/
+texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fon
+ts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvi
+ps/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-r
+m.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm
+/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on myslides.pdf (60 pages, 244572 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
