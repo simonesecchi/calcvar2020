@@ -884,6 +884,129 @@ funzioni di {\em infinite} variabili.
 * Per far ci\`o, vedremo che occorrono strumenti nuovi, e che la {\em
   topologia} dello spazio di riferimento avr\`a un ruolo fondamentale.
 
+\pg;
+
+\sec Problemi (in tutti i sensi) di minimizzazione
+
+Uno dei pi\`u importanti teoremi dell'Analisi Matematica recita:
+
+\medskip
+
+{\bf Teorema.} Ogni funzione reale continua su un insieme compatto di $\R^N$
+possiede massimi e minimi assoluti.
+
+\pg+
+
+Questo enunciato continua a sussistere per funzioni continue definite
+su spazi metrici compatti, con dimostrazione sostanzialmente identica.
+
+\pg+ Il ruolo della compattezza nel Teorema di Weierstrass \`e
+fondamentale, come mostra il seguente controesempio, dovuto anch'esso
+a Weierstrass.
+
+\pg;
+
+{\bf Esempio.} Sia
+$$
+I(u) = \int_{-1}^1 \left| x u'(x) \right|^2 \, dx
+$$
+definito per ogni funzione $u \in C^1([-1,1])$ a valori reali. Il
+problema
+$$
+\min_{u \in X} I(u),
+$$
+dove $X = \left\{ u \in C^1([-1,1]) \mid u(\pm 1) = \pm 1 \right\}$
+non ha soluzioni.
+
+\pg+
+
+Infatti, la famiglia di funzioni
+$$
+u_\ge (x) = \frac{\arctan(x/\ge)}{\arctan(1/\ge)}
+$$
+mostra con un calcolo diretto che $\inf_X I=0$. \`E poi evidente che
+$I(u)=0$ implica $u'=0$ in $[-1,1]$, cio\`e $u$ \`e costante. Pertanto
+$u \notin X$.
+
+\pg;
+
+\sec Weierstrass in astratto
+
+{\bf Teorema.} Sia $M$ uno spazio topologico di Hausdorff, e
+supponiamo che $I \colon M \to \R \cup \{+\infty\}$ soddisfi la
+seguente condizione: 
+
+\smallskip
+
+Per ogni $\alpha \in \R$, l'insieme $K_\alpha = \{ u \in M \mid I(u)
+\leq \alpha \}$ \`e compatto.
+
+\smallskip
+
+Allora $I$ raggiunge il suo estremo inferiore $\inf_M I$.
+
+\medskip
+
+{\em Dim.} Possiamo evidentemente supporre che $I$ non sia
+identicamente uguale a $+\infty$. Poniamo
+$$
+\alpha_0 = \inf_M I \geq -\infty,
+$$
+e consideriamo una successione $\{\alpha_m\}_m$ strettamente
+decrescente verso $\alpha_0$. Poniamo per brevit\`a
+$K_m=K_{\alpha_m}$.
+\pg+
+Per ipotesi, ogni $K_m$ \`e compatto e non-vuoto. Inoltre $K_m \supset
+K_{m+1}$. Per la propriet\`a dell'intersezione finita, esiste
+$$
+u \in \bigcap_{m \in {\bbchar N}} K_m,
+$$
+cio\`e $I(u) \leq \alpha_m$ per ogni $m$. Facendo tendere $m \to
++\infty$, concludiamo che $I(u) \leq \alpha_0$, cio\`e $u$ \`e un
+minimo assoluto di $I$ su $M$.
+
+\pg;
+
+* Nell'ipotesi del Teorema precedente, per ogni $\alpha \in \R$
+  l'insieme
+  $$
+  \left\{ u \in M \mid I(u) > \alpha \right\} = M \setminus K_\alpha
+  $$
+  \`e aperto in $M$. Questo significa, per definizione, che $I$ \`e
+  una funzione {\em semicontinua inferiormente} su $M$.
+
+* Nei casi concreti, la struttura di $M$ pu\`o essere pi\`u ricca di
+  quella di un mero spazio topologico. Di seguito un caso piuttosto
+  frequente nell'Analisi Variazionale.
+
+\pg;
+
+{\bf Teorema.} Sia $V$ uno spazio di Banach riflessivo con norma $\|
+\cdot \|$, e sia $M \subset V$ un sottospazio debolmente
+chiuso. Supponiamo che $I \colon M \to \R \cup \{+\infty\}$ sia un
+funzionale tale che
+\begitems
+* $I(u) \to +\infty$ se $\|u\| \to +\infty$;
+* per ogni $u \in M$ ed ogni successione $\{u_m\}_k$ in $M$ tale che
+$u_m \rightharpoonup u$, risulta: $I(u) \leq \liminf_{m \to +\infty}
+I(u_m)$.
+\enditems
+Allora $I$ \`e limitato dal basso, e raggiunge il suo minimo assoluto.
+
+\medskip
+
+{\em Dim.} Sia $\alpha_0 = \inf_M I$ e sia $\{u_m\}_m$ una successione
+in $M$ tale che $I(u_m) \to \alpha_0$ per $m \to +\infty$. Per la
+prima ipotesi, $\{u_m\}_m$ \`e una successione limitata in $V$
+(altrimenti...). Il teorema di Eberlein-Smulian garantisce la
+convergenza debole di tale successione a qualche $u \in V$. Per
+ipotesi $M$ \`e debolmente chiuso, sicch\'e $u \in M$. Infine,
+$$
+I(u) \leq \liminf_{m \to +\infty} I(u_m) = \alpha_0.
+$$
+
+
+
 
 
 
