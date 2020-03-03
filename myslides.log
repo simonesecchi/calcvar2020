@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.18)  2 MAR 2020 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  3 MAR 2020 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -515,7 +515,9 @@ Overfull \hbox (34.83157pt too wide) detected at line 572
 [27.2] [28.1] [29.1] [30.1] [31.1] [32.1] [32.2] [33.1] [33.2] [34.1] [34.2]
 [35.1] [35.2] [35.3] [36.1] [36.2] [36.3] [36.4] [37.1] [37.2] [37.3] [37.4]
 [38.1] [38.2] [38.3] [39.1] [39.2] [39.3] [39.4] [40.1] [41.1] [42.1] [42.2]
-[42.3] [43.1] [43.2] [44.1] [44.2] [45.1] [46.1] ){/usr/local/texlive/2019/texm
+[42.3] [43.1] [43.2] [44.1] [44.2] [45.1] [46.1] [47.1] [47.2] [47.3] [48.1]
+[48.2] [49.1] [50.1] [50.2] [50.3] [51.1] [51.2] [52.1] [53.1] [53.2] [54.1]
+[55.1] [55.2] [55.3] [56.1] [56.2] [56.3] [57.1] ){/usr/local/texlive/2019/texm
 f-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fon
 ts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/l
 m/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathe
@@ -532,10 +534,10 @@ texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
 1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (69 pages, 256455 bytes).
+Output written on myslides.pdf (91 pages, 283034 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

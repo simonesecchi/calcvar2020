@@ -1005,6 +1005,254 @@ $$
 I(u) \leq \liminf_{m \to +\infty} I(u_m) = \alpha_0.
 $$
 
+\pg;
+
+* La semicontinuit\`a inferiore debole del precedente teorema \`e
+  sovente garantita dalla {\em convessit\`a} del funzionale.
+
+\pg+
+
+{\bf Lemma.} Siano $X$ uno spazio di Banach, $K$ un sottoinsieme
+convesso e chiuso di $X$, e $I$ un funzionale convesso s.c.i. su
+$K$. Allora $I$ \`e debolmente s.c.i.
+
+\medskip
+
+{\em Dim.} Per ogni $\alpha \in \R$, l'insieme $K_\alpha$ \`e convesso
+e chiuso. Per un noto risultato di Analisi Funzionale Lineare, tale
+insieme \`e anche debolmente chiuso, quindi $I$ \`e debolmente s.c.i.
+
+\pg+
+
+{\bf Notazione.} Per rendere pi\`u espressiva la simbologia,
+utilizzeremo anche la scrittura
+$$
+[I \leq \alpha] = \left\{ u \in X \mid I(u) \leq \alpha \right\}.
+$$
+
+\pg;
+
+\sec Punti critici e topologia
+
+Quando $X$ \`e uno spazio di Banach riflessivo e $I$ \`e un funzionale
+convesso, la strategia per dimostrare che $I$ raggiunge il suo minimo
+assoluto $\alpha_0$ consiste in due passi:
+\begitems
+* $\alpha_0 \in \R$ \`e tale che $[I < \alpha_0]=\emptyset$;
+* per $\ge>0$ abbastanza piccolo, l'insieme $[I \leq \alpha_0+\ge]$
+\`e non-vuoto e debolmente compatto.
+\enditems
+
+\pg+
+
+In realt\`a ci\`o indica la presenza di punti critici di $I$ \`e la
+differenza topologica dei sottolivelli $[I \leq c]$ e $[I \leq
+c+\ge]$.
+
+\pg;
+
+\sec Esempi
+
+* Sia $I(x)=x^3-3x$ per ogni $x \in \R$. La derivata di $I$ si annulla
+  in $\pm 1$, e se poniamo $c_1=I(1)=-2$, $c_2=I(-1)=2$, vediamo che
+  \begitems
+  \style n
+  * se $a_1<c_1$, l'insieme $[I \leq a_1]$ \`e un intervallo del tipo
+  $(-\infty,\alpha_1]$;
+  * se $c_1<a_2<c_2$, risulta $[I \leq a_2] = (-\infty,\alpha_2] \cup
+  [\beta_2,\gamma_2]$ con $\alpha_2<\beta_2<\gamma_2$;
+  * se $a_3>c_2$, risulta $[I \leq a_3] = (-\infty,\alpha_3]$.
+  \enditems
+  Nell'attraversare i valori $c_1$ e $c_2$, i sottolivelli del
+  funzionale sono topologicamente distinti.
+
+* Sia $I(x,y) = x^2-y^2$ per ogni $(x,y) \in \R^2$. Sappiamo che $0$
+  \`e l'unico valore critico di $I$. Per ogni $\ge>0$, l'insieme $[I
+  \leq \ge]$ \`e connesso, mentre $[I \leq -\ge]$ ha due componenti
+  connesse.
+
+\pg;
+
+* Sia $I(x,y) = (x^2+y^2)^2-2(x^2+y^2)$ per ogni $(x,y) \in
+  \R^2$. Esistono due valori critici $c_1=-1$ e $c_2=0$. Si vede
+  facilmente (tutta la geometria del funzionale \`e radiale!) che se
+  $a_1<c_1$, l'insieme $[I \leq a_1]$ \`e vuoto, che se $c_1<a_2<c_2$
+  l'insieme $[I \leq a_2]$ \`e un anello del tipo $r^2 \leq x^2+y^2
+  \leq R^2$, e infine che se $a_3>c_2$ l'insieme $[I \leq a_3]$ \`e
+  una palla $B(0,R)$. Quindi il numero di componenti connesse non
+  cambia nell'attraversare il livello $c_2=0$, e tuttavia anello e
+  palla hanno invarianti topologici diversi.
+
+\pg+
+
+Questa idea di collegare la topologia dei sottolivelli all'esistenza
+di punti critici si rivela vincente, e da essa si sviluppa la
+cosiddetta {\em Teoria di Morse}.
+
+\pg+ A causa del forte legame con la Topologia Algebrica, questa
+teoria non rientra nei limiti del nostro corso.
+
+\pg;
+
+\sec Principi variazionali
+
+* Come osservato, non \`e chiaro che una funzione limitata e
+  semicontinua inferiormente debba raggiungere il suo minimo assoluto:
+  si pensi alla funzione {\em analitica} $f(x)=\arctan x$ per ogni $x
+  \in \R$.
+  
+\pg+
+
+* Con il termine di {\it principi variazionali} ci si riferisce a
+  teoremi che permettano di costruire {\it quasi minimi}, cio\`e
+  tipicamente successioni minimizzanti per funzionali limitati e
+  s.c.i., aventi per\`o ulteriori propriet\`a.
+
+\pg;
+
+\sec Il principio di Ekeland
+
+{\bf Teorema.} Sia $M$ uno spazio metrico completo con metrica $d$, e
+sia $I \colon M \to \R \cup \{+\infty\}$ un funzionale limitato dal
+basso, s.c.i. e non identicamente infinito. Allora per ogni $\ge>0$ e
+ogni $u \in M$ con
+$$
+I(u) \leq \inf_M I + \ge,
+$$
+esiste un elemento $v \in M$ tale che 
+$$
+d(u,v) \leq 1, \quad I(v) < I(u),
+$$
+e, per ogni $w \neq v$ in $M$, 
+$$
+I(w) > I(v)-\ge d(v,w).
+$$
+
+\pg;
+
+{\em Dim.} Definiamo un ordinamento su $M$ ponendo
+$w \leq v$ se e solo se $I(w)+\ge d(v,w) \leq I(v)$. Poniamo $u_0=u$,
+e supponiamo di aver definito $u_n$. Sia
+$$
+S_n = \left\{ w \in M \mid w \leq u_n \right\},
+$$
+e scegliamo $u_{n+1} \in S_n$ tale che
+$$
+I(u_{n+1}) \leq \inf_{S_n} I + \frac{1}{n+1}.
+$$
+\pg+
+\`E chiaro che $S_{n+1} \subset S_n$ poich\'e $u_{n+1} \leq u_n$;
+inoltre $S_n$ \`e chiuso perch\'e $I$ \`e s.c.i.
+
+Se $w\in S_{n+1}$, allora $w \leq u_{n+1} \leq u_n$ e dunque 
+$$
+\ge d(w,u_{n+1}) \leq I(u_{n+1})-I(u_n) \leq \inf_{S_{n}} I +
+\frac{1}{n+1} - \inf_{S_n} I = {1 \over n+1}.
+$$
+Deduciamo che
+$$
+\mathop{\rm diam} S_{n+1} \leq \frac{2}{\ge (n+1)}.
+$$
+
+\pg;
+
+Poich\'e $M$ \`e uno spazio completo, \`e noto che
+$$
+\bigcap_n S_n = \{v\}
+$$
+per qualche $v \in M$. In particolare $v \in S_0$, cio\`e $v \leq
+u_0=u$. Quindi
+$$
+I(v) \leq I(u)-\ge d(u,v) \leq I(u)
+$$
+e
+$$
+d(u,v) \leq \ge^{-1} \left( I(u)-I(v) \right) \leq \ge^{-1} \left(
+\inf_M I + \ge - \inf_M I \right) =1.
+$$
+Per concludere, dimostriamo che $w \leq v$ implica $w=v$. Infatti, $w
+\leq v$ implica $w \in u_n$ per ogni $n$, e dunque $w \in S_n$ per
+ogni $n$. Quindi $w=v$.
+
+\pg;
+
+* Il senso del principio di Ekeland \`e che ad ogni punto in cui il
+funzionale raggiunge ``quasi'' il minimo, \`e possibile associare un
+punto ancora ``migliore'', che realizza anche il minimo assoluto {\em
+proprio} di
+$$
+w \mapsto I(w)+\ge d(v,w).
+$$
+
+\pg+
+
+* Questo principio diventa ancora pi\`u suggestivo se si arricchisce
+  la struttura dello spazio $M$ e del funzionale $I$. 
+
+\pg+
+
+{\bf Teorema.} Siano $X$ uno spazio di Banach, $\varphi \colon X \to
+\R$ una funzione derivabile e limitata dal basso su $X$. Allora, per
+ogni $\ge>0$ e per ogni $u \in X$ tale che $\varphi (u) \leq \inf_X
+\varphi + \ge$, esiste $v \in X$ tale che $\varphi(v) \leq
+\varphi(u)$, 
+$$
+|v-u| \leq \sqrt{\ge}, \quad |\varphi'(v)| \leq \sqrt{\ge}.
+$$
+
+\pg;
+
+{\em Dim.} Scegliamo $M=X$, $I=\varphi$ e, per $\ge>0$ dato, scegliamo
+$d(x,y)=\ge^{-1/2} |x-y|$ nel Teorema di Ekeland. Otteniamo un
+elemento $v \in X$ tale che $\varphi(w)>\varphi(v)-\sqrt{\ge}|w-v|$
+per ogni $w \neq v$.
+
+Scriviamo $w=v+th$ con $t>0$, $h \in X$, $|h|=1$, per ottenere
+$$
+\varphi(v+th)-\varphi(v) > -\sqrt{\ge} t.
+$$
+\pg+
+Dividendo per $t$ e prendendo il limite per $t \to 0$, deduciamo
+$$
+-\sqrt{\ge} \leq \varphi'(v)[h].
+$$
+Per l'arbitrariet\`a di $h$ sulla sfera unitaria di $X$, deve essere
+$|\varphi'(v)| \leq \sqrt{\ge}$. 
+
+Le altre propriet\`a di $v$ sono ovvia conseguenza del Teorema di
+Ekeland.
+
+\pg+
+
+* \`E ormai spontaneo ``discretizzare'' il parametro $\ge>0$, per
+  costruire successioni minimizzanti con derivata ``quasi'' nulla.
+
+\pg;
+
+{\bf Corollario.} Siano $X$ uno spazio di Banach, $\varphi \colon X
+\to \R$ un funzionale limitato dal basso e derivabile in $X$. Allora,
+per ogni successione minimizzante $\{u_k\}_k$ di $\varphi$, esiste una
+successione minimizzante $\{v_k\}_k$ di $\varphi$ tale che
+$\varphi(v_k) \leq \varphi(u_k)$, 
+$$
+\lim_{k \to +\infty} |u_k-v_k| =0, \quad 
+\lim_{k \to +\infty} \|\varphi'(v_k)\| =0.
+$$
+
+\medskip
+
+{\em Dim.} Basta porre
+$$
+\ge_k = \cases{\varphi(u_k)-\inf_X \varphi &se $\varphi(u_k)-\inf_X
+\varphi>0$ \cr
+1/k &se $\varphi(u_k)-\inf_X \varphi=0$. \cr
+}
+$$
+
+
+
+ 
+
 
 
 
