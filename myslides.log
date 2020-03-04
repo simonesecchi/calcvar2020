@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  4 MAR 2020 15:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  4 MAR 2020 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,9 +158,9 @@ Overfull \hbox (34.83157pt too wide) detected at line 560
 ....\hbox(0.0+0.0)x0.0
 ....\mathoff
 ...\glue(\tabskip) 0.0
-...\hbox(14.39287+5.6001)x379.5432, glue set 113.02443fil
+...\hbox(14.39287+5.6001)x379.5432, glue set 98.83005fil
 ....\mathon
-....\hbox(14.39287+5.6001)x266.51877
+....\hbox(14.39287+5.6001)x280.71315
 .....\hbox(0.0+0.0)x0.0
 .....\glue(\thickmuskip) 4.44443 plus 4.44443
 .....\mF ^^T
@@ -168,7 +168,7 @@ Overfull \hbox (34.83157pt too wide) detected at line 560
 .....\tenit C
 .....\kern1.99644
 .....\glue(\thinmuskip) 2.66666
-.....\hbox(14.39287+5.6001)x229.32233
+.....\hbox(14.39287+5.6001)x243.51671
 ......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
 .......\mF ^^@
 ......\mF j
@@ -375,9 +375,9 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 ....\hbox(0.0+0.0)x0.0
 ....\mathoff
 ...\glue(\tabskip) 0.0
-...\hbox(14.39287+5.6001)x379.5432, glue set 113.02443fil
+...\hbox(14.39287+5.6001)x379.5432, glue set 98.83005fil
 ....\mathon
-....\hbox(14.39287+5.6001)x266.51877
+....\hbox(14.39287+5.6001)x280.71315
 .....\hbox(0.0+0.0)x0.0
 .....\glue(\thickmuskip) 4.44443 plus 4.44443
 .....\mF ^^T
@@ -385,7 +385,7 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 .....\tenit C
 .....\kern1.99644
 .....\glue(\thinmuskip) 2.66666
-.....\hbox(14.39287+5.6001)x229.32233
+.....\hbox(14.39287+5.6001)x243.51671
 ......\hbox(0.63998+18.56021)x7.33337, shifted -12.96011
 .......\mF ^^@
 ......\mF j
@@ -530,7 +530,7 @@ f-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/fonts/type1
 fb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (91 pages, 283033 bytes).
+Output written on myslides.pdf (91 pages, 283069 bytes).
 PDF statistics:
  474 PDF objects out of 1000 (max. 8388607)
  364 compressed objects within 4 object streams
