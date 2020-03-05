@@ -1248,6 +1248,201 @@ $$
 }
 $$
 
+\pg;
+
+\sec Passi di montagna: il caso finito-dimensionale
+
+* L'idea di costruire punti ``quasi critici'' per un funzionale si
+  rivela essere un approccio molto utile nello sviluppo di teoremi di
+  ``vero'' punto critico. Cominciamo con un caso in dimensione finita.
+
+\pg+
+
+{\bf Teorema.} Supponiamo che $I \in C^1(\R^N)$ sia un funzionale
+coercivo, e che $I$ possieda due punti distinti di minimo stretto,
+$x_1$ e $x_2$. Allora $I$ possiede un terzo punto critico $x_3$ che
+non \`e un minimo locale, e dunque distinto da $x_1$ e $x_2$.
+
+\pg+
+
+* Immaginiamo dunque (almeno nel caso $N=2$) il grafico di $I$, con
+  due punti di minimo locale stretto. Il teorema afferma, sotto
+  l'ipotesi che $I$ diverga all'infinito per argomenti divergenti
+  all'infinito, che da qualche parte esiste un punto di {\em sella}.
+
+\pg;
+
+{\em Dim.} Definiamo il valore
+$$
+\beta = \inf_{p \in P} \max_{x \in p} I(x),
+$$
+dove
+$$
+P = \left\{ p \subset \R^N \mid x_1 \in p,\ x_2 \in p, \ \hbox{$p$ \`e
+compatto e connesso} \right\}.
+$$
+Prendiamo una successione $\{p_m\}_m \subset P$ minimizzante per $\beta$, nel
+senso che
+$$
+\lim_{m \to +\infty} \max_{x\in p_m} I(x) = \beta.
+$$
+Poich\'e $I$ \`e coercivo, gli insiemi $p_m$ sono uniformemente
+limitati.
+\pg+
+L'insieme dei punti di accumulazione di $\{p_m\}_m$,
+$$
+p = \bigcap_{m \in {\bbchar N}} \overline{\bigcup_{l \geq m} p_l},
+$$
+\`e l'intersezione di una successione decrescente di insiemi compatti
+e connessi: dunque anch'esso \`e compatto e connesso. Inoltre
+$\{x_1,x_2\} \subset p$, poich\'e $\{x_1,x_2\} \subset p_m$ per ogni
+$m$.
+
+\pg;
+
+Deduciamo che
+$$
+\max_{x \in p} I(x) \geq \inf_{p'\in P} \max_{x \in p'} I(x) = \beta.
+$$
+D'altra parte, per continuit\`a,
+$$
+\max_{x \in p} I(x) \leq \limsup_{m \to+\infty} \max_{x \in p_m} I(x)
+= \beta,
+$$
+sicch\'e $\max_{x \in p} I(x) = \beta$.
+
+\pg+
+
+Poich\'e $x_1$ e $x_2$ sono due punti di minimo locale stretto
+collegati da $p$, risulta $\beta > \max \{ I(x_1),I(x_2)\}$.
+
+\pg+
+
+* Dimostriamo che esiste un punto critico $x_3 \in p$ tale che
+  $I(x_3)=\beta$.
+
+\pg+
+
+Procediamo per assurdo. Innanzitutto l'insieme
+$$
+K = \left\{ x \in p \mid I(x)=\beta \right\}
+$$
+\`e chiuso (perch\'e?) e limitato, dunque compatto. Supponiamo che $I'
+\neq 0$ in $K$.
+
+\pg;
+
+L'ipotesi assurda garantisce l'esistenza di un numero $\delta>0$ tale
+che $|I'(x) | \geq 2\delta>0$ per ogni $x \in K$. Per continuit\`a,
+esiste un intorno
+$$
+U_\ge = \left\{ x \in \R^N \mid |x-y| < \ge \ \hbox{per qualche $y \in
+K$} \right\}
+$$
+di $K$ tale che $|I'| \geq \delta$ su $U_\ge$. In particolare, $x_i
+\notin U_\ge$, $i=1,2$.
+
+\pg+
+
+Sia $\eta$ una funzione continua con supporto contenuto in $U_\ge$,
+tale che $0 \leq \eta \leq 1$ e $\eta \equiv 1$ in un intorno di
+$K$.
+
+\pg+
+
+Definiamo $\Phi \colon \R^N \times \R \to \R^N$ mediante
+$$
+\Phi(x,t) = x - t \eta(x) \nabla I(x).
+$$
+Un calcolo diretto mostra che
+$$
+\left. {d \over dt} \right|_{t=0} I(\Phi(x,t)) = -\eta(x) |\nabla
+I(x)|^2.
+$$
+
+\pg;
+
+Inoltre $|\nabla I(x)|^2 \geq \delta^2 >0$ su $\mathop{\rm supp} \eta
+\subset U_\ge$. Per continuit\`a, esiste $T>0$ tale che
+$$
+{d \over dt} I(\Phi(x,t)) \leq -{\eta(x) \over 2} |\nabla I(x)|^2
+$$
+per ogni $0 \leq t \leq T$, uniformemente rispetto a $x$.
+
+\pg+
+
+Sia $p_T = \{\Phi(x,T) \mid x \in p\}$; per ogni $\Phi(x,T) \in p_T$
+calcoliamo
+$$
+\eqalign{%
+I(\Phi(x,T)) &= I(x) + \int_0^T {d \over dt} I(\Phi(x,t))\, dt \cr
+&\leq I(x) - {T \over 2} \eta(x) |\nabla I(x)|^2, \cr
+}
+$$
+e l'ultimo termine \`e $\leq I(x)=\beta$ se $x \notin K$, oppure $\leq
+\beta - {T \over 2} \delta^2 < \beta$ se $x \in K$. In ogni caso,
+$$
+\max_{x \in p_T} I(x) < \beta.
+$$
+Ma:
+\begitems
+* $p_T$ \`e compatto e connesso;
+* $x_i = \Phi(x_i,T) \in p_T$, $i=1,2$.
+\enditems
+Pertanto $p_T \in P$, e questo contraddice la definizione di $\beta$.
+
+\pg;
+
+Se tutti i punti critici $u$ di $I$ in $p$ con $I(u)=\beta$ fossero
+minimi locali, l'insieme $\tilde{K}$ di tali punti sarebbe aperto in
+$p$  e --- per la continuit\`a di $I$ e di $I'$ --- anche chiuso. Ma $
+\tilde{K} \neq \emptyset$ per la discussione precedente, dunque
+$p=\tilde{K}$. Ci\`o contraddice il fatto che $I(x_1)<\beta$,
+$I(x_2)<\beta$.
+
+\pg+
+
+Pertanto almeno un punto critico di $I$ in $p$ al livello $\beta$ non
+\`e un minimo locale. La dimostrazione \`e completa.
+
+\pg+
+
+* L'interpretazione di questo teorema \`e suggestiva: $I(x)$ misura
+  l'altitudine di un punto $x$ in un panorama. I due minimi $x_1$ e
+  $x_2$ corrispondono a due villaggi collocati al fondo di due valli
+  separate da una cresta montagnosa. Se camminiamo lungo un sentiero
+  $p$ che unisce i due villaggi, scelto in modo che la quota massima
+  $I(x)$ raggiunta nei punti $x \in p$ sia minimale tra le quote di
+  tutti i possibili sentieri, il teorema afferma che attraverseremo la
+  cresta in un punto di sella (che i montanari chiamano anche {\it
+  forcella}).
+
+\pg;
+
+* Il teorema precedente \`e la versione finito-dimensionale del {\em
+  teorema del passo di montagna}, dimostrato nel 1972 da A. Ambrosetti
+  e P. H. Rabinowitz.
+
+\pg+
+
+* La versione ambientata in uno spazio normato di dimensione
+  (eventualmente) infinita \`e generalmente falsa senza ulteriori
+  ipotesi sul funzionale $I$.
+
+\pg+
+
+* Nalla dimostrazione appena vista, la coercivit\`a di $I$ garantiva
+  immediatamente la limitatezza --- e dunque la {\em relativa
+  compattezza} --- di tutti i (sotto)livelli di $I$. La compattezza
+  (relativa) della palla unitaria di uno spazio di Banach equivale
+  per\`o all'avere dimensione finita.
+
+\pg+
+
+* Occorre, nel caso infinito-dimensionale, un surrogato della
+  coercivit\`a, che garantisca la necessaria compattezza.
+
+
 
 
 
