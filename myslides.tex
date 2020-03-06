@@ -1536,6 +1536,130 @@ contiene una sottosuccessione convergente in $X$.
 
 * La condizione non \`e banale: si pensi alla funzione reale di una variabile reale $f(x)=e^{-x}(2+\sin (e^{-2x}))$ con $c=0$.
 
+\pg;
+
+{\bf Corollario.} Se $J$ verifica la coondizione (PS) a livello $c \in \R$, allora l'insieme
+$$
+K(c) = \left\{ u \in X \mid J(u)=c, \quad J'(u)=0 \right\}
+$$
+\`e compatto.
+
+\pg+
+
+{\em Dim.} Supponiamo che $u_n \in K(c)$ per ogni $n$. Allora, in particolare, $\{u_n\}_n$ \`e una successione di Palais-Smale a livello $c$. Esiste pertanto una sottosuccessione convergente in $X$ ad un limite $u$, che risulta appartenere a $K(c)$ per continuit\`a di $J$ e di $J'$.
+
+\pg;
+
+\sec Un esempio
+
+Sia $(A,D(A))$ l'operatore autoaggiunto a risolvente compatto definito in $L^2(\Omega)$, dove $\Omega$ \`e un aperto limitato, dalla formula $Au = -\Delta u$ per ogni $u \in D(A)$, essendo
+$$
+D(A) = \left\{ u \in H_0^1(\Omega) \mid \Delta u \in L^2 (\Omega) \right\}.
+$$
+Sia $\sigma_p(A)=\{\lambda_k\}_k$ l'insieme degli autovalori di $A$.
+
+\pg+
+
+Identificando $L^2(\Omega)$ con il suo duale, risulta $H_0^1(\Omega) \subset L^2(\Omega) \subset H^{-1}(\Omega)$, con immersioni continue e dense.
+
+\pg+
+
+Per $\lambda \in \R$ e $f \in H^{-1}(\Omega)$ fissati, sia $J$ il funzionale definito su $H_0^1(\Omega)$ come
+$$
+J(u) = \frac{1}{2} \int_\Omega \left[ |\nabla u|^2 + \lambda |u|^2 \right] \, dx - \langle f,u \rangle,
+$$
+dove $\langle \phantom{\cdot},\phantom{\cdot} \rangle$ denota la dualit\`a tra $H_0^1(\Omega)$ e $H^{-1}(\Omega)$.
+
+\pg;
+
+Dimostriamo che, se $\lambda \notin \sigma_p(A)$, allora $J$ soddisfa la condizione (PS) a qualunque livello.
+
+\pg+
+
+Infatti, denotando con $\tilde{A}$ l'estensione di $A$ a $H_0^1(\Omega)$, risulta
+$$
+J'(u) = \tilde{A}u - \lambda u - f
+$$
+e $\tilde{A}-\lambda I$ \`e un omeomorfismo di $H_0^1(\Omega)$ su $H^{-1}(\Omega)$.
+
+\pg+
+
+Se $\{u_n\}_n$ \`e una successione di $H_0^1(\Omega)$ tale che $J(u_n)\to c$ e
+$$
+J'(u_n) = \tilde{A}u_n-\lambda u_n -f =\ge_n \to 0 \quad \hbox{in $H^{-1}(\Omega)$},
+$$
+allora $u_n = (\tilde{A}-\lambda I)^{-1} [f+\ge_n] \to u = (\tilde{A}-\lambda I)^{-1}f$  in $H_0^1(\Omega)$ per la compattezza del risolvente di $A$.
+
+\pg+
+
+Se invece $\lambda = \lambda_k \in \sigma_p(A)$, la condizione (PS) non pu\`o essere soddisfatta. Basta considerare la successione $\{n \varphi_k\})n$, dove $\varphi_k$ \`e un'autofunzione associata all'autovalore $\lambda_k$. Risulta $J(n \varphi_k)=0$ e $J'(n \varphi_k)=0$ per ogni $n$, sebbene non esistano sottosuccessioni convergenti.
+
+\pg;
+
+\sec Un esempio semilineare
+
+Siano $\Omega$ un aperto limitato di $\R^N$, $p>1$ tale che $(N-2)p<N+2$. Per $\lambda$ reale fissato, consideriamo il funzionale $J$ definito su $H_0^1(\Omega)$ da
+$$
+J(u)={1 \over 2} \int_\Omega |\nabla u|^2 \, dx + {\lambda \over p+1} \int_\Omega |u|^{p+1}\, dx.
+$$
+\pg+
+Sia $\{u_n\}_n$ una successione di Palais-Smale al livello $c$. Quindi
+$$
+J'(u_n) = -\Delta u_n + \lambda |u_n|^{p-1}u_n \to 0 \quad \hbox{in $H^{-1}(\Omega)$}.
+$$
+\pg+
+Calcoliamo
+$$
+\eqalign{
+J'(u_n)[u_n] &= \int_\Omega |\nabla u_n|^2 + \lambda \int_\Omega |u_n|^{p+1} \cr
+&= (p+1) J(u_n) - {p-1 \over 2} \int_\Omega |\nabla u_n|^2 .
+}
+$$
+Ora, $|J'(u_n)[u_n]| \leq \|J'(u_n)\| \| \nabla u_n\|$, e possiamo dedurre che
+$$
+{p-1 \over 2} \|\nabla u_n\|^2 \leq (p+1)J(u_n) + \|J'(u_n)\| \| \nabla u_n\|.
+$$
+
+\pg;
+
+Poich\'e $p>1$, questa disuguaglianza dimostra che la successione $\{u_n\}_n$ \`e limitata. Possiamo applicare il teorema di compattezza di Rellich, e dedurre che esiste una sottosuccessione $v_i = u_{n_i}$ tale che $v_i \to v$ in $H_0^1(\Omega)$ debole e in $L^{p+1}(\Omega)$ forte.
+
+\pg+
+
+Ma allora $|v_i|^{p-1}v_i \to |v|^{p-1}v$ in $L^{(p+1)/p}(\Omega)$, dunque anche in $H^{-1}(\Omega)$, e infine
+$$
+-\Delta v_i = J'(v_i)-\lambda |v_i|^{p-1}v_i \to -\lambda |v|^{p-1}v
+$$
+in $H^{-1}(\Omega)$.
+
+\pg+
+
+Chiamando $B$ l'operatore che a $f \in H^{-1}(\Omega)$ fa corrispondere la soluzione $z$ di:
+$$
+z \in H_0^1(\Omega), \quad -\Delta z = h,
+$$
+sappiamo che $B$ \`e un operatore continuo da $H^{-1}(\Omega)$ in $H_0^1(\Omega)$. Otteniamo
+$$
+v_i = B(J'(v_i)-\lambda |v_i|^{p-1}v_i) \to B(-\lambda |v|^{p-1}v)
+$$
+in $H_0^1(\Omega)$.
+
+\pg;
+
+Questo mostra non solo che $\{u_n\}_n$ possiede una sottosuccessione covergente, ma anche che il limite $v$ di tale sottosuccessione \`e una soluzione di
+$$
+-\Delta v + \lambda |v|^{p-1}v =0 \quad \hbox{in $H^{-1}(\Omega)$}.
+$$
+
+\pg;
+
+\sec La condizione (PS) e il principio di Ekeland
+
+Vediamo un'interessante risultato che unisce la condizione di Palais-Smale al principio variazionale di Ekeland.
+
+\medskip
+
+{\bf Proposizione.} Siano $X$ uno spazio di Banach e $J \in C^1(X)$ un funzionale su $X$. Supponiamo che $J$ sia limitato dal basso e verifichi la condizione (PS) al livello $c = \inf_X J$. Allora $J$ raggiunge il suo minimo $c$.
 
 
 
