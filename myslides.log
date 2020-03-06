@@ -1,14 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.18)  5 MAR 2020 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  6 MAR 2020 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**myslides.tex
+**myslides
 (./myslides.tex The format: csplain <Mar. 2019>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
-(./ctuslides2.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
+(./ctuslides2.tex (c:/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
 This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \tmpnum=\count28
 \tmpdim=\dimen16
@@ -20,7 +19,7 @@ This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \titskip=\skip18
 \ptunit=\dimen22
 \fontdim=\dimen23
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
 FONT: AMS math fonts - \mathchardef's prepared, 12 math families preloaded.
 \ptmunit=\dimen24
 )
@@ -62,23 +61,22 @@ The \^, \`, \', \v, \" and \r expands to characters by ISO-8859-2.
 (./myslides.ref)
 \openout0 = `myslides.ref'.
 
-)
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
+) (c:/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
 Font encoding set to Cork.
 The \^,\`,\',\v,\",\r,\c,\~,\H,\u,\. and \k expands to characters by Cork.
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
+(c:/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
 FONT: Latin Modern - {\caps \sans \ttset \slant \nbold \ttprop \ttlight \ttcond
  \quotset \upital \dunhill } {\rm \bf \it \bi } +AMS
 )
 \faculty=\toks14
 \department=\toks15
 \verbbox=\count48
-) [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2.1] [3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1]
-[14.1] [15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1]
-[25.1] [26.1] [26.2] [26.3]
+) [1.1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2.1]
+[3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1] [14.1]
+[15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1] [25.1]
+[26.1] [26.2] [26.3]
 Overfull \hbox (34.83157pt too wide) detected at line 560
 [] [] |
 
@@ -519,27 +517,26 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 [48.2] [49.1] [50.1] [50.2] [50.3] [51.1] [51.2] [52.1] [53.1] [53.2] [54.1]
 [55.1] [55.2] [55.3] [56.1] [56.2] [56.3] [57.1] [58.1] [58.2] [58.3] [59.1]
 [59.2] [60.1] [60.2] [60.3] [60.4] [61.1] [61.2] [61.3] [62.1] [62.2] [63.1]
-[63.2] [63.3] [64.1] [64.2] [64.3] [64.4] ){/usr/local/texlive/2019/texmf-dist/
-fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/
-dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ma
-thsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{
-/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/
-texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
-e1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
-m/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-d
-ist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
-c/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+[63.2] [63.3] [64.1] [64.2] [64.3] [64.4] [65.1] [66.1] [66.2] [67.1] [68.1]
+[68.2] [69.1] [69.2] [69.3] ){c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-
+mathit.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive
+/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2019/texmf-dist/f
+onts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/
+lm-rm.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texl
+ive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2019/texmf-dis
+t/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
+ic/lm/lmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:
+/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2019/t
+exmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/typ
+e1/public/lm/lmtt12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on myslides.pdf (112 pages, 306025 bytes).
+Output written on myslides.pdf (121 pages, 318378 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

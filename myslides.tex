@@ -1443,6 +1443,98 @@ Pertanto almeno un punto critico di $I$ in $p$ al livello $\beta$ non
 * Occorre, nel caso infinito-dimensionale, un surrogato della
   coercivit\`a, che garantisca la necessaria compattezza.
 
+\pg;
+
+\sec Un lemma di deformazione
+
+Approfondiamo il legame tra l'esistenza di punti critici e la topologia dei sottolivelli.
+
+\smallskip
+
+{\bf Lemma di deformazione.} Siano $J \in C^{1,1}_{\rm loc}(\R^N,\R)$, $c \in \R$ e $\ge_0>0$ tali che
+\begitems
+\style n
+* l'insieme $[c-\ge_0 \leq J \leq c+\ge_0]$ \`e compatto;
+* esiste $\lambda>0$ tale che, per ogni $x \in [c-\ge_0,c+\ge_0]$, si abbia $\|J'(x)\| \geq \lambda$.
+\enditems
+Allora, per ogni $\ge<\ge_0/2$, esiste un omeomorfismo $\Phi$ di $\R^N$ in $\R^N$, tale che $\Phi([J \leq c+\ge]) \subset [J \leq c-\ge]$.
+
+\medskip
+
+* L'ipotesi di assenza di punti critici {\em nella striscia}
+ $[c-\ge_0 \leq J \leq c+\ge_0]$ assicura che il sottolivello $[J \leq c+\ge]$ abbia la stessa topologia del sottolivello $[J \leq c - \ge]$.
+
+ \pg;
+
+ {\em Dim.} Sia $0< \ge < \ge_0/2$. Poniamo $\alpha = 2\ge / \lambda^2$ e
+ $$
+ A = [J \leq c-\ge_0] \sup [J \geq c+\ge_0], \quad B = [c-\ge \leq J \leq c_\ge].
+ $$
+ Sia $f \colon \R^N \to [0,1]$ una funzione localmente lipschitziana tale che $f(A)=\{0\}$ e $f(B)=\{1\}$. Ad esempio possiamo scegliere
+ $$
+ f(x) = {d(x,A) \over d(x,A)+d(x,B)}.
+ $$
+ \pg+
+ Allora l'equazione differenziale
+ $$
+ \cases{
+ {dx \over dt} = -\alpha f(x(t))J'(x(t)) \cr
+ x(0)=x_0
+ }
+ $$
+ possiede un'unica soluzione $x$ che esiste per ogni tempo, dal momento che il secondo membro \`e un campo vettoriale localmente lipschitziano e uniformemente limitato. Inoltre la soluzione dipende con continuit\`a da $x_0$. Denotiamo questa soluzione con $\eta(t,x_0)$.
+
+ \pg;
+
+ Il funzionale $J$ decresce lungo la soluzione:
+ $$
+ \eqalign{%
+  {d \over dt} J(\eta(t,x_0)) &= J'(\eta(t,x_0)) {d\eta \over dt} \cr
+  &= -\alpha f(\eta(t,x_0)) \| J'(\eta(t,x_0)) \|^2 \leq 0.
+  }
+$$
+* Definiamo $\Phi(x_0) = \eta(1,x_0)$ per ogni $x_0 \in \R^N$.
+
+Sia $x_0 \in [J \leq c+\ge]$: Se $J(x_0) \leq c-\ge$, per la monotonia di $t \mapsto J(\eta(t,x_0))$ si ha $\Phi(x_0) \in [J \leq c-\ge]$. Se invece per ogni tempo $t$ risulta che $\eta(t,x_0)$ appartiene a $[c-\ge < J \leq c+\ge]$, allora
+$$
+\eqalign{
+J(\eta(1,x_0)) &= J(x_0) + \int_0^1 {d \over dt} J(\eta(t,x_0))\, dt \cr
+&= J(x_0) - \alpha \int_0^1 f(\eta(t,x_0)) \| J'(\eta(t,x_0)) \|^2 \, dt \cr
+&\leq J(x_0) - \alpha \lambda^2 \leq c-\ge,
+}
+$$
+il che significa che la traiettoria di $\eta$ passante per $x_0$ esce, al pi\`u tardi al tempo $t=1$, dall'insieme $[c-\ge<J \leq c+\ge]$ per entrare nell'insieme $[J \leq c-\ge]$.
+
+\pg;
+
+{\bf Osservarzione.} La funzione $\eta(\cdot,x_0)$ \`e chiamata {\em flusso} associato a $J$ passante per $x_0$. Nei fatti abbiamo dimostrato ben pi\`u dell'enunciato:
+\begitems
+\style n
+* per ogni $t \in [0,1]$, $x \mapsto \eta(t,x)$ \`e un omoemorfismo;
+* per ogni $x \in \R^N$, $\eta(0,x)=x$
+* se $x \notin [c-\ge_0 \leq J \leq c+\ge_0]$, abbiamo che $\eta(t,x)=x$ per ogni $t \in [0,1]$;
+* se $x \in [c-\ge \leq J \leq c+\ge]$, abbiamo che $\eta(1,x) \in [J \leq c-\ge]$.
+\enditems
+\pg+
+* Se $[c-\ge_0 \leq J \leq c+\ge_0]$ \`e limitato e non contiene punti critici di $J$, allora $\|J'\|$ \`e minorato su tale insieme da una costante positiva, e il lemma si applica. \`E questa una conseguenza del teorema di Weierstrass e della compattezza locale di $\R^N$. Ma che succede in dimensione infinita, dove la compattezza locale \`e (sempre) falsa?
+
+\pg;
+
+\sec La condizione di Palais-Smale
+
+{\bf Definizione.} Sia $X$ uno spazio di Banach, e sia $J \in C^1(X)$ un funzionale su $X$. Se $c \in \R$, diciamo che $J$ soddisfa la condizione di Palais-Smale al livello $c$, se ogni successione $\{u_n\}_n$ in $X$ tale che
+$$
+J(u_n) \to c, \quad J'(u_n) \to 0
+$$
+contiene una sottosuccessione convergente in $X$.
+
+\pg+
+
+* Intuitivamente, stiamo pretendendo che le successioni che ``puntano'' verso valori critici convergano (almeno a meno di sottosuccessioni) effettivamente ad un punto critico.
+
+\pg+
+
+* La condizione non \`e banale: si pensi alla funzione reale di una variabile reale $f(x)=e^{-x}(2+\sin (e^{-2x}))$ con $c=0$.
 
 
 
