@@ -1576,15 +1576,18 @@ Dimostriamo che, se $\lambda \notin \sigma_p(A)$, allora $J$ soddisfa la condizi
 
 \pg+
 
-Infatti, denotando con $\tilde{A}$ l'estensione di $A$ a $H_0^1(\Omega)$, risulta
+Infatti, denotando con $\tilde{A}$ l'estensione di $A$ a
+$H_0^1(\Omega)$, risulta
 $$
 J'(u) = \tilde{A}u - \lambda u - f
 $$
-e $\tilde{A}-\lambda I$ \`e un omeomorfismo di $H_0^1(\Omega)$ su $H^{-1}(\Omega)$.
+e $\tilde{A}-\lambda I$ \`e un omeomorfismo di $H_0^1(\Omega)$ su
+$H^{-1}(\Omega)$.
 
 \pg+
 
-Se $\{u_n\}_n$ \`e una successione di $H_0^1(\Omega)$ tale che $J(u_n)\to c$ e
+Se $\{u_n\}_n$ \`e una successione di $H_0^1(\Omega)$ tale che
+$J(u_n)\to c$ e
 $$
 J'(u_n) = \tilde{A}u_n-\lambda u_n -f =\ge_n \to 0 \quad \hbox{in $H^{-1}(\Omega)$},
 $$
@@ -1592,28 +1595,36 @@ allora $u_n = (\tilde{A}-\lambda I)^{-1} [f+\ge_n] \to u = (\tilde{A}-\lambda I)
 
 \pg+
 
-Se invece $\lambda = \lambda_k \in \sigma_p(A)$, la condizione (PS) non pu\`o essere soddisfatta. Basta considerare la successione $\{n \varphi_k\})n$, dove $\varphi_k$ \`e un'autofunzione associata all'autovalore $\lambda_k$. Risulta $J(n \varphi_k)=0$ e $J'(n \varphi_k)=0$ per ogni $n$, sebbene non esistano sottosuccessioni convergenti.
+Se invece $\lambda = \lambda_k \in \sigma_p(A)$, la condizione (PS)
+non pu\`o essere soddisfatta. Basta considerare la successione $\{n
+\varphi_k\})n$, dove $\varphi_k$ \`e un'autofunzione associata
+all'autovalore $\lambda_k$. Risulta $J(n \varphi_k)=0$ e $J'(n
+\varphi_k)=0$ per ogni $n$, sebbene non esistano sottosuccessioni
+convergenti.
 
 \pg;
 
 \sec Un esempio semilineare
 
-Siano $\Omega$ un aperto limitato di $\R^N$, $p>1$ tale che $(N-2)p<N+2$. Per $\lambda$ reale fissato, consideriamo il funzionale $J$ definito su $H_0^1(\Omega)$ da
+Siano $\Omega$ un aperto limitato di $\R^N$, $p>1$ tale che
+$(N-2)p<N+2$. Per $\lambda$ reale fissato, consideriamo il funzionale
+$J$ definito su $H_0^1(\Omega)$ da
 $$
-J(u)={1 \over 2} \int_\Omega |\nabla u|^2 \, dx + {\lambda \over p+1} \int_\Omega |u|^{p+1}\, dx.
+J(u)={1 \over 2} \int_\Omega |\nabla u|^2 \, dx + {\lambda \over p+1}
+\int_\Omega |u|^{p+1}\, dx.
 $$
-\pg+
-Sia $\{u_n\}_n$ una successione di Palais-Smale al livello $c$. Quindi
+\pg+ Sia $\{u_n\}_n$ una successione di Palais-Smale al livello
+$c$. Quindi
 $$
-J'(u_n) = -\Delta u_n + \lambda |u_n|^{p-1}u_n \to 0 \quad \hbox{in $H^{-1}(\Omega)$}.
+J'(u_n) = -\Delta u_n + \lambda |u_n|^{p-1}u_n \to 0 \quad \hbox{in
+$H^{-1}(\Omega)$}.
 $$
 \pg+
 Calcoliamo
 $$
-\eqalign{
-J'(u_n)[u_n] &= \int_\Omega |\nabla u_n|^2 + \lambda \int_\Omega |u_n|^{p+1} \cr
-&= (p+1) J(u_n) - {p-1 \over 2} \int_\Omega |\nabla u_n|^2 .
-}
+\eqalign{ J'(u_n)[u_n] &= \int_\Omega |\nabla u_n|^2 + \lambda
+\int_\Omega |u_n|^{p+1} \cr &= (p+1) J(u_n) - {p-1 \over 2}
+\int_\Omega |\nabla u_n|^2 .  }
 $$
 Ora, $|J'(u_n)[u_n]| \leq \|J'(u_n)\| \| \nabla u_n\|$, e possiamo dedurre che
 $$
@@ -1622,11 +1633,16 @@ $$
 
 \pg;
 
-Poich\'e $p>1$, questa disuguaglianza dimostra che la successione $\{u_n\}_n$ \`e limitata. Possiamo applicare il teorema di compattezza di Rellich, e dedurre che esiste una sottosuccessione $v_i = u_{n_i}$ tale che $v_i \to v$ in $H_0^1(\Omega)$ debole e in $L^{p+1}(\Omega)$ forte.
+Poich\'e $p>1$, questa disuguaglianza dimostra che la successione
+$\{u_n\}_n$ \`e limitata. Possiamo applicare il teorema di compattezza
+di Rellich, e dedurre che esiste una sottosuccessione $v_i = u_{n_i}$
+tale che $v_i \to v$ in $H_0^1(\Omega)$ debole e in $L^{p+1}(\Omega)$
+forte.
 
 \pg+
 
-Ma allora $|v_i|^{p-1}v_i \to |v|^{p-1}v$ in $L^{(p+1)/p}(\Omega)$, dunque anche in $H^{-1}(\Omega)$, e infine
+Ma allora $|v_i|^{p-1}v_i \to |v|^{p-1}v$ in $L^{(p+1)/p}(\Omega)$,
+dunque anche in $H^{-1}(\Omega)$, e infine
 $$
 -\Delta v_i = J'(v_i)-\lambda |v_i|^{p-1}v_i \to -\lambda |v|^{p-1}v
 $$
@@ -1634,11 +1650,13 @@ in $H^{-1}(\Omega)$.
 
 \pg+
 
-Chiamando $B$ l'operatore che a $f \in H^{-1}(\Omega)$ fa corrispondere la soluzione $z$ di:
+Chiamando $B$ l'operatore che a $f \in H^{-1}(\Omega)$ fa
+corrispondere la soluzione $z$ di:
 $$
 z \in H_0^1(\Omega), \quad -\Delta z = h,
 $$
-sappiamo che $B$ \`e un operatore continuo da $H^{-1}(\Omega)$ in $H_0^1(\Omega)$. Otteniamo
+sappiamo che $B$ \`e un operatore continuo da $H^{-1}(\Omega)$ in
+$H_0^1(\Omega)$. Otteniamo
 $$
 v_i = B(J'(v_i)-\lambda |v_i|^{p-1}v_i) \to B(-\lambda |v|^{p-1}v)
 $$
@@ -1646,7 +1664,9 @@ in $H_0^1(\Omega)$.
 
 \pg;
 
-Questo mostra non solo che $\{u_n\}_n$ possiede una sottosuccessione covergente, ma anche che il limite $v$ di tale sottosuccessione \`e una soluzione di
+Questo mostra non solo che $\{u_n\}_n$ possiede una sottosuccessione
+covergente, ma anche che il limite $v$ di tale sottosuccessione \`e
+una soluzione di
 $$
 -\Delta v + \lambda |v|^{p-1}v =0 \quad \hbox{in $H^{-1}(\Omega)$}.
 $$
@@ -1659,12 +1679,244 @@ Vediamo un'interessante risultato che unisce la condizione di Palais-Smale al pr
 
 \medskip
 
-{\bf Proposizione.} Siano $X$ uno spazio di Banach e $J \in C^1(X)$ un funzionale su $X$. Supponiamo che $J$ sia limitato dal basso e verifichi la condizione (PS) al livello $c = \inf_X J$. Allora $J$ raggiunge il suo minimo $c$.
+{\bf Proposizione.} Siano $X$ uno spazio di Banach e $J \in C^1(X)$ un
+funzionale su $X$. Supponiamo che $J$ sia limitato dal basso e
+verifichi la condizione (PS) al livello $c = \inf_X J$. Allora $J$
+raggiunge il suo minimo $c$.
 
+\pg+
 
+{\em Dim.} Per il principio variazionale, esiste una successione $u_n
+\in X$ tale che
+$$
+\eqalign{%
+&c \leq J(u_n) \leq c+{1 \over n} \cr
+&\forall v \in X: \quad J(v)+{1 \over n} \|v-u_n\| \geq J(u_n).
+}
+$$
+Scrivendo
+$$
+J(v)=J(u_n)+J'(u_n)[v-u_n]+o(\|v-u_n\|),
+$$
+deduciamo che
+$$
+\|J'(u_n)\| \leq {1 \over n}.
+$$
+Poich\'e $J$ soddisfa la condizione (PS) al livello $c$, esiste una
+sottosuccessione convergente a qualche $u \in X$. Per continuit\`a,
+$J(u)=c$ e $J'(u)=0$.
 
+\pg;
 
+\sec Campi vettoriali pseudo-gradienti
 
+{\bf Definizione.} Siano $X$ uno spazio di Banach e $J \in
+C^1(X,\R)$. Se $u \in X$, diciamo che $v \in X$ \`e un vettore
+pseudogradiente di $J$ in $u$ se:
+$$
+\|v\| \leq 2 \|J'(u)\|, \quad J'(u)[v] \geq \|J'(u)\|^2.
+$$
+Denotato con $X_r = \{u \in X \mid J'(u) \neq 0\}$ l'insieme dei punti
+regolari di $J$, un'applicazione $V \colon X_r \to X$ \`e chiamata
+campo vettoriale pseudogradiente per $J$ se $V$ \`e localmente
+lipschitziana su $X_r$ e per ogni $u \in X_r$, $V(u)$ \`e un vettore
+pseudogradiente per $J$ in $u$.
+
+\pg+
+
+* Se $X$ \`e uno spazio di Hilbert e se $J \in C^1$ \`e anche
+  localmente lipschitziano, allora $\nabla J$ \`e un c.v.p.g.
+
+* Se $J$ non \`e localmente lipschitziano, l'esistenza di un
+  c.v.p.g. non \`e affatto evidente.
+
+\pg;
+
+{\bf Lemma.} Siano $X$ uno spazio di Banach, e $J \in C^1(X)$ un
+funzionale non costante. Esiste allora un c.v.p.g. per $J$.
+
+\smallskip
+
+{|em Dim.} Sia $u \in X_r$ un punto regolare. Per definizione,
+$$
+\|J'(u) \| = \sup_{\|x\|=1} J'(u)[x],
+$$
+e pertanto esiste $x_u \in X$ tale che $\|x_u\|=1$ e
+$$
+J'(u)[x_u] > {2 \over 3} \|J'(u)\|.
+$$
+Ponendo $v=v_u={3 \over 2} \|J'(u)\|x_u$, abbiamo:
+$$
+\eqalign{%
+\|v_u\| &= {3 \over 2} \|J'(u)\| < 2 \|J'(u)\| \cr
+J'(u)[v_u] &= {3 \over 2} J'(u)[x_u] > \|J'(u)\|^2. \cr
+}
+$$
+
+\pg;
+
+Abbiamo costruito un vettore pseudogradiente per $J$ in $u$. Adesso
+facciamo una tipica operazione di Topologia Differenziale: incolliamo,
+mediante una partizione dell'unit\`a, questi vettori.
+
+\pg+
+
+* Per continuit\`a di $J'$, esiste un intorno $\Omega_u$ di $u$,
+  contenuto in $X_r$, tale per ogni $x \in \Omega_u$, $v_u$ sia un
+  vettore pseudogradiente per $J$ in $x$.
+
+* La famiglia $\{\Omega_u \mid u \in X_r\}$ \`e un ricoprimento aperto
+  di $X_r$. Poich\'e tutti gli spazi metrici sono {\em paracompatti},
+  esistono un sottoricoprimento localmente finito $\{\omega_j\}_{j \in
+  I}$ e una partizione dell'unit\`a localmente lipschitziana
+  $\{\theta_j\}_{j \in I}$, subordinata a $\{\omega_j\}_{j \in I}$.
+
+\pg;
+
+Ponendo
+$$
+V(z) = \sum_{j \in J} \theta_j(z) v_{u_j},
+$$
+basta osservare che la somma \`e finita: dunque $V$ \`e un campo
+vettoriale localmente lipschitziano su $X_r$ a valori in $X$, che
+risulta pseudo-gradiente per la scelta di $v_{u_j}$.
+
+\pg+
+
+* I risultati topologici utilizzati nel corso della dimostrazione
+  possono essere recuperati in molti manuali di topologia generale e/o
+  differenziale. Ad esempio quelli di Bourbaki o Dieudonn\'e.
+
+\pg+
+
+* Siamo pronti ad enunciare e dimostrare un lemma di deformazione nel
+  contesto degli spazi di Banach di dimensione qualunque.
+
+\pg;
+
+\sec Un lemma di deformazione
+
+{\bf Lemma.} Siano $X$ uno spazio di Banach, $J \in C^1(X,\R)$ un
+funzionale non costante che soddisfa la condizione (PS) (ad ogni
+livello), e sia $c \in \R$ un valore regolare di $J$. Esiste allora
+$\ge_0>0$ tale che per $0<\ge<\ge_0$ esiste un'applicazione $\eta \in
+C(\R \times X,X)$, chiamata flusso associato a $J$, che verifica le
+seguenti condizioni:
+\begitems
+\style n
+* per ogni $u \in X$, si ha $\eta(0,u)=u$;
+* pe rogni $t \in R$ e $u \notin [c-\ge_0\leq J \leq c+\ge_0]$, si ha
+$\eta(t,u) = u$;
+* per ogni $t \in \R$, $\eta(t,\cdot)$ \`e un omeomorfismo di $X$ in
+$X$;
+* per ogni $u \in X$, la funzione $t \mapsto J(\eta(t,x))$ \`e
+monotona decrescente;
+* Se $u \in [J \leq c+\ge]$, allora $\eta(1,u) \in [J \leq c-\ge]$;
+\enditems
+
+\pg;
+
+{\em Dim.} Poich\'e $J$ soddisfa la condizione (PS) al valore $c$, e
+$c$ non \`e un valore critico, si verifica immediatamente per
+contraddizione che esistono $\ge_1>0$ e $\delta \in (0,1]$ tali che
+$$
+\forall u \in [c-\ge_1 \leq J \leq c+\ge_1]: \quad \|J'(u)\| \geq
+\delta.
+$$
+\pg+
+Poniamo $\ge_0 = \min\{\ge_1,\delta^2/8\}$, e per $0<\ge<\ge_0$,
+$$
+A=[J \leq c-\ge_0] \cup [J \geq c+\ge_0], \quad B = [c-\ge \leq J \leq
+c+\ge].
+$$
+Poich\'e $A \cap B = \emptyset$, la funzione
+$$
+\alpha(x) = {d(x,A \over d(x,A)+d(x,B)}
+$$
+\`e localmente lipschitziana e verifica $\alpha=0$ su $A$, $\alpha=1$
+su $B$.
+\pg+
+Infine, sia $V$ un campo vettoriale pseudogradiente per $J$ su
+$X_r$. Sia, per ogni $x \in X$,
+$$
+W(x) = \alpha(x) \min \left\{ 1,{1 \over \|V(x)\|} \right\} V(x).
+$$
+
+\pg;
+
+Si verifica direttamente che $\|W(\cdot)\| \leq 1$. Per la teoria
+generale delle equazioni differenziali ordinarie, il problema
+$$
+\cases{%
+{d \over dt} \eta(t,x) = -W(\eta(t,x)) \cr
+\null \cr
+\eta(0,x)=x \cr
+}
+$$
+possiede una ed una sola soluzione $\eta(\cdot,x) \in C^1(\R,X)$, e
+$\eta$ \`e localmente lipschitziana su $\R \times X$.
+
+\pg+
+
+Per la propriet\`a di flusso $\eta(t,\eta(s,x))=\eta(t+s,x)$, per ogni
+$t \in \R$ la funzione $\eta(t,\cdot)$ \`e un omeomorfismo di $X$ in
+$X$, la cui inversa \`e $\eta(-t,\cdot)$.
+
+\pg+
+
+Le condizioni 1. e 3. sono evidenti per costruzione. Se
+$$
+u \notin [c-\ge_0\leq J \leq c+\ge_0],
+$$
+allora $W(u)=0$, e l'unicit\`a della soluzione implica che
+$\eta(t,u)=u$ per ogni tempo $t$.
+
+\pg;
+
+Anche la propriet\`a 4. si verifica direttamente, calcolando
+$$
+\eqalign{%
+{d \over dt} J(\eta(t,u)) &= J'(\eta(t,u))\left[ {d \eta \over dt}
+\right] \cr
+&= -\alpha(\eta(t,u)) \min \left\{ 1, {1 \over \|V(\eta(t,u))\|}
+\right\} J'(\eta(t,u)) [V(\eta(t,u))] \cr
+&\leq -\alpha(\eta(t,u)) \min \left\{ 1, {1 \over \|V(\eta(t,u))\|}
+\right\} \|J'(\eta(t,u))\|^2, \cr
+}
+$$
+ci\`o che dimostra la monotonia desiderata.
+
+\pg+
+
+Per verificare 5. consideriamo $u \in [J \leq c+\ge]$ e notiamo che se
+per qualche $t_0 \in [0,1)$ si ha
+$$
+\eta(t_0,u) \in [J \leq c-\ge],
+$$
+allora $\eta(1,u)$ resta in $[J \leq c-\ge]$ per la monotonia appena
+dimostrata. Supponiamo dunque che, per ogni $t \in [0,1)$, si abbia
+$\eta(t,u) \in [c-\ge < J \leq c+\ge]$.
+
+\pg;
+
+Ricordando che $\|J'(x)\| \leq \|V(x) \leq 2 \|J'(x)\|$, risulta
+$$
+\eqalign{%
+{d \over dt} J(\eta(t,u)) &\leq -{1 \over 4} \min \left\{ 1,{1 \over
+\|V(\eta(t,u))\|} \right\} \|V(\eta(t,u))\|^2 \cr
+&\leq \cases{-{1 \over 4} &se $\|V(\eta(t,u))\| \geq 1$, \cr
+-{\delta^2 \over 4} &se $\|V(\eta(t,u))\| < 1$. \cr
+}
+}
+$$
+\pg+
+
+Poich\'e $\delta \leq 1$, concludiamo facilmente che
+$$
+J(\eta(1,u)) \leq -{\delta^2 \over 4} + J(u) \leq -{\delta^2 \over 4}
++ c+\ge.
+$$
+Ricordando la scelta di $\ge_0$, otteniamo $J(\eta(1,u))\leq c-\ge$.
 
 
 
