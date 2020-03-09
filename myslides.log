@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  9 MAR 2020 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  9 MAR 2020 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**myslides
+**myslides.tex
 (./myslides.tex The format: csplain <Mar. 2019>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
@@ -522,25 +522,26 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 [72.3] [72.4] [73.1] [73.2] [73.3] [74.1] [74.2] [74.3] [75.1] [76.1] [76.2]
 [77.1] [77.2] [78.1] [79.1] [79.2] [80.1] [80.2] [80.3] [81.1] [82.1] [82.2]
 [82.3] [83.1] [83.2] [83.3] [84.1] [84.2] [85.1] [85.2] [86.1] [86.2] [87.1]
-[88.1] [88.2] [88.3] [89.1] [89.2] [89.3] [90.1] [90.2] ){c:/texlive/2019/texmf
--dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dv
-ips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
-c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2019/te
-xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/texlive/2019/texmf-dist/fonts/type1/p
-ublic/lm/lmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2019
-/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/t
-ype1/public/lm/lmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr1
-7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/20
-19/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/font
-s/type1/public/lm/lmri8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/l
-msy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (169 pages, 374785 bytes).
+[88.1] [88.2] [88.3] [89.1] [89.2] [89.3] [90.1] [90.2] [91.1] [92.1] [92.2]
+[92.3] [93.1] [93.2] ){c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.
+enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2019/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2019/texmf-dist/fonts/en
+c/dvips/lm/lm-mathex.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.e
+nc}<c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2019/texmf-dist/fonts
+/type1/public/lm/lmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/l
+mmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texliv
+e/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2019/texmf-dist/f
+onts/type1/public/lm/lmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm
+/lmri12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/tex
+live/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2019/texmf-di
+st/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publ
+ic/lm/lmtt12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on myslides.pdf (175 pages, 382091 bytes).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 628 compressed objects within 7 object streams
- 169 named destinations out of 1000 (max. 500000)
+ 845 PDF objects out of 1000 (max. 8388607)
+ 648 compressed objects within 7 object streams
+ 175 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

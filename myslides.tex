@@ -1992,6 +1992,50 @@ $$
 $$
 che \`e lo stesso corollario applicato a $-J$.
 
+\pg;
+
+\sec Il teorema del Passo di Montagna
+
+* Il Teorema del Passo di Montagna fu enunciato e dimostrato da A. Ambrosetti e P.H. Rabinowitz in {\em Dual variational methods in critical point theory and applications}, J. Funct. Anal. {\bf 14} (1973).
+
+* L'articolo originale si basa su una versione del Lemma di Deformazione gi\`a nota in letteratura, e dovuta a Clarke.
+
+* Successivamente sono state proposte molte generalizzazioni del Passo di Montagna, soprattutto mediante strumenti topologici. Sebbene il Passo di Montagna sia un caso particolare di risultati pi\`u generali, rimane ancora oggi lo strumento pi\`u utilizzato nella risoluzione variazionale delle equazioni semilineari ellittiche.
+
+\pg;
+
+{\bf Teorema.} Siano $X$ uno spazio di Banach, e $J \in C^1(X)$ un funzionale che soddisfa la condizione (PS). Supponiamo che $J(0)=0$ e che:
+\begitems
+\style n
+* esistano $R>0$ e $a>0$ tali che se $\|u\|=R$, allora $J(u) > a$;
+* esista $u_0 \in X$ tale che $\|u_0\|>R$ e e$J(u_0)<a$.
+\enditems
+Allora $J$ possiede un valore critico $c\geq a$. Pi\`u precisamente,
+$$
+c = \inf_{A \in {\cal B}} \max_{v \in A} J(v),
+$$
+dove
+$$
+{\cal B} = \left\{ \varphi([0,1]) \mid \varphi \in C([0,1],X),\; \varphi(0)=0,\; \varphi(1)=u_0 \right\}.
+$$
+\pg+
+
+{\em Dim.} Evidentemente ${\cal B} \neq \emptyset$.  Per ogni $A \in {\cal B}$, l'intersezione $A \cap \{u \in X \mid \|u\|=R\} \neq \emptyset$ per questioni di connessione. Dunque $\max_{v \in A} J(v) \geq a$ e infine $c \geq a$.
+\pg+
+
+Se $c$ non fosse un valore critico, con le stesse notazioni del Lemma di Deformazione e con $0<\ge < \ge_0$ sarebbe possibile trovare $A \in {\cal B}$ tale che
+$$
+A = \varphi([0,1]), \quad c \leq \max_{v \in A} J(v) \leq c+\ge.
+$$
+
+\pg;
+
+Ponendo $\psi(\tau) = \eta(1,\varphi(\tau))$ e $B = \psi([0,1])$, risulta $B \in {\cal B}$. Ma allora $B \subset [J \leq c-\ge]$, in contraddizione con il fatto che $\max_{v \in B} J(v) \geq c$.
+
+\pg+
+
+* Si osservi che ${\cal B}$ \`e costituito dalle immagini dei cammini che uniscono in $X$ l'origine con il punto $u_0$. In altri termini, stiamo facendo un minimax del funzionale $J$ sui cammini che partono dal punto di origine, e terminano nel punto $u_0$ esterno alla ``montagna'' $\{u \in X \mid \|u\|=R\}$.
+
 
 
 
