@@ -1,14 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.18)  7 MAR 2020 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  9 MAR 2020 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**myslides.tex
+**myslides
 (./myslides.tex The format: csplain <Mar. 2019>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
-(./ctuslides2.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
+(./ctuslides2.tex (c:/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
 This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \tmpnum=\count28
 \tmpdim=\dimen16
@@ -20,7 +19,7 @@ This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \titskip=\skip18
 \ptunit=\dimen22
 \fontdim=\dimen23
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
 FONT: AMS math fonts - \mathchardef's prepared, 12 math families preloaded.
 \ptmunit=\dimen24
 )
@@ -62,23 +61,22 @@ The \^, \`, \', \v, \" and \r expands to characters by ISO-8859-2.
 (./myslides.ref)
 \openout0 = `myslides.ref'.
 
-)
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
+) (c:/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
 Font encoding set to Cork.
 The \^,\`,\',\v,\",\r,\c,\~,\H,\u,\. and \k expands to characters by Cork.
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
+(c:/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
 FONT: Latin Modern - {\caps \sans \ttset \slant \nbold \ttprop \ttlight \ttcond
  \quotset \upital \dunhill } {\rm \bf \it \bi } +AMS
 )
 \faculty=\toks14
 \department=\toks15
 \verbbox=\count48
-) [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2.1] [3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1]
-[14.1] [15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1]
-[25.1] [26.1] [26.2] [26.3]
+) [1.1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2.1]
+[3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1] [14.1]
+[15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1] [25.1]
+[26.1] [26.2] [26.3]
 Overfull \hbox (34.83157pt too wide) detected at line 560
 [] [] |
 
@@ -523,27 +521,26 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 [68.2] [69.1] [69.2] [69.3] [70.1] [70.2] [71.1] [71.2] [71.3] [72.1] [72.2]
 [72.3] [72.4] [73.1] [73.2] [73.3] [74.1] [74.2] [74.3] [75.1] [76.1] [76.2]
 [77.1] [77.2] [78.1] [79.1] [79.2] [80.1] [80.2] [80.3] [81.1] [82.1] [82.2]
-[82.3] [83.1] [83.2] [83.3] [84.1] [84.2] [85.1] [85.2] ){/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-d
-ist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/
-dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/l
-m-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
-c/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (158 pages, 362370 bytes).
+[82.3] [83.1] [83.2] [83.3] [84.1] [84.2] [85.1] [85.2] [86.1] [86.2] [87.1]
+[88.1] [88.2] [88.3] [89.1] [89.2] [89.3] [90.1] [90.2] ){c:/texlive/2019/texmf
+-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dv
+ips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{
+c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2019/te
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/lm/lmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/t
+ype1/public/lm/lmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr1
+7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/20
+19/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/lm/lmri8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/l
+msy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texli
+ve/2019/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2019/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on myslides.pdf (169 pages, 374785 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 591 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
+ 819 PDF objects out of 1000 (max. 8388607)
+ 628 compressed objects within 7 object streams
+ 169 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

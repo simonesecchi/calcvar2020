@@ -1918,6 +1918,80 @@ J(\eta(1,u)) \leq -{\delta^2 \over 4} + J(u) \leq -{\delta^2 \over 4}
 $$
 Ricordando la scelta di $\ge_0$, otteniamo $J(\eta(1,u))\leq c-\ge$.
 
+\pg;
+
+\sec Un teorema di M. Morse
+
+{\bf Teorema.} Siano $X$ uno spazio di Banach e $J \in C^1(X)$ un funzionale non costante che soddisfa la condizione (PS). Se un valore $c\in\R$ non \`e critico, allora esiste $\ge_0>0$ tale che per ogni $0<\ge<\ge_0$, il livello $[J \leq c-\ge]$ \`e un retratto di deformazione di $[J \leq c+\ge]$.
+
+\medskip
+
+{\em Dim.} Se $\ge_0>0$ \`e il numero del Lemma di Deformazione, con le stesse notazioni \`e sufficiente definire
+$$
+\varphi(t,u) = \eta \left( {4t \over \delta^2} (J(u)-c+\ge)^{+},u \right)
+,
+$$
+avendo indicato con $z^{+}$ la parte positiva del numero reale $z$.
+\pg+
+
+Risulta evidentemente $\varphi(0,\cdot)=I$ e $\varphi(t,u)=u$ se $u \in [J \leq c-\ge]$, sicch\'e $[J \leq c-\ge] \subset \varphi(1,[J \leq c+\ge])$. Per mostrare l'inclusione inversa, siano $u \in [c-\ge<J\leq c+\ge]$ e $\tau>0$ tali che per $0 \leq t \leq \tau$ si abbia $\eta(t,u) \in [c-\ge<J \leq c+\ge]$.
+
+\pg;
+
+Come nella dimostrazione del Lemma di Deformazione, risulta
+$$
+c_\ge < J(\eta(\tau,u)) \leq J(u) - {\delta^2 \over 4} \tau,
+$$
+cio\`e $\tau<4(J(u)-c+\ge))/\delta^2$. Di conseguenza per
+$$
+t_0 = \frac{4(J(u)-c+\ge)}{\delta^2},
+$$
+risulta $\varphi(1,u) = \eta(t_0,u) \in [J \leq c-\ge]$, e la dimostrazione \`e completa.
+
+\pg;
+
+\sec Il principio di minimax
+
+Il lemma di deformazione ci permette di enunciare un principio variazionale molto potente, del quale vedremo un caso speciale di utilizzo diffuso nello studio delle equazioni differenziali.
+
+\pg+
+
+* Sebbene faremo discendere questo principio variazionale dal Lemma di Deformazione, \`e possibile utilizzare esclusivamente il principio variazionale di Ekeland.
+
+\pg+
+
+{\bf Teorema di minimax.} Siano $X$ uno spazio di Banach, $J \in C^1(X)$ un funzionale che soddisfa la condizione (PS), e ${\cal B}$ una famiglia non vuota di sottoinsiemi non vuoti di $X$. Supponiamo che per ogni $c \in R$ e $\ge>0$ sufficientemente piccolo, il flusso $\eta(1,\cdot)$ costruito nel Lemma di Deformazione preservi ${\cal B}$, nel senso che $\eta(1,B) \in {\cal B}$ se $B \in {\cal B}$. Poniamo
+$$
+\tilde{c} = \inf_{A \in {\cal B}} \sup_{v \in A} J(v).
+$$
+Se $\tilde{c} \in \R$, allora $\tilde{c}$ \`e un valore critico di $J$.
+
+\pg;
+
+{\em Dim.} La dimostrazione \`e molto semplice, a questo punto. Sia infatti $\tilde{c} \in \R$. Se non fosse un valore critico, scegliendo $\ge>0$ sufficientemente piccolo potremmo selezionare un elemento $A \in {\cal B}$ tale che $\tilde{c} \leq \sup_{v \in A} J(v) \leq \tilde{c}+\ge$. Ma per ipotesi l'insieme $B = \eta(1,A)$ da una parte appartiene alla famiglia ${\cal B}$; dall'altra soddisfa $B \subset [J \leq \tilde{c}-\ge]$, contraddicendo la definizione di $\tilde{c}$.
+
+\pg+
+
+* Ovviamente la parola ``minimax'' non deve essere presa alla lettera, ma ``infisup'' non sembra un'alternativa foneticamente gradevole.
+
+\pg+
+
+* L'enunciato pu\`o sembrare poco elegante, poich\'e le ipotesi fanno uso esplicito del flusso costruito nel Lemma di Deformazione. Vedremo una variante completamente ``intrinseca'', le cui ipotesi non fanno riferimento ad enti costruiti all'interno di dimostrazioni precedenti.
+
+\pg;
+
+{\bf Esempio.} Abbiamo gi\`a detto quanto questi risultati siano connessi al principio variazionale di Ekeland. Per convincercene, possiamo scegliere ${\cal B} = \{\{x\}\mid x \in X\}$. Allora
+$$\inf_{A\in{\cal B}} \sup_{v \in A} J(v) = \inf_{v \in X} J(v),$$
+e ritroviamo il corollario del principio di Ekeland gi\`a dimostrato.
+
+\pg+
+
+Similmente, scegliendo ${\cal B} = \{X\}$, risulta
+$$
+\inf_{A \in {\cal B}} \sup_{v \in A} J(v) = \sup_{v \in X} J(v),
+$$
+che \`e lo stesso corollario applicato a $-J$.
+
 
 
 
