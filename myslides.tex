@@ -2020,21 +2020,202 @@ $$
 $$
 \pg+
 
-{\em Dim.} Evidentemente ${\cal B} \neq \emptyset$.  Per ogni $A \in {\cal B}$, l'intersezione $A \cap \{u \in X \mid \|u\|=R\} \neq \emptyset$ per questioni di connessione. Dunque $\max_{v \in A} J(v) \geq a$ e infine $c \geq a$.
-\pg+
+{\em Dim.} Evidentemente ${\cal B} \neq \emptyset$.  Per ogni $A \in
+{\cal B}$, l'intersezione $A \cap \{u \in X \mid \|u\|=R\} \neq
+\emptyset$ per questioni di connessione. Dunque $\max_{v \in A} J(v)
+\geq a$ e infine $c \geq a$.  \pg+
 
-Se $c$ non fosse un valore critico, con le stesse notazioni del Lemma di Deformazione e con $0<\ge < \ge_0$ sarebbe possibile trovare $A \in {\cal B}$ tale che
+Se $c$ non fosse un valore critico, con le stesse notazioni del Lemma
+di Deformazione e con $0<\ge < \ge_0$ sarebbe possibile trovare $A \in
+{\cal B}$ tale che
 $$
 A = \varphi([0,1]), \quad c \leq \max_{v \in A} J(v) \leq c+\ge.
 $$
 
 \pg;
 
-Ponendo $\psi(\tau) = \eta(1,\varphi(\tau))$ e $B = \psi([0,1])$, risulta $B \in {\cal B}$. Ma allora $B \subset [J \leq c-\ge]$, in contraddizione con il fatto che $\max_{v \in B} J(v) \geq c$.
+Ponendo $\psi(\tau) = \eta(1,\varphi(\tau))$ e $B = \psi([0,1])$,
+risulta $B \in {\cal B}$. Ma allora $B \subset [J \leq c-\ge]$, in
+contraddizione con il fatto che $\max_{v \in B} J(v) \geq c$.
 
 \pg+
 
-* Si osservi che ${\cal B}$ \`e costituito dalle immagini dei cammini che uniscono in $X$ l'origine con il punto $u_0$. In altri termini, stiamo facendo un minimax del funzionale $J$ sui cammini che partono dal punto di origine, e terminano nel punto $u_0$ esterno alla ``montagna'' $\{u \in X \mid \|u\|=R\}$.
+* Si osservi che ${\cal B}$ \`e costituito dalle immagini dei cammini
+  che uniscono in $X$ l'origine con il punto $u_0$. In altri termini,
+  stiamo facendo un minimax del funzionale $J$ sui cammini che partono
+  dal punto di origine, e terminano nel punto $u_0$ esterno alla
+  ``montagna'' $\{u \in X \mid \|u\|=R\}$.
+
+\pg;
+
+\sec Strumenti per applicazioni (non banali)
+
+* Per poter apprezzare la portata della Teoria dei Punti Critici nella
+  risoluzione di equazioni differenziali alle derivate parziali,
+  dobbiamo raccogliere alcuni risultati fondamentali sugli operatori
+  differenziali.
+
+* Per la maggior parte di essi non daremo la dimostrazione, perch\'e
+  non fa uso di tecniche inerenti al nostro corso.
+
+* Un riferimento insuperabile, per quanto in lingua francese, \`e il
+  libro di O. Kavian, Introduction \`a la th\'eorie des points
+  critiques, edito da Springer.
+
+\pg;
+
+\sec Operatori ellittici del secondo ordine
+
+* Siano $E$, $F$ due spazi di Banach. Un operatore lineare su $E$ a
+valori in $F$ \`e una coppia $(A,D(A))$ in cui $D(A)$ \`e un
+sottospazio vettoriale di $E$ e $A$ \`e un'applicazione lineare di
+$D(A)$ in $F$.
+
+* $D(A)$ \`e il dominio dell'operatore $A$. Il grafico di $A$ \`e
+  l'insieme
+  $$
+  G(A) = \left\{ (u,Au) \mid u \in D(A) \right\} \subset E \times F.
+  $$
+
+* Se $(A,D(A))$ e $(B,D(B))$ sono due operatori di $E$ in $F$,
+  scriveremo $A \subset B$ per indicare che $D(A) \subset D(B)$ e che
+  $Au=Bu$ per ogni $u \in D(A)$. Quindi $A=B$ significa che $A \subset
+  B$ e $B \subset A$.
+
+* L'operatore $(A,D(A))$ \`e chiuso se $G(A)$ \`e chiuso in $E \times
+  F$. Quando ci\`o accade, \`e possibile introdurre in $D(A)$ la norma
+  $$
+  \|u\|_{D(A)} = \|u\|_A = \|u\|_E + \|Au\|_F,
+  $$
+  detta appunto {\em norma del grafico}.
+
+\pg;
+
+{\bf Esempio.} Siano $\Omega$ un aperto di $\R^N$ e $[a_{ij}]$ una
+matrice quadrata $N \times N$ definita quasi ovunque in $\Omega$ e
+tale che:
+
+esiste $\alpha>0$, tale che per ogni $\xi \in \R^N$, q.o. in $\Omega$,
+si abbia $a(x) \xi \cdot \xi = \sum_{i,j=1}^N a_{ij}(x) \xi_i \xi_j
+\geq \alpha |\xi|^2$.
+
+Questa condizione \`e detta {\em coercivit\`a} della matrice
+$[a_{ij}]$.
+
+\pg+
+
+Supporremo inoltre che $a_{ij} \in L^\infty(\Omega)$ per ogni $i$, $j$
+tra $1$ e $N$.
+
+\pg+
+
+Definiamo allora
+$$
+D(A) = \left\{ u \in H_0^1(\Omega) \mid \sum_{i,j=1}^N \partial_i
+\left( a_{ij} \partial_j u \right) \in L^2(\Omega) \right\}
+$$
+e
+$$
+Au = -\sum_{i,j=1}^N \partial_i
+\left( a_{ij} \partial_j u \right) = - \mathop{\rm div}(a(\cdot)
+\nabla u).
+$$
+
+\pg;
+
+* Operatori di questo tipo sono chiamati {\em operatori ellittici del
+secondo ordine in forma di divergenza}.
+
+* Si verifica che tali operatori sono, nelle ipotesi suddette, chiusi.
+
+* Nella definizione del dominio, \`e richiesto che la somma degli
+  addendi $\partial_i \left( a_{ij} \partial_j u \right)$ appartenga a
+  $L^2(\Omega)$, e non che ciascun addendo abbia questa propriet\`a.
+
+* Il prossimo risultato raccoglie alcune propriet\`a utili di questi
+  operatori, la cui dimostrazione deriva dal teorema di Lax-Milgram e
+  da principi generali di analisi funzionale lineare. Indicheremo con
+  $\| \cdot \|$ e con $\langle \cdot \mid \cdot \rangle$ la norma e il
+  prodotto scalare in $L^2(\Omega)$.
+
+\pg;
+
+{\bf Lemma.} Siano $\Omega$ un aperto limitato di $\R^N$, $(A,D(A))$
+un operatore ellittico del secondo ordine in forma di divergenza (con
+le stesse ipotesi della definizione). Allora:
+\begitems
+\style n
+* per ogni $f \in L^2(\Omega)$ esiste ed \`e unico $u \in D(A)$ tale
+che: $u+Au=f$. Inoltre $(A+I)^{-1}$ \`e un operatore continuo di
+$L^2(\Omega)$ in s\'e stesso e si ha $\|u\| \leq \|f\|$. Se $\Omega$
+\`e limitato, $(A+I)^{-1}$ \`e un operatore compatto di $L^2(\Omega)$
+in s\'e stesso.
+* L'operatore $(A,D(A))$ \`e chiuso.
+* $D(A)$ \`e denso in $L^2(\Omega)$.
+\enditems
+
+\pg;
+
+* Pi\`u in generale, \`e possibile costruire operatori (differenziali)
+  ellittici del secondo ordine in forma generale.
+
+* Siano $\Omega$ un aperto di $\R^N$, $a = [a_{ij}]$ una matrice $N
+  \times N$, $b=(b_i)$ e $\beta = (\beta_i)$ due vettori a $N$
+  componenti, e $c$ una funzione.
+
+* Definiamo due operatori del secondo ordine:
+$$
+\eqalign{%
+Au &= - \sum_{i,j=1}^N \partial_i (a_{ij} \partial_j u) +
+\sum_{j=1}^n \partial_j (\beta_j u) + b \cdot \nabla u + cu, \cr
+Lu &= -\sum_{i,j=1}^N a_{ij} \partial_{ij} u + b \cdot \nabla u
++cu. \cr
+}
+$$
+
+* Il secondo operatore non \`e in forma di divergenza, ed \`e pi\`u
+  generale del primo.
+
+\pg;
+
+\sec Teoria spettrale
+
+Per un operatore $A$ come sopra, supponiamo che $a_{ij}$, $\beta_j$,
+$b_j$, $c$ siano funzioni di $L^\infty(\Omega)$. Supporremo sempre che
+la matrice $[a_{ij}]$ sia coerciva con costante $\alpha>0$.
+
+* Supponendo che $\Omega$ sia un aperto limitato e che
+$$
+D(A) = \left\{ u \in H_0^1(\Omega) \mid Au \in L^2(\Omega) \right\},
+$$
+si dimostra che esiste $\lambda_0 \in \R$ tale che per ogni $\lambda
+\geq \lambda_0$ e ogni $u \in H_0^1(\Omega)$ si abbia (disuguaglianza
+di G\aa rding)
+$$
+\langle Au+\lambda u \mid u \rangle \geq {\alpha \over 2} \|u\|^2.
+$$
+
+* Dunque l'operatore $(A+\lambda_0 I )^{-1}$ \`e continuo da
+  $L^2(\Omega)$ in s\'e, e la sua immagine \`e $D(A)$.
+
+\pg;
+
+* Per il teorema di compattezza di Rellich, $(A+\lambda_0 I)^{-1}$ \`e
+  un operatore compatto da $L^2(\Omega)$ in s\'e.
+
+* Poich\'e $0$ non \`e un autovalore di $(A+\lambda_0 I)^{-1}$, esiste
+  una successione $\{\mu_n\}_n$ si numeri complessi non nulli, tale
+  che $\mu_n \to 0$, ogni $\mu_n$ \`e un autovalore di molteplicit\`a
+  finita, e lo spettro di $(A+\lambda_0 I)^{-1}$ \`e $\{0\} \cup
+  \{\mu_n \mid n \geq 1 \}$.
+
+* Deduciamo infine che lo spettro di $A$ \`e costituito dai numeri
+  $\lambda_n$, $n \geq 1$, definiti da
+  $$
+  \lambda_n = \frac{1}{\mu_n} - \lambda_0.
+  $$
+
+
 
 
 
