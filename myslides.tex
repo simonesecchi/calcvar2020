@@ -2215,8 +2215,94 @@ $$
   \lambda_n = \frac{1}{\mu_n} - \lambda_0.
   $$
 
+\pg;
 
+\sec Un'applicazione del passo di montagna
 
+{\bf Definizione.} Sia $\Omega$ un aperto di $\R^N$. Una funzione $f\colon \Omega \times \R \to \R$, $(x,s) \mapsto f(x,s)$, \`e una {\em funzione di Carath\'eodory}, se:
+\begitems
+* per ogni $s \in \R$, la funzione $f(\cdot,s)$ \`e misurabile su $\Omega$;
+* per quasi ogni $x \in \Omega$, la funzione $f(x,\cdot)$ \`e continua su $\R$.
+\enditems
+
+\pg+
+
+* Siano $\Omega$ un sottoinsieme aperto e limitato di $\R^N$, $g$ una funzione di Carath\'eodory e $Au=-\mathop{\rm div}(a(\cdot)\nabla u)$ un operatore ellittico, come visto nelle slide precedenti.
+
+\pg+
+
+* Ricordiamo che il primo autovalore di $A$ \`e caratterizzato da
+$$
+\eqalign{%}
+\lambda_1 &= \inf \left\{ \int_\Omega a \nabla v \cdot \nabla v \mid v \in H_0^1(\Omega),\ \|v\|_2=1 \right\} \cr
+&= \inf \left\{ \frac{\int_\Omega a \nabla v \cdot \nabla v}{\int_\Omega |v|^2} \mid v \in H_0^1(\Omega) \setminus \{0\}\right\} \cr}
+$$
+
+\pg;
+
+Sia $G(x,s)=\int_0^s g(x,\sigma)\, d\sigma$, e definiamo il funzionale $J \colon H_0^1(\Omega) \to \R$ come
+$$
+\eqalign{%
+J(u) &= {1 \over 2} \int_\Omega \left[ a \nabla u \cdot \nabla u + \lambda |u|^2 \right] dx \cr
+&\qquad {}+\mu \int_\Omega G(x,u)\, dx - \langle f,u \rangle, \cr
+}
+$$
+dove $\lambda \in \R$, $\mu \in \R$, $\mu \neq 0$, e $f \in H^{-1}(\Omega)$ sono fissati.
+
+\pg+
+
+* Vogliamo dimostrare che, sotto opportune ipotesi, $J$ soddisfa la condizione di Palais-Smale.
+
+\pg;
+
+{\bf Lemma.} Siano $\Omega$ un aperto limitato di $\R^N$ e $m \colon \Omega \to [0,+\infty)$ tale che $m>0$ quasi ovunque in $\Omega$. Supponiamo che esistano $b_1 \geq 0$ e $b_0 \in L^{p_0}(\Omega)$ con $p_0 > 2N/(N+2)$ se $N \geq 2$ e $p_0 =1$ se $N=1$, e infine $\theta$, $p \geq 1$ tali che $(N-2)p < N+2$, con la propriet\`a che
+$$
+m(x) |s|^\theta  \leq b_0(x) |s|+b_1 (1+|s|^{p+1})
+$$
+per ogni $s \in \R$ e per q.o. $x \in \Omega$. Allora per ogni $\ge>0$, esiste una costante $C(\ge)>0$ tale che per ogni $u \in H_0^1(\Omega)$:
+$$
+\int_\Omega |u|^2 \leq \ge \int_\Omega |\nabla u|^2 + C(\ge) \left( \int_\Omega m(x) |u|^\theta \, dx \right)^{2/\theta}.
+$$
+
+\pg;
+
+{\em Dim.} La disuguaglianza da dimostrare \`e omogenea di grado due. Ragionando per assurdo, supponiamo che esista $\ge >0$ tale che, per ogni $n \geq 1$, esista $u_n \in H_0^1(\Omega)$ t.c. $\int_\Omega |u_n|^2=1$ e
+$$
+1 > \ge \int_\Omega |\nabla u_n|^2 + n \left( \int_\Omega m(x) |u|^{\theta}\, dx \right).
+$$
+\pg+
+La successione $\{u_n\}_n$ \`e limitata in $H_0^1(\Omega)$, e passando ad una sottosuccessione possiamo d'ora in poi immaginare che $u_n \rightharpoonup u$ in $H_0^1(\Omega)$ e $u_n \to u$ in $L^2(\Omega)$ e puntualmente quasi ovunque.
+
+Ne deduciamo che $\int_\Omega |u|^2=1$. L'ipotesi assurda garantisce che
+$$
+\lim_{n \to +\infty} \int_\Omega m(x) |u|^\theta \, dx =0.
+$$
+
+\pg;
+
+Per $N \geq 2$ abbiamo $p_0>2N/(N+2)$, sicch\'e $p_0' = p_0/(p_0-1) < 2^\*$; per il teorema di compattezza di Rellich, $u_n$ tende a $u$ in $L^{p_0'}(\Omega)$. Inoltre
+$$
+\|b_0(u-u_n)\|_{L^1} \leq \|b_0\|_{L^{p_0}} \| u-u_n \|_{L^{p_0'}},
+$$
+e dunque $b_0|u_n|$ tende a $b_0|u|$ in $L^1(\Omega)$ e puntualmente quasi ovunque. Allo stesso modo, $|u_n|^{p+1}$ tende a $|u|^{p+1}$ in $L^{1}(\Omega)$.
+
+\pg+
+
+Se
+$$
+\eqalign{%
+Z_n (x) &= b_0(x) |u_n(x)| +b_1 (1+|u_n(x)|^{p+1}) \cr
+Z(x) &= b_0(x) |u(x)| +b_1 (1+|u(x)|^{p+1}), \cr
+}
+$$
+deduciamo che $Z_n$ tende a $Z$ in $L^1(\Omega)$ e puntualmente quasi ovunque. Essendo $m |u_n| \leq Z_n$, da una versione generalizzata della convergenza dominata deduciamo che $m|u_n|^\theta$ converge a $m|u|^\theta$ in $L^1(\Omega)$ e che:
+$$
+\lim_{n \to +\infty} \int_\Omega m(x) |u_n|^\theta \, dx = \int_\Omega m(x) |u|^\theta \, dx.
+$$
+
+\pg;
+
+Concludiamo che $\int_\Omega m(x) |u|^\theta \, dx=0$, cio\`e $u =0$ q.o. contro l'ipotesi di normalizzazione $\int_\Omega |u|^2 =1$.
 
 
 
