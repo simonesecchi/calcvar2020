@@ -2295,15 +2295,224 @@ Z_n (x) &= b_0(x) |u_n(x)| +b_1 (1+|u_n(x)|^{p+1}) \cr
 Z(x) &= b_0(x) |u(x)| +b_1 (1+|u(x)|^{p+1}), \cr
 }
 $$
-deduciamo che $Z_n$ tende a $Z$ in $L^1(\Omega)$ e puntualmente quasi ovunque. Essendo $m |u_n| \leq Z_n$, da una versione generalizzata della convergenza dominata deduciamo che $m|u_n|^\theta$ converge a $m|u|^\theta$ in $L^1(\Omega)$ e che:
+deduciamo che $Z_n$ tende a $Z$ in $L^1(\Omega)$ e puntualmente quasi
+ovunque. Essendo $m |u_n| \leq Z_n$, da una versione generalizzata
+della convergenza dominata deduciamo che $m|u_n|^\theta$ converge a
+$m|u|^\theta$ in $L^1(\Omega)$ e che:
 $$
 \lim_{n \to +\infty} \int_\Omega m(x) |u_n|^\theta \, dx = \int_\Omega m(x) |u|^\theta \, dx.
 $$
 
 \pg;
 
-Concludiamo che $\int_\Omega m(x) |u|^\theta \, dx=0$, cio\`e $u =0$ q.o. contro l'ipotesi di normalizzazione $\int_\Omega |u|^2 =1$.
+Concludiamo che $\int_\Omega m(x) |u|^\theta \, dx=0$, cio\`e $u =0$
+q.o. contro l'ipotesi di normalizzazione $\int_\Omega |u|^2 =1$.
 
+\pg+
+
+{\bf Proposizione.} Sia $\Omega$ un aperto limitato di $\R^N$. Se $N
+\geq 2$, sia $p_0 = \ge+N/2$ per $\ge>0$, e $p_0=1$ se $N=1$. Sia
+$p>1$ tale che $(N-2)p<N+2$; supponiamo che $g$ soddisfi le condizioni
+\begitems
+* esistono $b_0 \in L^{p_0}(\Omega)$, $b_1 \geq 0$, tali che $|g(x,s)|
+\leq b_0(x) + b_1 |s|^{p}$;
+* esistono $\theta >2$, $R>0$ tali che se $|s|\geq R$, $0 < \theta
+G(x,s) \leq s g(x,s)$.
+\enditems
+Allora se $\lambda\in\R$, $\mu \neq 0$, $f \in H^{-1}(\Omega)$, il
+funzionale $J$ soddisfa la condizione (PS) su $H_0^1(\Omega)$. Se
+$\Omega$ \`e un aperto di classe $C^1$ e $f \in L^q(\Omega)$ con $q
+\geq 2N/(N+2)$, il funzionale $J$ soddisfa la condizione (PS) su
+$H^1(\Omega)$.
+
+\pg;
+
+{\em Dim.} Cominciamo da una conseguenza della seconda ipotesi su
+$g$. Se $s \geq R$ allora $\theta s^{-1} \leq g(x,s)/G(x,s)$ e di
+conseguenza $G(x,s) \geq G(x,R) R^{-\theta} s^\theta$ sull'intervallo
+$[R,+\infty)$. Deduciamo che per qualche funzione $c_1 \in
+L^{p_0}(\Omega)$, per ogni $(x,s) \in \Omega \times \R$:
+$$
+G(x,s) \geq \min \left\{ G(x,-R),G(x,R) \right\} R^{-\theta}
+|s|^\theta - c_1(x). \eqno(1)
+$$
+\pg+
+La prima condizione su $g$ implica ormai $\theta < 2^\*$. Consideriamo
+ora una successione $\{u_n\}_n$ in $H_0^1(\Omega)$ tale che $J(u_n)
+\to c$ e $J'(u_n) \to 0$.
+\pg+
+Riscriviamo quest'ultima condizione nella forma
+$$
+h_n = J'(u_n) = A u_n + \lambda u_n +\mu g(\cdot,u_n) -f \to 0
+$$
+in $H^{-1}(\Omega)$.
+
+\pg;
+
+* Mostriamo che la successione $\{u_n\}_n$ \`e limitata. Infatti, da
+  $\theta>2$ e usando il fatto che esiste $c_2 \in L^{p_0}(\Omega)$
+  tale che $\theta G(x,s) \leq s g(x,s) + c_2(x)$, per una costante
+  $C>0$ indipendente da $n$ otteniamo:
+  $$
+  \eqalign{% \
+  \int_\Omega G(x,u_n(x))\, dx &\leq {1 \over \theta-2} \int_\Omega
+  [u_n(x)g(x,u_n(x))-2G(x,u_n(x))]\, dx + C \cr
+  &= {1 \over \mu (\theta-2)} [\langle h_n-f,u_n \rangle - 2J(u_n)]+C
+  \cr
+  &\leq C (1+\|\nabla u_n\|).
+  }
+  $$
+  \pg+
+  D'altronde, ponendo $m(x) = R^{-\theta}\min\{1,G(x,R),G(x,-R)\}$, il
+  Lemma precedente e l'equazione (1) garantiscono che
+  $$
+  \int_\Omega |u_n|^2 \leq \ge \|\nabla u_n\|^2 + C(\ge) (1+\| \nabla
+  u_n\| )^{2\theta}.
+  $$
+
+\pg;
+
+Poich\'e $a(x)\xi \cdot \xi \geq \alpha |\xi|^2$ con $\alpha>0$, e
+poich\'e $J(u_n)$ resta limitata, se $\mu<0$
+$$
+\eqalign{%
+\alpha \|\nabla u_n\|^2 &\leq 2 J(u_n) + \|f\|_{H^{-1}} \|\nabla u_n\|
++ |\lambda| \|u_n\|^2 \cr
+&\qquad {}-\mu \int_\Omega G(x,u_n) \cr
+&\leq C + \ge \|\nabla u_n\|^2 + C(\ge) (1+\|\nabla u_n\|)^{2/\theta}.
+}
+$$
+\pg+
+Se $\mu>0$, ricordiamo che (1) implica $\int_\Omega G(x,u_n)\, dx \geq
+-C$, e verifichiamo facilmente che l'ultima disuguaglianza continua ad
+essere soddisfatta. A questo punto, la scelta di $\ge>0$
+sufficientemente piccolo (ad esempio $\ge=\alpha/2$) garantisce che
+$\{u_n\}_n$ \`e una successione limitata in $H_0^1(\Omega)$.
+
+\pg+
+
+* Esiste pertanto una sottosuccessione $\{u_{n_j}\}_j$ convergente
+  verso $u$ in senso debole in $H_0^1(\Omega)$, in senso forte in ogni
+  $L^r(\Omega)$ con $(N-2)r<N+2$, e puntualmente quasi ovunque.
+
+\pg;
+
+Come nella dimostrazione del precedente Lemma, se $r_0 =
+\min\{p_0,(p+1)/p\}$, allora $g(\cdot, u_{n_j})$ converge q.o. e in
+$L^{r_0}(\Omega)$ verso $g(\cdot,u)$. Per interpolazione, lo stesso
+accade in $L^{(p+1)/p}(\Omega)$, dunque a maggior ragione in
+$H^{-1}(\Omega)$.
+
+\pg+
+
+Come visto sopra, denotando con $\tilde{A}$ l'estensione di $A$ a
+$H_0^1(\Omega)$, $\tilde{A}$ risulta essere un isomorfismo di
+$H_0^1(\Omega)$ su $H^{-1}(\Omega)$, e pertanto:
+$$
+\displaylines{%
+u_{n_j} = \tilde{A}^{-1} [ \ge_{n_j}+f+\lambda u_{n_j} + \mu
+g(\cdot,u_{n_j})] \cr
+\to \tilde{A}^{-1} [f+\lambda u + \mu g(\cdot,u)].
+}
+$$
+La dimostrazione \`e ormai conclusa.
+
+\pg;
+
+\sec Il passo di montagna e l'esistenza di soluzioni.
+
+Per semplicit\`a, rafforziamo leggermente le ipotesi sulla funzione di
+Carath\'eodory $g$:
+\begitems
+* esistono $b_0 \in L^\infty(\Omega)$, $b_1 \geq 0$, tali che $|g(x,s)|
+\leq b_0(x) + b_1 |s|^{p}$;
+* esistono $\theta >2$, $R>0$ tali che se $|s|\geq R$, $0 < \theta
+G(x,s) \leq s g(x,s)$.
+\enditems
+Supponiamo inoltre che per ogni $\ge>0$, esista $\delta>0$ tale che
+$|G(\cdot,s)| \leq \ge |s|^2$ per ogni $|s| \leq \delta$.
+
+\pg+
+
+{\bf Teorema.} se $\lambda<\lambda_1$, allora il problema di Dirichlet
+$$
+\cases{%
+Au = \lambda u + g(\cdot,u) &in $\Omega$ \cr
+u=0 &su $\partial\Omega$ \cr
+}
+$$
+possiede una soluzione non identicamente nulla.
+
+\pg;
+
+{\em Dim.} Consideriamo il funzionale
+$$
+J(u) = {1 \over 2} \left[ \langle Au \mid u \rangle - \lambda \|u\|^2
+\right] - \int_\Omega G(x,u(x))\, dx,
+$$
+funzionale dell'energia associato al nostro problema di Dirichlet in
+$H_0^1(\Omega)$. Dimostriamo che il teorema del passo di montagna \`e
+applicabile.
+
+\pg+
+
+Per le ipotesi su $g$, dato $\ge>0$ esiste una costante $C_\ge>0$ tale
+che
+$$
+\eqalign{%
+\left| \int_\Omega G(x,u(x))\, dx \right| &\leq \int_\Omega
+|G(x,u(x))| \, dx \cr
+&\leq \ge \|u\|^2 + C_\ge \int_\Omega |u(x)|^{p+1}\, dx \cr
+&\leq \ge \|u\|^2 + C_\ge \|\nabla u \|^{p+1}.
+}
+$$
+
+\pg;
+
+Non appena $\lambda+2 \ge < \lambda_1$,
+$$
+\eqalign{%
+J(u) &\geq \frac12 \left[ \langle Au\mid u \rangle - \lambda \|u\|^2
+\right] - \ge \|u\|^2 - C_\ge \|\nabla u\|^{p+1} \cr
+&\geq \frac{\alpha(\lambda_1-\lambda -2\ge)}{2 \lambda_1} \|\nabla
+u\|^2 - C_\ge \|\nabla u\|^{p+1}.
+}
+$$
+\pg+
+Scegliendo $R_0^{p-1} = \alpha(\lambda_1-\lambda -2\ge) / (2 \lambda_1
+C_\ge)$, se $\|\nabla u\|=R<R_0$, allora esiste $b=b(R)>0$ tale che
+$J(u) \geq b$. L'origine \`e pertanto un minimo locale di $J$ su
+$H_0^1(\Omega)$.
+
+\pg+
+
+Per trovare un punto $u_0 \in H_0^1(\Omega)$ tale che $J(u_0)<0$,
+ricordiamo innanzitutto che $G(x,s) \geq m(x) |s|^\theta -C_1$ per
+qualche funzione $m \in L^\infty(\Omega)$ con $m>0$ q.o., e
+$\theta>2$.
+
+\pg+
+
+Sia $\varphi_1 \in H_0^1(\Omega)$ (con $\|\varphi_1\|_2=1$)
+un'autofunzione associata all'autovalore $\lambda_1$ di $A$. 
+
+\pg;
+
+Per ogni $t>0$ otteniamo
+$$
+J(t\varphi_1) \leq \frac12 (\lambda_1 - \lambda) t^2 + C_2 - t^\theta
+\int_\Omega m(x) |\varphi_1(x)|^\theta \, dx.
+$$
+Essendo $\theta > 2$, \`e sufficiente scegliere $t>0$ abbastanza
+grande per dedurre che $J(t \varphi_1)<0$.
+
+\pg+
+
+Sappiamo gi\`a (anche sotto ipotesi pi\`u deboli) che $J$ soddisfa la
+condizione (PS) su $H_0^1(\Omega)$. Quindi un'applicazione del Teorema
+del Passo di Montagna fornisce un punto critico di $J$ a livello $c
+\geq b >0$. In particolare, questo punto critico \`e una soluzione non
+identicamente nulla del nostro problema di Dirichlet.
 
 
 
