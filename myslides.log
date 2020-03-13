@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  12 MAR 2020 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  13 MAR 2020 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**myslides
+**myslides.tex
 (./myslides.tex The format: csplain <Mar. 2019>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
@@ -529,27 +529,28 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 [100.1] [101.1] [102.1] [102.2] [102.3] [103.1] [103.2] [104.1] [105.1]
 [105.2] [106.1] [106.2] [107.1] [107.2] [108.1] [108.2] [108.3] [109.1]
 [109.2] [110.1] [110.2] [110.3] [111.1] [111.2] [112.1] [112.2] [113.1]
-[113.2] [114.1] [114.2] [114.3] [114.4] [115.1] [115.2] ){/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-d
-ist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/
-dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/l
-m-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/
-type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
-c/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.p
-fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/tex
-mf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (217 pages, 435583 bytes).
+[113.2] [114.1] [114.2] [114.3] [114.4] [115.1] [115.2] [116.1] [117.1]
+[117.2] [118.1] [118.2] [119.1] [119.2] [120.1] [120.2] [121.1] [121.2] ){/usr/
+local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texl
+ive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf
+-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/font
+s/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvip
+s/lm/lm-rm.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12
+.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/f
+onts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
+public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
+ri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on myslides.pdf (228 pages, 448396 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
- 796 compressed objects within 8 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 831 compressed objects within 9 object streams
+ 228 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2514,6 +2514,139 @@ del Passo di Montagna fornisce un punto critico di $J$ a livello $c
 \geq b >0$. In particolare, questo punto critico \`e una soluzione non
 identicamente nulla del nostro problema di Dirichlet.
 
+\pg;
+
+\sec L'identit\`a di Pohozaev e assenza di soluzioni
+
+* L'esistenza di soluzioni per i problemi di Dirichlet su domini
+  limitati non \`e un fatto scontato. 
+
+* In questa sezione introdurremo una notevole {\em identit\`a
+  variazionale} e ne dedurremo una {\em ostruzione} all'esistenza di
+  soluzioni non nulle.
+
+* Consideriamo il problema di Dirichlet
+$$
+\cases{ -\Delta u = f(u) &in $\Omega$ \cr
+u=0 &su $\partial\Omega$. \cr
+} \eqno(P)
+$$
+Sia $F(u) = \int_0^u f(s) \, ds$.
+
+\pg;
+
+{\bf Teorema.} Sia $\Omega$ un dominio limitato di $\R^N$ con
+frontiera regolare, e sia $\nu$ la normale esterna a
+$\partial\Omega$. Se $u$ \`e una soluzione classica del problema (P)
+(ma $u \in H_0^1(\Omega) \cap H^2(\Omega)$ basterebbe per ottenere la
+stessa conclusione), allora \`e soddisfatta l'identit\`a di Pohozaev
+$$
+N \int_\Omega F(u(x))\, dx - {N-2 \over 2} \int_\Omega u(x)f(u(x))\,
+dx = \frac12 \int_{\partial\Omega} \left| {\partial u \over \partial
+\nu} \right|^2 (x \cdot \nu) \, d\sigma.
+$$
+
+\pg+
+
+* Questo risultato \`e essenzialmente dovuto a S. Pohozaev, ed \`e
+  stato ampiamente generalizzato da P. Pucci e J. Serrin negli anni
+  '80.
+
+\pg;
+
+{\em Dim.} Definiamo $\Theta(x) = (x \cdot \nabla u(x))\nabla
+u(x)$. Un calcolo diretto mostra che
+$$
+\eqalign{%
+\mathop{\rm div} \Theta (x) &= \Delta u (x \cdot \nabla u) + \sum_k
+\frac{\partial u}{\partial x_k} \frac{\partial}{\partial x_k} \left(
+\sum_i x_i \frac{\partial u}{\partial x_i} \right) \cr
+&= \Delta u (x \cdot \nabla u) + \sum_k \left| \frac{\partial
+u}{\partial x_k} \right|^2  + \sum_{i,k} \frac{\partial u}{\partial
+x_k} x_i \frac{\partial^2 u}{\partial x_i \partial x_k} \cr
+&= \Delta u (x \cdot \nabla u) +|\nabla u|^2 + \frac12 \sum_i
+\frac{\partial}{\partial x_i} |\nabla |^2.
+}
+$$
+\pg+
+Il teorema della divergenza mostra allora che 
+$$
+\eqalign{%
+&\int_\Omega \Delta u (x \cdot \nabla u) \, dx +\int_\Omega |\nabla
+u|^2 \, dx + \frac12 \int_\Omega \sum_i \frac{\partial}{\partial x_i}
+|\nabla |^2 \, dx \cr
+&= \int_{\partial\Omega} (x \cdot \nabla u)(\nabla u \cdot \nu)\,
+d\sigma. \cr
+}
+$$
+\pg;
+
+Poich\'e $u=0$ su $\partial\Omega$, risulta che $\nabla u = (\partial
+u / \partial \nu)\nu$ su $\partial\Omega$, sicch\'e
+$$
+\eqalign{%
+\int_\Omega \Delta u (x \cdot \nabla u) \, dx +\int_\Omega |\nabla
+u|^2 \, dx &+ \frac12 \int_\Omega \sum_i \frac{\partial}{\partial x_i}
+|\nabla |^2 \, dx \cr
+&= \int_{\partial \Omega} (x \cdot \nu) \left| \frac{\partial
+u}{\partial \nu} \right|^2 \, d\sigma. \cr
+}
+$$
+\pg+
+Sia ora $\Theta_1(x) = \frac12 |\nabla u|^2 x$. Poich\'e
+$$
+\mathop{\rm div} \Theta_1 = \frac{N}{2} |\nabla u|^2 + \frac12 \sum_i
+x_i \frac{\partial}{\partial x_i} |\nabla u|^2,
+$$
+una seconda applicazione del teorema della divergenza mostra che
+$$
+\frac{N}{2} \int_\Omega |\nabla u|^2 \, dx + \frac12 \int_\Omega
+\sum_i x_i \frac{\partial}{\partial x_i} |\nabla u|^2 \, dx = \frac12
+\int_{\partial\Omega} (x\cdot \nu) \left| \frac{\partial u}{\partial
+\nu} \right|^2 \, d\sigma.
+$$
+
+\pg;
+
+Confrontando queste due identit\`a, troviamo
+$$
+\int_\Omega \Delta u (x\cdot \nabla u)\, dx + \left(1-\frac{N}{2}
+\right) \int_\Omega |\nabla u|^2 \, dx = \frac{1}{2}
+\int_{\partial\Omega} (x \cdot \nu) \left| \frac{\partial u}{\partial
+\nu} \right|^2 \, d\sigma.
+$$
+\pg+
+\`E venuto il momento di inserire l'informazione che $u$ risolve (P):
+$$
+\eqalign{%
+\int_\Omega \Delta u (x\cdot \nabla u)\, dx &= \int_\Omega f(u(x))
+(x\cdot \nabla u)\, dx \cr
+&= \int_\Omega f(u(x)) \sum_i x_i \frac{\partial u}{\partial x_i} \,
+dx \cr
+&= \int_\Omega \sum_i x_i \frac{\partial F(u(x))}{x_i} \, dx. \cr
+}
+$$
+
+\pg;
+
+Un'integrazione per parti nell'ultimo integrale mostra che
+$$
+\int_\Omega \sum_i x_i \frac{\partial F(u(x))}{x_i} \, dx. = -N
+\int_\Omega F(u(x))\, dx,
+$$
+e pertanto
+$$
+\int_\Omega \Delta u (x \cdot \nabla u)\, dx = N \int_\Omega F(u(x))\,
+dx.
+$$
+\pg+
+Sempre da (P), moltiplicando per $u$ e integrando:
+$$
+\int_\Omega |\nabla u|^2 \, dx = \int_\Omega u f(u)\, dx.
+$$
+Con queste uguaglianze, otteniamo finalmente l'identit\`a di Pohozaev.
+
+
 
 
 
