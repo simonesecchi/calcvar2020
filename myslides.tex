@@ -2646,6 +2646,173 @@ $$
 $$
 Con queste uguaglianze, otteniamo finalmente l'identit\`a di Pohozaev.
 
+\pg;
+
+* Come applicazione di questa identit\`a variazionale, mostriamo che
+  l'ipotesi di crescita {\em sottocritica} di $f$ ($f(u) \sim |u|^p$
+  con $p<(N+2)/(N-2)$) \`e realmente necessaria per l'esistenza di
+  soluzioni non banali.
+
+\pg+
+
+* Consideriamo il problema di Dirichlet ``modello''
+$$
+\cases{%
+-\Delta u = |u|^{p-1}u &in $\Omega$ \cr
+u=0 &su $\partial\Omega$ \cr
+}
+$$
+
+\pg+
+
+{\bf Corollario.} Se $\Omega$ \`e {\em stellato} rispetto all'origine
+di $\R^N$, cio\`e se $\nu \cdot x > 0$ per ogni $x
+\in \partial\Omega$, allora ogni soluzione classica del problema
+modello soddisfa l'identit\`a
+$$
+\left( {N \over p+1} - {N-2 \over 2} \right) \int_\Omega |u|^{p+1} \,
+dx >0,
+$$
+e dunque $u \neq 0$ implica $p<(N+2)/(N-2)$.
+
+\pg+
+
+* Questi risultati sono molto sensibili alle piccole perturbazioni del
+  problema. \`E noto (Brezis e Nirenberg, 1983) che l'equazione
+  $-\Delta u = \lambda u + u^{{N+2 \over N-2}}$ possiede soluzioni
+  positive non banali in qualunque dominio $\Omega$, almeno per
+  opportuni valori di $\lambda \in \R$.
+
+\pg;
+
+\sec E se la condizione (PS) fallisce?
+
+* Uno dei problemi pi\`u interessanti della Teoria dei Punti Critici
+  \`e l'analisi della {\em perdita di compattezza}.
+
+\pg+
+
+* Abbiamo presentato risultati di esistenza di punti critici sotto
+  ipotesi di compattezza globale dello spazio. Poi siamo passati ad
+  ipotesi di compattezza per opportune successioni (di Palais-Smale).
+
+\pg+
+
+* Ma se un funzionale non soddisfa la condizione (PS), \`e inevitabile
+  gettare la spugna?
+
+\pg;
+
+* Ricordiamo la notazione $A_\alpha = \{x \in A \mid d(x,A) \leq \alpha\}$.
+
+\sec Un lemma di deformazione senza (PS)
+
+{\bf Lemma (M. Willem).} Sia $J \in C^1(X)$ un funzionale sullo spazio
+di Banach $X$.  Siano $S \subset X$, $c \in \R$, $\epsilon>0$,
+$\delta>0$ tali che
+$$
+\|J'(u)\| \geq {4 \epsilon \over \delta}
+$$
+per ogni $u \in [c-2\epsilon \leq J \leq c+2\epsilon] \cap
+S_{2\delta}$. Allora esiste un mappa continua $\eta \in C([0,1] \times
+X,X)$ tale che, per ogni $u \in X$ e $t \in [0,1]$, si abbia:
+\begitems
+\style n
+* $\eta(0,u)=u$
+* $\eta(t,u)=u$ se $u \notin [c-2\epsilon \leq J \leq c+2 \epsilon]
+\cap S_{2 \delta}$
+* $\eta(1,[J \leq c+\epsilon]\cap S) \subset [J\leq c-\epsilon] \cap
+S_\delta$
+* $\eta(t,\cdot)$ \`e un omeomorfismo di $X$ in $X$.
+\enditems
+
+\pg;
+
+{\em Dim.} Siano
+$$
+\eqalign{%
+A &= [c-2\epsilon \leq J \leq c+2\epsilon] \cap S_{2\delta} \cr
+B &= [c-\epsilon \leq J \leq c+\epsilon] \cap S_{\delta} \cr
+}
+$$
+in modo tale che $B \subset A \subset X_r$. Sia $V \colon X_r \to X$
+un campo vettoriale pseudogradiente per $J$. Definiamo infine una
+mappa lipschitziana $\rho \colon X \to \R$ tale che $0 \leq \rho \leq
+1$, $\rho=1$ in $B$ e $\rho=0$ in $X \setminus A$.
+
+\pg+
+
+Poniamo $f \colon X \to X$,
+$$
+f(u) = -\rho(u) {V(u) \over \|V(u)\|}.
+$$
+\pg+
+Poich\'e $\|f(u)\|\leq 1$ per ogni $u$, il problema di Cauchy
+$$
+\cases{%
+{dw \over dt} = f(w) \cr
+w(0)=u \cr
+}
+$$
+possiede, per ogni $u \in X$ soluzione unica definita per tutti i
+tempi $t \geq 0$.
+
+\pg;
+
+Definiamo $\eta \colon [0,1] \times X \to X$, $\eta(t,u)=w(\delta
+t,u)$. Le propriet\`a 1., 2. e 4. si dimostrano come nel lemma di
+deformazione gi\`a visto.
+
+\pg+
+
+Per dimostrare 3, cominciamo ad osservare che per $t \geq 0$,
+$$
+\|w(t,u)-u\| \leq \int_0^t \| f(w(\tau,u))\| \, d\tau \leq t,
+$$
+sicch\'e $w(t,S) \subset S_\delta$ per ogni $t \in [0,\delta]$. Quindi
+$\eta(t,S) \subset S_\delta$ per ogni $t \in [0,1]$.
+
+Notiamo inoltre che, per ogni $u \in X$ fissato, la funzione $t
+\mapsto J(w(t,u))$ \`e monotona decrescente.
+
+\pg+
+
+Sia $u \in [J \leq c+\epsilon] \cap S$. distinguiamo due casi:
+\begitems
+* se $J(w(\hat t,u)) <c-\epsilon$ per qualche $\hat t \in [0,\delta)$,
+allora $J(\eta(1,u))=J(w(\delta,u)) \leq J(w(\hat t,u)) <c-\epsilon$.
+\enditems
+
+\pg;
+
+\begitems
+* Altrimenti abbiamo $w(t,u) \in [c-\epsilon\leq J \leq c+\epsilon]
+\cap S_\delta = B$ per ogni $t \in [0,\delta]$, pertanto
+$$
+\eqalign{%
+J(w(t,u)) &= J(u) + \int_0^\delta {d \over dt} J(w(t,u)) \, dt \cr
+&\leq J(u) - \int_0^\delta {1 \over 2} \|J'(w(t,u))\| \, dt \cr
+&\leq c+\epsilon -{1 \over 2} {4\epsilon \over \delta} \delta =
+c-\epsilon. \cr
+}
+$$
+\pg+
+In entrambi i casi, $\eta(1,u) \in [J \leq c-\epsilon] \cap S_\delta$
+se $u \in [J \leq c+\epsilon] \cap S_{2\delta}$. La dimostrazione \`e
+completa.
+
+\pg+
+
+* Il senso di questo Lemma (per $S=X$) \`e il seguente: se la derivata del
+  funzionale $J$ \`e ben discosta da zero nella striscia $[c-2\epsilon
+  \leq J \leq c+2\epsilon]$, allora $[J \leq c+\epsilon]$ pu\`o essere
+  deformato con continuit\`a in $[J \leq c-\epsilon]$.
+
+* La stessa dimostrazione gi\`a vista del teorema del passo di
+  montagna permette di concludere che {\em esiste una successione (PS)
+  al livello} $c$ definito in quell'enunciato.
+
+ 
 
 
 

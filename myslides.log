@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  13 MAR 2020 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  13 MAR 2020 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,27 +530,29 @@ Overfull \hbox (34.83157pt too wide) detected at line 571
 [105.2] [106.1] [106.2] [107.1] [107.2] [108.1] [108.2] [108.3] [109.1]
 [109.2] [110.1] [110.2] [110.3] [111.1] [111.2] [112.1] [112.2] [113.1]
 [113.2] [114.1] [114.2] [114.3] [114.4] [115.1] [115.2] [116.1] [117.1]
-[117.2] [118.1] [118.2] [119.1] [119.2] [120.1] [120.2] [121.1] [121.2] ){/usr/
-local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texl
-ive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf
--dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/font
-s/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvip
-s/lm/lm-rm.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12
-.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
-ri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (228 pages, 448396 bytes).
+[117.2] [118.1] [118.2] [119.1] [119.2] [120.1] [120.2] [121.1] [121.2]
+[122.1] [122.2] [122.3] [122.4] [123.1] [123.2] [123.3] [124.1] [125.1]
+[125.2] [125.3] [126.1] [126.2] [126.3] [127.1] [127.2] [127.3] ){/usr/local/te
+xlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/tex
+mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fo
+nts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/
+lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-math
+ex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/201
+9/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
+e1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
+m/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on myslides.pdf (245 pages, 468160 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 831 compressed objects within 9 object streams
- 228 named destinations out of 1000 (max. 500000)
+ 1159 PDF objects out of 1200 (max. 8388607)
+ 890 compressed objects within 9 object streams
+ 245 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
