@@ -1940,7 +1940,7 @@ Risulta evidentemente $\varphi(0,\cdot)=I$ e $\varphi(t,u)=u$ se $u \in [J \leq 
 
 Come nella dimostrazione del Lemma di Deformazione, risulta
 $$
-c_\ge < J(\eta(\tau,u)) \leq J(u) - {\delta^2 \over 4} \tau,
+c-\ge < J(\eta(\tau,u)) \leq J(u) - {\delta^2 \over 4} \tau,
 $$
 cio\`e $\tau<4(J(u)-c+\ge))/\delta^2$. Di conseguenza per
 $$
@@ -1952,15 +1952,25 @@ risulta $\varphi(1,u) = \eta(t_0,u) \in [J \leq c-\ge]$, e la dimostrazione \`e 
 
 \sec Il principio di minimax
 
-Il lemma di deformazione ci permette di enunciare un principio variazionale molto potente, del quale vedremo un caso speciale di utilizzo diffuso nello studio delle equazioni differenziali.
+Il lemma di deformazione ci permette di enunciare un principio
+variazionale molto potente, del quale vedremo un caso speciale di
+utilizzo diffuso nello studio delle equazioni differenziali.
 
 \pg+
 
-* Sebbene faremo discendere questo principio variazionale dal Lemma di Deformazione, \`e possibile utilizzare esclusivamente il principio variazionale di Ekeland.
+* Sebbene faremo discendere questo principio variazionale dal Lemma di
+  Deformazione, \`e possibile utilizzare esclusivamente il principio
+  variazionale di Ekeland.
 
 \pg+
 
-{\bf Teorema di minimax.} Siano $X$ uno spazio di Banach, $J \in C^1(X)$ un funzionale che soddisfa la condizione (PS), e ${\cal B}$ una famiglia non vuota di sottoinsiemi non vuoti di $X$. Supponiamo che per ogni $c \in R$ e $\ge>0$ sufficientemente piccolo, il flusso $\eta(1,\cdot)$ costruito nel Lemma di Deformazione preservi ${\cal B}$, nel senso che $\eta(1,B) \in {\cal B}$ se $B \in {\cal B}$. Poniamo
+{\bf Teorema di minimax.} Siano $X$ uno spazio di Banach, $J \in
+C^1(X)$ un funzionale che soddisfa la condizione (PS), e ${\cal B}$
+una famiglia non vuota di sottoinsiemi non vuoti di $X$. Supponiamo
+che per ogni $c \in R$ e $\ge>0$ sufficientemente piccolo, il flusso
+$\eta(1,\cdot)$ costruito nel Lemma di Deformazione preservi ${\cal
+B}$, nel senso che $\eta(1,B) \in {\cal B}$ se $B \in {\cal
+B}$. Poniamo
 $$
 \tilde{c} = \inf_{A \in {\cal B}} \sup_{v \in A} J(v).
 $$
@@ -1968,19 +1978,32 @@ Se $\tilde{c} \in \R$, allora $\tilde{c}$ \`e un valore critico di $J$.
 
 \pg;
 
-{\em Dim.} La dimostrazione \`e molto semplice, a questo punto. Sia infatti $\tilde{c} \in \R$. Se non fosse un valore critico, scegliendo $\ge>0$ sufficientemente piccolo potremmo selezionare un elemento $A \in {\cal B}$ tale che $\tilde{c} \leq \sup_{v \in A} J(v) \leq \tilde{c}+\ge$. Ma per ipotesi l'insieme $B = \eta(1,A)$ da una parte appartiene alla famiglia ${\cal B}$; dall'altra soddisfa $B \subset [J \leq \tilde{c}-\ge]$, contraddicendo la definizione di $\tilde{c}$.
+{\em Dim.} La dimostrazione \`e molto semplice, a questo punto. Sia
+infatti $\tilde{c} \in \R$. Se non fosse un valore critico, scegliendo
+$\ge>0$ sufficientemente piccolo potremmo selezionare un elemento $A
+\in {\cal B}$ tale che $\tilde{c} \leq \sup_{v \in A} J(v) \leq
+\tilde{c}+\ge$. Ma per ipotesi l'insieme $B = \eta(1,A)$ da una parte
+appartiene alla famiglia ${\cal B}$; dall'altra soddisfa $B \subset [J
+\leq \tilde{c}-\ge]$, contraddicendo la definizione di $\tilde{c}$.
 
 \pg+
 
-* Ovviamente la parola ``minimax'' non deve essere presa alla lettera, ma ``infisup'' non sembra un'alternativa foneticamente gradevole.
+* Ovviamente la parola ``minimax'' non deve essere presa alla lettera,
+  ma ``infisup'' non sembra un'alternativa foneticamente gradevole.
 
 \pg+
 
-* L'enunciato pu\`o sembrare poco elegante, poich\'e le ipotesi fanno uso esplicito del flusso costruito nel Lemma di Deformazione. Vedremo una variante completamente ``intrinseca'', le cui ipotesi non fanno riferimento ad enti costruiti all'interno di dimostrazioni precedenti.
+* L'enunciato pu\`o sembrare poco elegante, poich\'e le ipotesi fanno
+  uso esplicito del flusso costruito nel Lemma di
+  Deformazione. Vedremo una variante completamente ``intrinseca'', le
+  cui ipotesi non fanno riferimento ad enti costruiti all'interno di
+  dimostrazioni precedenti.
 
 \pg;
 
-{\bf Esempio.} Abbiamo gi\`a detto quanto questi risultati siano connessi al principio variazionale di Ekeland. Per convincercene, possiamo scegliere ${\cal B} = \{\{x\}\mid x \in X\}$. Allora
+{\bf Esempio.} Abbiamo gi\`a detto quanto questi risultati siano
+connessi al principio variazionale di Ekeland. Per convincercene,
+possiamo scegliere ${\cal B} = \{\{x\}\mid x \in X\}$. Allora
 $$\inf_{A\in{\cal B}} \sup_{v \in A} J(v) = \inf_{v \in X} J(v),$$
 e ritroviamo il corollario del principio di Ekeland gi\`a dimostrato.
 
@@ -1996,19 +2019,31 @@ che \`e lo stesso corollario applicato a $-J$.
 
 \sec Il teorema del Passo di Montagna
 
-* Il Teorema del Passo di Montagna fu enunciato e dimostrato da A. Ambrosetti e P.H. Rabinowitz in {\em Dual variational methods in critical point theory and applications}, J. Funct. Anal. {\bf 14} (1973).
+* Il Teorema del Passo di Montagna fu enunciato e dimostrato da
+  A. Ambrosetti e P.H. Rabinowitz in {\em Dual variational methods in
+  critical point theory and applications}, J. Funct. Anal. {\bf 14}
+  (1973).
 
-* L'articolo originale si basa su una versione del Lemma di Deformazione gi\`a nota in letteratura, e dovuta a Clarke.
+* L'articolo originale si basa su una versione del Lemma di
+  Deformazione gi\`a nota in letteratura, e dovuta a Clarke.
 
-* Successivamente sono state proposte molte generalizzazioni del Passo di Montagna, soprattutto mediante strumenti topologici. Sebbene il Passo di Montagna sia un caso particolare di risultati pi\`u generali, rimane ancora oggi lo strumento pi\`u utilizzato nella risoluzione variazionale delle equazioni semilineari ellittiche.
+* Successivamente sono state proposte molte generalizzazioni del Passo
+  di Montagna, soprattutto mediante strumenti topologici. Sebbene il
+  Passo di Montagna sia un caso particolare di risultati pi\`u
+  generali, rimane ancora oggi lo strumento pi\`u utilizzato nella
+  risoluzione variazionale delle equazioni semilineari ellittiche.
 
 \pg;
 
-{\bf Teorema.} Siano $X$ uno spazio di Banach, e $J \in C^1(X)$ un funzionale che soddisfa la condizione (PS). Supponiamo che $J(0)=0$ e che:
+{\bf Teorema.} Siano $X$ uno spazio di Banach, e $J \in C^1(X)$ un
+funzionale che soddisfa la condizione (PS). Supponiamo che $J(0)=0$ e
+che:
 \begitems
 \style n
-* esistano $R>0$ e $a>0$ tali che se $\|u\|=R$, allora $J(u) > a$;
-* esista $u_0 \in X$ tale che $\|u_0\|>R$ e e$J(u_0)<a$.
+* esistano $R>0$ e $a>0$ tali che se
+$\|u\|=R$, allora $J(u) \geq a$;
+* esista $u_0 \in X$ tale che
+$\|u_0\|>R$ e e$J(u_0)<a$.
 \enditems
 Allora $J$ possiede un valore critico $c\geq a$. Pi\`u precisamente,
 $$
@@ -2016,7 +2051,8 @@ c = \inf_{A \in {\cal B}} \max_{v \in A} J(v),
 $$
 dove
 $$
-{\cal B} = \left\{ \varphi([0,1]) \mid \varphi \in C([0,1],X),\; \varphi(0)=0,\; \varphi(1)=u_0 \right\}.
+{\cal B} = \left\{ \varphi([0,1]) \mid \varphi \in C([0,1],X),\;
+\varphi(0)=0,\; \varphi(1)=u_0 \right\}.
 $$
 \pg+
 
