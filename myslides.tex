@@ -2302,16 +2302,24 @@ $$
 
 \pg;
 
-{\em Dim.} La disuguaglianza da dimostrare \`e omogenea di grado due. Ragionando per assurdo, supponiamo che esista $\ge >0$ tale che, per ogni $n \geq 1$, esista $u_n \in H_0^1(\Omega)$ t.c. $\int_\Omega |u_n|^2=1$ e
+{\em Dim.} La disuguaglianza da dimostrare \`e omogenea di grado
+due. Ragionando per assurdo, supponiamo che esista $\ge >0$ tale che,
+per ogni $n \geq 1$, esista $u_n \in H_0^1(\Omega)$ t.c. $\int_\Omega
+|u_n|^2=1$ e
 $$
-1 > \ge \int_\Omega |\nabla u_n|^2 + n \left( \int_\Omega m(x) |u|^{\theta}\, dx \right).
+1 > \ge \int_\Omega |\nabla u_n|^2 + n \left( \int_\Omega m(x)
+|u_n|^{\theta}\, dx \right)^{2/\theta}.
 $$
 \pg+
-La successione $\{u_n\}_n$ \`e limitata in $H_0^1(\Omega)$, e passando ad una sottosuccessione possiamo d'ora in poi immaginare che $u_n \rightharpoonup u$ in $H_0^1(\Omega)$ e $u_n \to u$ in $L^2(\Omega)$ e puntualmente quasi ovunque.
+La successione $\{u_n\}_n$ \`e limitata in $H_0^1(\Omega)$, e
+passando ad una sottosuccessione possiamo d'ora in poi immaginare che
+$u_n \rightharpoonup u$ in $H_0^1(\Omega)$ e $u_n \to u$ in
+$L^2(\Omega)$ e puntualmente quasi ovunque.
 
-Ne deduciamo che $\int_\Omega |u|^2=1$. L'ipotesi assurda garantisce che
+Ne deduciamo che $\int_\Omega |u|^2=1$. L'ipotesi assurda garantisce
+che
 $$
-\lim_{n \to +\infty} \int_\Omega m(x) |u|^\theta \, dx =0.
+\lim_{n \to +\infty} \int_\Omega m(x) |u_n|^\theta \, dx =0.
 $$
 
 \pg;
