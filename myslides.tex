@@ -2848,6 +2848,249 @@ completa.
   montagna permette di concludere che {\em esiste una successione (PS)
   al livello} $c$ definito in quell'enunciato.
 
+\pg;
+
+\sec Un approccio alternativo
+
+* L'uso dei teoremi di minimax non \`e l'unico approccio possibile
+  alla risoluzione di equazioni semilineari ellittiche.
+
+\pg+
+
+* Affronteremo ora lo studio di un problema di Dirichlet, su un
+  dominio limitato $\Omega$, mediante una tecnica di {\em
+  minimizzazione vincolata}.
+
+\pg+
+
+* \`E possibile mostrare, sotto ipotesi abbastanza generiche, che la
+  risoluzione con il Passo di Montagna \`e {\em equivalente} alla
+  risoluzione per minimizzazione vincolata.
+
+\pg;
+
+* Sia $2<p<2^\*=\frac{2N}{N-2}$ un numero reale.
+
+* Cerchiamo una funzione $u$ che soddisfi il problema {\em
+  superlineare} e {\em sottocritico}
+  $$
+  \cases{-\Delta u + q(x) u = |u|^{p-2}u &in $\Omega$ \cr
+  u=0 &su $\partial\Omega$. \cr
+  }\eqno(P)
+  $$
+
+* Supporremo valide, fino a diversa indicazione, le seguenti ipotesi:
+  $\Omega$ \`e un aperto limitato di $\R^N$ con $N \geq 3$, $q \in
+  L^\infty(\Omega)$ e $q(x) \geq 0$ per q.o. $x \in \Omega$.
+
+\pg+
+
+{\bf Teorema.} Sotto le predette ipotesi, il problema (P) possiede
+almeno una soluzione non banale e non negativa in $\Omega$.
+
+\pg+
+
+* L'ipotesi che $q\geq 0$ in $\Omega$ garantisce che il primo
+  autovalore dell'operatore $-\Delta + q(\cdot)$ sia strettamente
+  positivo. Ci\`o implica che la norma standard di $H_0^1(\Omega)$ sia
+  equivalente a quella indotta dal prodotto scalare
+  $$
+  \langle u\mid v \rangle = \int_\Omega \nabla u \cdot \nabla v \, dx
+  + \int_\Omega q(x)uv\, dx.
+  $$
+  D'ora in avanti, lo spazio $H_0^1(\Omega)$ sar\`a normato in questo
+  modo.
+
+\pg;
+
+* Le soluzioni (deboli) di (P) corrispondono ai punti critici del
+  funzionale $I \colon H_0^1(\Omega) \to \R$,
+  $$
+  I(u) = \frac12 \int_\Omega |\nabla u|^2 \, dx + \frac12 \int_\Omega
+  q(x) |u|^2 \, dx - \frac1p \int_\Omega |u|^{p}\, dx.
+  $$
+
+\pg+
+
+* Sappiamo che questo funzionale \`e derivabile secondo Fr\'echet, per
+  gli esempi visti in precedenza.
+
+\pg+
+
+* Il funzionale $I$ non \`e limitato dal basso:
+$$
+\lim_{t \to +\infty} I(tu) = \lim_{t \to +\infty} \frac{t^2}{2}
+\|u\|^2 - \frac{t^p}{p} \|u\|_p^p = -\infty
+$$
+per ogni $u \neq 0$, dal momento che $p>2$.
+
+\pg;
+
+\sec Minimizzazione sulle sfere
+
+* Per ogni $\beta>0$, definiamo la {\em sfera}
+$$
+\Sigma_\beta = \left\{ u \in H_0^1(\Omega) \mid \int_\Omega |u|^p \,
+dx = \beta \right\}.
+$$
+
+\pg+
+
+* Se $u \in \Sigma_\beta$, allora $I(u) = \frac{1}{2} \|u\|^2 -
+  \frac{\beta}{p}$. In particolare, $I$ \`e limitato dal basso su
+  $\Sigma_\beta$.
+
+\pg+
+
+* Introduciamo il problema di minimo
+$$
+m_\beta = \inf_{u \in \Sigma_\beta} \|u\|^2.
+$$
+
+\pg;
+
+{\bf Lemma.} Per ogni $\beta>0$, il livello $m_\beta$ \`e raggiunto da
+una funzione non negativa. Esiste pertanto $u \in \Sigma_\beta$, $u
+\geq 0$ quasi ovunque in $\Omega$, tale che $\|u\|^2 = m_\beta$.
+
+\pg+
+
+{\em Dim.} Sia $\{u_k\}_k$ una successione minimizzante per
+$m_\beta$. Evidentemente anche la successione $\{|u|_k\}_k$ \`e
+minimizzante per $m_\beta$: possiamo d'ora in poi supporre che $u_k
+\geq 0$ quasi ovunque in $\Omega$.
+
+\pg+
+
+Poich\'e questa successione minimizzante \`e limitata (perch\'e?),
+possiamo estrarre una sottosuccessione e supporre che: $u_k
+\rightharpoonup u$ in $H_0^1(\Omega)$, $u_k \to u$ in $L^p(\Omega)$ e
+puntualmente quasi ovunque.
+
+\pg+ 
+
+\`E noto dall'analisi funzionale lineare che ogni norma \`e
+semicontinua inferiormente rispetto alla topologia debole, dunque
+$$
+\|u\|^2 \leq \liminf_{k \to +\infty} \|u_k\|^2 = m_\beta.
+$$
+
+\pg+
+
+Per la convergenza in $L^p$, risulta
+$$
+\int_\Omega |u|^p \, dx = \beta.
+$$
+
+\pg;
+
+La convergenza puntuale quasi ovunque implica che $u \geq 0$ quasi
+ovunque in $\Omega$, e tutto questo dimostra che $u$ \`e una soluzione
+non negativa del problema $m_\beta$.
+
+\pg+
+
+* L'ipotesi che $p<2^\*$ ha permesso di passare al limite nella
+  convergenza forte di $L^p(\Omega)$, e di dimostrare che il limite
+  {\em debole} appartiene al vincolo $\Sigma_\beta$.
+
+\pg+
+
+{\bf Lemma.} Sia $u$ il minimo per $m_\beta$ costruito nel lemma
+precedente. Allora $u$ soddisfa
+$$
+\int_\Omega \nabla u \cdot \nabla v \, dx + \int_\Omega q(x)uv \, dx =
+{m_\beta \over \beta} \int_\Omega |u|^{p-2}uv \, dx
+$$
+per ogni $v \in H_0^1(\Omega)$.
+
+\pg+
+
+{\em Dim.} Cominciamo da un'osservazione fondamentale. Sebbene $u$
+minimizzi il funzionale $N(u)=\|u\|^2$ su $\Sigma_\beta$, non possiamo
+dedurre che la derivata di $N$ si annulla in $u$. Infatti
+$\Sigma_\beta$ {\em non} \`e un sottospazio vettoriale: non \`e lecito
+confrontare i valori di $N(u)$ e $N(u+v)$, poich\'e in generale $u+v
+\notin \Sigma_\beta$.
+
+\pg;
+
+Fissiamo $v \in H_0^1(\Omega)$. Per $s \in \R$ abbastanza piccolo,
+diciamo $s \in (-\ge,\ge)$, la funzione $u+sv$ non \`e identicamente
+nulla. Pertanto esiste $t \colon (-\ge,\ge) \to (0,+\infty)$ tale che
+$$
+\int_\Omega |t(s)(u+sv)|^p\, dx = \beta.
+$$
+Esplicitamente,
+$$
+t(s) = \left( \frac{\beta}{\int_\Omega |u+sv|^p \, dx} \right)^{1/p}.
+$$
+\pg+
+
+La funzione $s \mapsto t(s)(u+sv)$ definisce una curva in
+$\Sigma_\beta$ che passa per $u$ al ``tempo'' $s=0$. La funzione $t$
+\`e derivabile in $(-\ge,\ge)$, e risulta
+$$
+t'(s)=-\beta^{1/p} \left( \int_\Omega |u+sv|^p\, dx \right)^{-{1 \over
+p}-1} \int_\Omega |u+sv|^{p-2}(u+sv)v \, dx.
+$$
+Inoltre $t(0)=1$, $t'(0)=-\beta^{-1}\int_\Omega |u|^{p-2}uv\, dx$.
+
+\pg;
+
+Definiamo $\gamma \colon (-\ge,\ge) \to \R$,
+$$
+\gamma(s) = \left\| t(s)(u+sv) \right\|^2.
+$$
+Poich\'e $t(s)(u+sv) \in \Sigma_\beta$ per ogni $s$, il punto $s=0$
+\`e un minimo per $\gamma$. Essendo
+$$
+\gamma'(s) = 2 \langle t(s)(u+sv)\mid t'(s)(u+sv)+t(s)v \rangle,
+$$
+abbiamo
+$$
+0 = \gamma'(0)= -2 \frac{m_\beta}{\beta} \int_\Omega |u|^{p-2}uv\, dx+
+2 \langle u\mid v \rangle.
+$$
+Quindi
+$$
+\langle u \mid v \rangle = \frac{m_\beta}{\beta} \int_\Omega
+|u|^{p-2}uv \, dx
+$$
+per ogni $v \in H_0^1(\Omega)$, e la dimostrazione \`e conclusa.
+
+\pg+
+
+* Chi ha qualche nozione di geometria differenziale, probabilmente ha
+  notato che abbiamo utilizzato il concetto di derivata su variet\`a
+  (immerse), e pi\`u precisamente la condizione che $dN(u)=0$ su $T_u
+  \Sigma_\beta$.
+
+\pg;
+
+Per concludere la dimostrazione del teorema di esistenza di una
+soluzione al problema (P), dobbiamo in qualche modo... sbarazzarci del
+fattore moltiplicativo $m_\beta/\beta$. Questo numero appare come un
+{\em moltiplicatore di Lagrange} subordinato al vincolo
+$\Sigma_\beta$. \`E a questo punto che entra in giorno, in maniera
+cruciale l'omogeneit\`a del vincolo.
+
+\pg+
+
+Sia $u$ il minimo di $N$ su $\Sigma_\beta$. Poniamo $u=cw$, con $c \in
+\R$ da determinare. Sappiamo che $u$ soddisfa
+$$
+c \langle w \mid v \rangle = {m_\beta \over \beta} c^{p-1} \int_\Omega
+|w|^{p-2}wv\, dx
+$$
+per ogni $v \in H_0^1(\Omega)$. Possiamo allora scegliere
+$c=(\beta/m_\beta)^{\frac{1}{p-2}}$ e dedurre che
+$$
+\langle w \mid v \rangle = \int_\Omega
+|w|^{p-2}wv\, dx
+$$
+per ogni $v \in H_0^1(\Omega)$. La funzione $w$ \`e pertanto la
+soluzione cercata.
  
 
 
