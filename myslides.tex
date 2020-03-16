@@ -3100,6 +3100,285 @@ $$
 per ogni $v \in H_0^1(\Omega)$. La funzione $w$ \`e pertanto la
 soluzione cercata.
  
+\pg;
+
+* Abbiamo determinato una soluzione della nostra equazione per
+  minimizzazione della norma $N$ sulla sfera $\Sigma_\beta$. Che cosa
+  succederebbe, se tentassimo di minimizzare il funzionale $I$ su
+  $\Sigma_\gamma$, per $\gamma \neq \beta$?
+
+\pg+
+
+* Si verifica con un calcolo elementare che 
+$$
+{m_\beta \over \beta^{2/p}} = {m_\gamma \over \gamma^{2/p}}.$$
+Inoltre $u$ \`e un minimo di $I$ su $\Sigma_\beta$ se e solo se
+$v=(\gamma/\beta)^{1/p} u$ \`e un minimo di $I$ su $\Sigma_\gamma$.
+
+\pg+
+
+* In altre parole, i due problemi di minimo conducono alla medesima
+  soluzione. Per comodit\`a, \`e consuetudine scegliere $\beta=1$ fin
+  dal principio.
+
+\pg;
+
+\sec Il metodo della variet\`a di Nehari
+
+* Una tecnica variazionale di grande successo, qualora non sia
+  possibile minimizzare globalmente o utilizzare qualche omogeneit\`a
+  algebrica del funzionale, \`e quello della cosiddetta {\em variet\`a
+  di Nehari}.
+
+\pg+
+
+* Questa tecnica \`e applicabile ad una grande variet\`a di problemi,
+  ed \`e stata recentemente generalizzata da A. Szulkin, T. Weth,
+  J. Mederski, ecc.
+
+\pg+
+
+* In questo corso ci limiteremo ad applicarne la variante pi\`u
+  semplice all'equazione (P). Tuttavia sar\`a chiaro che la tecnica
+  \`e pi\`u ``robusta'' di quella appena vista, perch\'e non dipende
+  dalla forma algebrica della nonlinearit\`a.
+
+\pg;
+
+* Ricordiamo che stiamo cercando punti critici del funzionale
+$$
+\eqalign{%
+I(u) &= \frac12 \int_\Omega |\nabla|^2 \, dx + \frac12 \int_\Omega
+q(x)|u|^2 \, dx - \frac1p \int_\Omega |u|^p \, dx \cr
+&= \frac12 \|u\|^2 - \frac1p \|u\|_p^2,\cr
+}
+$$
+definito per ogni $u \in H_0^1(\Omega)$.
+
+\pg+
+
+* Definiamo la variet\`a di Nehari associata ad $I$:
+$$
+\eqalign{%
+{\cal N} &= \left\{ u \in H_0^1(\Omega)\setminus \{0\} \mid I'(u)[u]=0 \right\} \cr
+&= \left\{ u \in  H_0^1(\Omega) \mid u \neq 0, \, \|u\|^2 =
+\int_\Omega |u|^p \, dx \right\}. \cr
+}
+$$
+
+\pg+
+
+* Segue direttamente dalla definizione che ${\cal N}$ contiene tutti i
+  punti critici non nulli di $I$.
+
+\pg;
+
+* Confrontando l'espressione di $I(u)$ con la definizione di ${\cal
+  N}$, concludiamo che, per ogni $u \in {\cal N}$, risulta
+  $$
+  I(u) = \left( \frac12 - \frac1p \right) \|u\|^2 = \left( \frac12 -
+  \frac1p \right) \int_\Omega |u|^p \, dx.
+  $$
+
+\pg+
+
+* Ne consegue che $I$ \`e coercivo su ${\cal N}$: se $u_k \in {\cal
+  N}$ e $\|u_k\| \to +\infty$, allora $I(u_k) \to +\infty$.
+
+\pg+
+
+* Ha senso considerare il problema di minimo
+$$
+m = \inf_{u \in {\cal N}} I(u).
+$$
+
+\pg+
+
+* Attraverso alcuni lemmi tecnici, dimostriamo che $m$ \`e raggiunto
+  da un punto critico di $I$ su $H_0^1(\Omega)$, e pertanto $u$ \`e
+  una soluzione non nulla di (P).
+
+\pg;
+
+{\bf Lemma.} ${\cal N} \neq \emptyset$.
+
+{\em Dim.} Per ogni $u \in H_0^1(\Omega)$ non identicamente nulla,
+esiste $t>0$ tale che $tu \in {\cal N}$. Infatti, $tu \in {\cal N}$
+equivale a
+$$
+\|tu\|^2 = \int_\Omega {tu}^p \, dx,
+$$
+cio\`e
+$$
+t = \left( \frac{\|u\|^2}{\int_\Omega |u|^p \, dx} \right)^{{1 \over
+p-2}}.
+$$
+
+\pg+
+
+* Non \`e troppo difficile realizzare che la mappa $u \mapsto t(u)u$
+  \`e un diffeomorfismo di $H_0^1(\Omega) \setminus \{0\}$ su ${\cal
+  N}$.
+
+\pg;
+
+{\bf Lemma.} Risulta
+$$
+m = \inf_{u \in {\cal N}} I(u) > 0.
+$$
+
+{\em Dim.} Se $u \in {\cal N}$, per le disuguaglianze di Sobolev
+risulta
+$$
+\|u\|^2 = \int_\Omega |u|^p \, dx \leq C \|u\|^p,
+$$
+dove $C>0$ \`e una costante opportuna (immersione di
+Sobolev). Poich\'e $\|u\| \neq 0$ e $p>2$, otteniamo
+$$
+\|u\| \geq {1 \over C^{{1 \over p-2}}}
+$$
+per ogni $u \in {\cal N}$, sicch\'e
+$$
+m = \left( \frac12 - \frac1p \right) \inf_{u \in {\cal N}} \|u\|^2
+\geq \left( \frac12 - \frac1p \right) {1 \over C^{{1 \over p-2}}} >0.
+$$
+
+\pg;
+
+{\bf Lemma.} Il valore $m$ \`e raggiunto da una funzione non negativa,
+cio\`e esiste $u \in {\cal N}$, $u \geq 0$ quasi ovunque in $\Omega$,
+tale che $I(u)=m$.
+
+{\em Dim.} Sia $\{u_k\}_k \subset {\cal N}$ una successione
+minimizzante per $m$, cio\`e $\lim_{k \to +\infty} I(u_k) =
+m$. Poich\'e $|u_k| \in {\cal N}$ e $I(|u_k|) = I(u_k)$, anche la
+successione $\{|u_k|\}_k$ \`e minimizzante per $m$: d'ora in poi,
+supporremo che $u_k \geq 0$ quasi ovunque.
+
+\pg+
+
+Abbiamo gi\`a osservato che $I$ \`e un funzionale coercivo su ${\cal
+N}$. Quindi la successione $\{u_k\}_k$ \`e limitata in
+$H_0^1(\Omega)$, ed estraendo una sottosuccessione possiamo supporre
+che
+\begitems
+* $u_k \rightharpoonup u$ in $H_0^1(\Omega)$;
+* $u_k \to u$ in $L^p(\Omega)$;
+* $u_k(x) \to u(x)$ per q.o. $x \in \Omega$.
+\enditems
+
+\pg;
+
+La convergenza puntuale garantisce che $u \geq 0$. La semicontinuit\`a
+della norma invece porge
+$$
+\eqalign{%
+I(u) &= \frac12 \|u\|^2 - \frac1p \|u\|_p^p \leq \liminf_{k \to
++\infty} \left( \frac12 \|u_k\|^2 - \frac1p \|u_k\|_p^p \right) \cr
+&= \liminf_{k \to +\infty} I(u_k) = m. \cr
+}
+$$
+\pg+
+Resta da capire se $u \in {\cal N}$. Ma $\|u_k\|^2 = \int_\Omega
+|u_k|^p\, dx$, e sappiamo gi\`a che
+$$
+\|u_k\| \geq {1 \over C^{{1 \over p-2}}}.
+$$
+Dunque $\int_\Omega |u|^p \, dx \neq 0$, e $u \neq 0$. Passando al
+limite,
+$$
+\|u\|^2 \leq \int_\Omega |u|^p \, dx.
+$$
+
+\pg;
+
+Se $\|u^2\| = \int_\Omega |u|^p \, dx$, allora $u \in {\cal N}$ e la
+dimostrazione \`e conclusa. Dobbiamo escludere che
+$$
+\|u\|^2 < \int_\Omega |u|^p \, dx.
+$$
+\pg+
+
+Sia $t>0$ tale che $tu \in {\cal N}$. Se $\|u\|^2 < \int_\Omega |u|^p
+\, dx$, allora $0<t<1$. Ma $tu \in {\cal N}$, sicch\'e
+$$
+\eqalign{%
+0 &< m \leq I(tu) = \left( \frac12 - \frac1p \right) \|tu\|^2 = t^2
+\left( \frac12 - \frac1p \right) \|u\|^2 \cr
+&\leq t^2 \liminf_{k \to +\infty} \left( \frac12 - \frac1p \right)
+\|u_k\|^2
+= t^2 \liminf_{k \to +\infty} I(u_k) = t^2 m <m. \cr
+}
+$$
+
+\pg;
+
+* Abbiamo dimostrato che il problema (P) possiede una soluzione? La
+risposta non pu\`o essere ancora affermativa, poich\'e la soluzione
+del problema di minimo $m$ potrebbe non essere un punto critico di $I$.
+
+\pg+
+
+* Ricordiamo che il teorema di Fermat sussiste, in generale, solo per
+  i punti di minimo/massimo di una funzione derivabile in un insieme
+  {\em aperto}. Ma la nostra variet\`a di Nehari \`e un insieme
+  chiuso, anzi diffeomorfo ad una sfera in $H_0^1(\Omega)$.
+
+\pg+
+
+* Esistono a questo punto due approcci: potremmo affidarci alla teoria
+  dei moltiplicatori di Lagrange, in dimensione per\`o infinita. La
+  teoria esiste e non \`e molto diversa da quella studiata nel secondo
+  corso di analisi matematica.
+
+\pg+
+
+* Procederemo invece in maniera completamente elementare, dimostrando
+  che {\em in questo caso} la soluzione del problema di minimo $m$ \`e
+  veramente un punto critico di $I$.
+
+\pg;
+
+Sia pertanto $u \in {\cal N}$ tale che $I(u)=m$. Per ogni $v \in
+H_0^1(\Omega)$ e per ogni $s$ in un piccolo intervallo $(-\ge,\ge)$ di
+${\R}$, risulta che $u+sv \neq 0$. Sia $t=t(s)>0$ una funzione tale
+che $t(s)(u+sv) \in {\cal N}$, esplicitamente
+$$
+t(s) = \left( \frac{\|u+sv\|^2}{\int_\Omega |u+sx|^p \, dx}\right)^{1
+\over p-2}.
+$$
+\pg+
+La funzione $t(\cdot)$ \`e derivabile in quanto composizione di
+funzioni derivabili. Inoltre $t(0)=1$. La mappa
+$$
+s \mapsto t(s)(u+sv)
+$$
+\`e allora una curva su ${\cal N}$, lungo la quale valutiamo il
+funzionale $I$.
+
+\pg;
+
+Definiamo per comodit\`a di notazione $\gamma \colon (-\ge,\ge) \to
+\R$,
+$$
+\gamma(s) = I(t(s)(u+sv)).
+$$
+\pg+
+Per costruzione, $s=0$ \`e un punto di minimo per $\gamma$ nell'aperto
+$(-\ge,\ge)$. Pertanto
+$$
+\eqalign{%
+0&=\gamma'(0) = I'(t(0)u)[t'(0)u+t(0)v] \cr
+&= t'(0)I'(u)[u]+I'(u)[v] \cr
+&= I'(u)[u]. \cr
+}
+$$
+\pg+
+Ma questo significa che $v \in \ker I'(u)$, e per l'arbitrariet\`a di
+$v \in H_0^1(\Omega)$ concludiamo che $u$ \`e un punto critico di $I$.
+
+
+
 
 
 
