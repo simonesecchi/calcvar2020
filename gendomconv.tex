@@ -1,0 +1,33 @@
+\input opmac.tex
+
+\typosize[11/13]
+\margins/1 a4 (1,1,1,1)in
+
+\tit Un teorema di convergenza dominata generalizzato
+
+\centerline{18 marzo 2020}
+
+\null\bigskip
+
+\noindent {\bf Teorema.} {\em Sia $(\Omega,\Sigma,\mu)$ uno spazio di misura positiva. Supponiamo che $\{f_n\}_n$ e $\{g_n\}_n$ siano due successioni in $L^1(\Omega,\mu)$, e $f$, $g$ due funzioni di $L^1(\Omega)$ tali che $f_n \to f$, $g_n \to g$ quasi ovunque in $\Omega$. Se $|f_n| \leq g_n$ e $\lim_{n \to +\infty} \int_\Omega g_n \, d\mu = \int_\Omega g \, d\mu$, allora $\lim_{n \to +\infty} \int_\Omega f_n \, d\mu = \int_\Omega f \, d\mu$
+}
+
+\medskip
+
+\noindent{\em Dimostrazione}. Per ipotesi, $0 \leq g_n+f_n$ e $0 \leq g_n-f_n$ in $\Omega$. Applicando il Lemma di Fatou otteniamo
+$$
+\int_\Omega (g+f) \, d\mu \leq \liminf_{n \to +\infty} \int_\Omega (g_n+f_n)\, d\mu = \int_\Omega g \, d\mu + \liminf_{n \to +\infty} \int_\Omega f_n \, d\mu
+\eqno(1)
+$$
+e
+$$
+\int_\Omega (g-f) \, d\mu \leq \liminf_{n \to +\infty} \int_\Omega (g_n-f_n)\, d\mu = \int_\Omega g \, d\mu - \limsup_{n \to +\infty} \int_\Omega f_n \, d\mu.
+\eqno(2)
+$$
+Pertanto 
+$$
+\int_\Omega f\, d\mu \leq \liminf_{n \to +\infty} \int_\Omega f_n \, d\mu \leq \limsup_{n \to +\infty} \int_\Omega f_n \, d\mu \leq \int_\Omega f \, d\mu.
+$$
+
+
+\bye

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  18 MAR 2020 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  18 MAR 2020 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -80,7 +80,7 @@ FONT: Latin Modern - {\caps \sans \ttset \slant \nbold \ttprop \ttlight \ttcond
 [2.1] [3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1]
 [14.1] [15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1]
 [25.1] [26.1] [26.2] [26.3]
-Overfull \hbox (34.83157pt too wide) detected at line 560
+Overfull \hbox (34.83157pt too wide) detected at line 563
 [] [] |
 
 \hbox(59.91228+51.91226)x540.60237
@@ -297,7 +297,7 @@ Overfull \hbox (34.83157pt too wide) detected at line 560
 .\rule(*+*)x5.0
 
 [27.1]
-Overfull \hbox (34.83157pt too wide) detected at line 571
+Overfull \hbox (34.83157pt too wide) detected at line 574
 [] [] |
 
 \hbox(59.91228+51.91226)x540.60237
