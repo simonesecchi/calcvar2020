@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  18 MAR 2020 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  18 MAR 2020 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -563,7 +563,7 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/
 texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (363 pages, 593716 bytes).
+Output written on myslides.pdf (363 pages, 593703 bytes).
 PDF statistics:
  1683 PDF objects out of 1728 (max. 8388607)
  1292 compressed objects within 13 object streams

@@ -2609,7 +2609,7 @@ $$
 u}{\partial x_k} \right|^2  + \sum_{i,k} \frac{\partial u}{\partial
 x_k} x_i \frac{\partial^2 u}{\partial x_i \partial x_k} \cr
 &= \Delta u (x \cdot \nabla u) +|\nabla u|^2 + \frac12 \sum_i
-\frac{\partial}{\partial x_i} |\nabla |^2.
+\frac{\partial}{\partial x_i} |\nabla u|^2.
 }
 $$
 \pg+
@@ -2618,7 +2618,7 @@ $$
 \eqalign{%
 &\int_\Omega \Delta u (x \cdot \nabla u) \, dx +\int_\Omega |\nabla
 u|^2 \, dx + \frac12 \int_\Omega \sum_i \frac{\partial}{\partial x_i}
-|\nabla |^2 \, dx \cr
+|\nabla u|^2 \, dx \cr
 &= \int_{\partial\Omega} (x \cdot \nabla u)(\nabla u \cdot \nu)\,
 d\sigma. \cr
 }
@@ -2631,7 +2631,7 @@ $$
 \eqalign{%
 \int_\Omega \Delta u (x \cdot \nabla u) \, dx +\int_\Omega |\nabla
 u|^2 \, dx &+ \frac12 \int_\Omega \sum_i \frac{\partial}{\partial x_i}
-|\nabla |^2 \, dx \cr
+|\nabla u|^2 \, dx \cr
 &= \int_{\partial \Omega} (x \cdot \nu) \left| \frac{\partial
 u}{\partial \nu} \right|^2 \, d\sigma. \cr
 }
@@ -2667,7 +2667,7 @@ $$
 (x\cdot \nabla u)\, dx \cr
 &= \int_\Omega f(u(x)) \sum_i x_i \frac{\partial u}{\partial x_i} \,
 dx \cr
-&= \int_\Omega \sum_i x_i \frac{\partial F(u(x))}{x_i} \, dx. \cr
+&= \int_\Omega \sum_i x_i \frac{\partial F(u(x))}{\partial x_i} \, dx. \cr
 }
 $$
 
@@ -2675,7 +2675,7 @@ $$
 
 Un'integrazione per parti nell'ultimo integrale mostra che
 $$
-\int_\Omega \sum_i x_i \frac{\partial F(u(x))}{x_i} \, dx. = -N
+\int_\Omega \sum_i x_i \frac{\partial F(u(x))}{\partial x_i} \, dx. = -N
 \int_\Omega F(u(x))\, dx,
 $$
 e pertanto
@@ -2747,7 +2747,7 @@ e dunque $u \neq 0$ implica $p<(N+2)/(N-2)$.
 
 \pg;
 
-* Ricordiamo la notazione $A_\alpha = \{x \in A \mid d(x,A) \leq \alpha\}$.
+* Ricordiamo la notazione $A_\alpha = \{x  \mid d(x,A) \leq \alpha\}$.
 
 \sec Un lemma di deformazione senza (PS)
 
