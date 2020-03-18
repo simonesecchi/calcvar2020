@@ -3580,6 +3580,215 @@ La successione $\{ \int_{B^c} |u_k|^2 \, dx\}_k$ \`e limitata, e $\int_{B^c}
 
 \sec Riarrangiamento decrescente
 
+* Rispetto al problema (PI), dobbiamo trovare il modo di passare dal {\em setting} consueto nello spazio di Sobolev $H^1(\R^N)$ a quello in $H_r$, se vogliamo approfittare del guadagno di compattezza dimostrato poco fa.
+
+\pg+
+
+* Uno strumento particolarmente adeguato ai problemi di minimizzazione \`e il cosiddetto {\em riarrangiamento decrescente}. Ci limitiamo in questa sede a pochi cenni pronti all'uso.
+
+\pg+
+
+* Sia $u \in D^{1,2}(\R^N)$ tale che $u(x) \geq 0$ per q.o. $x$. Per $t>0$, denotiamo 
+$$
+\{u>t\} = \{ x \in \R^N \mid u(x) > t \}, \quad \mu(t) = {\cal L}^N (\{u>t\}),
+$$
+dove ${\cal L}^N$ \`e la misura di Lebesgue di $\R^N$.
+
+\pg;
+
+* Poich\'e $u \in L^{2^\*}(\R^N)$, risulta $\mu(t) < +\infty$ per ogni $t>0$.
+
+\pg+
+
+* La {\em simmetrizzazione di Schwarz}, o {\em riarrangiamento decrescente} di $u$ \`e la funzione $u^\* \colon \R^N \to \R$ tale che 
+$$
+\{u^\* > t\} = B(0,\rho(t)) \quad \hbox{con ${\cal L}^N (B(0,\rho(t))) = \mu(t)$}.
+$$
+
+\pg+
+
+* Quindi gli insiemi in cui $u$ e $u^\*$ sono maggiori di $t$ hanno sempre la stessa misura, per qualunque $t>0$. Tuttavia l'insieme corrispondente a $u^\*$ \`e una palla centrata nell'origine e di raggio opportuno (affinch\'e ci sia l'uguaglianza delle misure).
+
+\pg+
+
+* Si dimostra che $u^\*$ \`e una funzione radialmente simmetrica.
+
+\pg;
+
+Raccogliamo in un enunciato le principali propriet\`a della simmetrizzazione di Schwarz.
+
+\pg+
+
+{\bf Proposizione.} Per ogni $u \in D^{1,2}(\R^N)$, $u \geq 0$, risulta che $u^\* \in D_r$, $u^\*\geq 0$, e
+$$
+\int_{\R^N} |\nabla u^\*|^2 \, dx \leq \int_{\R^N} |\nabla u|^2 \, dx,
+$$
+e
+$$
+\int_{\R^N} |u^\*|^p \, dx = \int_{\R^N} |u|^p \, dx
+$$
+per ogni $p>1$. Queste propriet\`a implicano che se $u \in H^1(\R^N)$, allora $u^\* \in H_r$.
+
+\pg+
+
+* Il senso della Proposizione \`e che la simmetrizzazione di Schwarz conserva le norme integrali della funzione, e {\em diminuisce} le norme integrali delle derivate.
+
+\pg;
+
+\sec Esistenza di soluzioni a simmetria radiale
+
+{\bf Teorema.} Il problema (PI) possiede almeno una soluzione non banale radialmente simmetrica.
+
+\pg+
+
+* Muniamo lo spazio $H^1(\R^N)$ della norma equivalente 
+$$
+\|u\|^2 = \int_{\R^N} |\nabla u|^2 \, dx + \alpha \int_{\R^N} |u|^2 \, dx.
+$$
+
+\pg+
+
+* Definiamo il funzionale $I \colon H^1(\R^N) \to \R$, 
+$$
+\eqalign{%
+I(u) &= \frac12 \int_{\R^N} |\nabla u|^2 \, dx + \frac{\alpha}{2} \int_{\R^N} |u|^2 \, dx - \frac1p \int_{\R^N} |u|^p \, dx - \frac{\lambda}{r} \int_{\R^N} |u|^r \, dx \cr
+&= {1 \over 2} \|u\|^2 - {1 \over p} \|u\|_p^p - {\lambda \over r} \|u\|_r^r. \cr
+}
+$$
+
+\pg;
+
+* Definiamo la variet\`a di Nehari 
+$$
+\eqalign{%
+{\cal N} &= \left\{ u \in H^1(\R^N) \mid u \neq 0,\ I'(u)[u]=0 \right\} \cr
+&= \left\{ u \in H^1(\R^N) \mid u \neq 0,\  \|u\|^2 = \|u\|_p^p + \lambda \|u\|_r^r \right\} \cr
+}
+$$
+
+\pg+
+
+* Notiamo che, per ogni $u \in {\cal N}$, 
+$$
+I(u) = \left( \frac12 - \frac1r \right) \|u\|^2 + \left( \frac1r - \frac1p \right) \|u\|_p^p,
+$$
+e che, essendo $2<r<p$, risulta $I(u) > \left( \frac12 - \frac1r \right) \|u\|^2 >0$ per ogni $u \in {\cal N}$.
+
+\pg;
+
+{\bf Lemma.} La variet\`a di Nehari $\cal N$ non \`e vuota.
+
+{\em Dim.} Fissiamo $u \in H^1(\R^N)$, non nulla. Definiamo la funzione
+$$
+\gamma \colon t>0 \mapsto I'(tu)[tu].
+$$
+Poich\'e $\gamma(t) = t^2 \|u\|^2 -t^p \|u\|_p^p - \lambda t^r \|u\|_r^r$, \`e chiaro che $\gamma(t)>0$ per piccoli valori di $t>0$, e che $\lim_{t \to +\infty} \gamma(t) = -\infty$. Dunque esiste $t>0$ tale che $\gamma(t)=0$, cio\`e $tu \in {\cal N}$.
+
+\pg;
+
+* Definiamo $m = \inf_{u \in {\cal N}} I(u)$.
+
+\pg+
+
+{\bf Lemma.} Risulta $m>0$.
+
+{\em Dim.} Se $\lambda=0$, si ripetono i calcoli gi\`a visti nel caso ``compatto''. Se $\lambda \neq 0$ e $u \in {\cal N}$, allora
+$$
+\|u\|^2 = \|u\|_p^p + \lambda \|u\|_r^r \leq C (\|u\|^p + \|u\|^r),
+$$
+cio\`e
+$$
+1 \leq C (\|u\|^{p-2} + \|u\|^{r-2}).
+$$
+\pg+
+Se $\|u\| \leq 1$, questo implica $1 \leq 2 C \|u\|^{r-2}$. Abbiamo dimostrato che
+$$
+\|u\| \geq \min \left\{1,(2C)^{-{1 \over r-2}} \right\}
+$$
+per ogni $u \in {\cal N}$. E ancora, se $u \in {\cal N}$, abbiamo
+$$
+I(u) > \left( \frac12 - \frac1r \right) \|u\|^2 \geq \left( \frac12 - \frac1r \right) \min \left\{1,(2C)^{-{1 \over r-2}} \right\}^2,
+$$
+e il lemma \`e dimostrato.
+
+\pg;
+
+{\bf Lemma.} Esiste $u \in {\cal N}$ tale che $I(u)=m$.
+
+{\em Dim.} Innanzitutto dimostriamo che possiamo considerare una successione minimizzante per $m$ in ${\cal N} \cap H_r$, cio\`e una successione minimizzante a simmetria radiale. Partiamo da una successione minimizzante $\{v_k\}_k$ in ${\cal N}$, e come in precedenza sappiamo che non \`e restrittivo supporre $v_k \geq 0$.
+
+\pg+
+
+Definiamo $w_k = v_k^\* \in H_r$, la simmetrizzata di Schwarz di $v_k$. Risulta
+$$
+\eqalign{%
+\|w_k\|^2 &= \int_{\R^N} |\nabla v_k^\*|^2 \, dx + \alpha \int_{\R^N} |v_k^\*|^2 \, dx \cr
+&\leq \int_{\R^N} |\nabla v_k|^2 \, dx + \alpha \int_{\R^N} |v_k|^2 \, dx \cr
+&= \int_{\R^N} |v_k|^p \, dx + \lambda \int_{\R^N} |v_k|^r \, dx \cr
+&= \int_{\R^N} |v_k^\*|^p \, dx + \lambda \int_{\R^N} |v_k^\*|^r \, dx \cr
+&= \int_{\R^N} |w_k|^p \, dx + \lambda \int_{\R^N} |w_k|^r \, dx. \cr
+}
+$$
+
+\pg;
+
+Se definiamo $\gamma(t)=I'(tw_k)[tw_k]= t^2 \|w_k\|^2 - t^p \|w_k\|_p^p - \lambda \|w_k\|_r^r$, abbiamo che $\gamma(1) \leq 0$, mentre $\gamma(t)>0$ per $t>0$ sufficientemente piccolo. Deve dunque esistere $t_k \in (0,1]$ tale che $\gamma(t_k) =0$, cio\`e $t_k w_k \in {\cal N}$. Otteniamo
+$$
+\eqalign{%
+m &\leq I(t_k w_k) \cr
+&= t_k^2 \left( \frac12 - \frac1r \right) \|w_k\|^2 + t^p_k \left( \frac1r-\frac1p \right) \|w_k\|_p^p \cr
+&\leq \left( \frac12 - \frac1r \right) \|w_k\|^2 + \left( \frac1r-\frac1p \right) \|w_k\|_p^p \cr
+&\leq \left( \frac12 - \frac1r \right) \|v_k\|^2 + \left( \frac1r-\frac1p \right) \|v_k\|_p^p \cr
+&= I(v_k). \cr
+}
+$$
+\pg+
+Concludiamo che $\{t_k w_k \}_k$ \`e una successione minimizzante per $m$, e $t_k w_k \in H_r$.
+
+\pg;
+
+Poniamo $u_k = t_k w_k \geq 0$, e possiamo supporre che $u_k \rightharpoonup u$ in $H^1(\R^N)$. Per l'immersione compatta delle funzioni a simmetria radiale, a meno di passare ad una sottosuccessione possiamo anche supporre $u_k \to u$ in $L^p(\R^N)$, in $L^r(\R^N)$ e puntualmente quasi ovunque. In particolare, $u \geq 0$ quasi ovunque, e $u \in H_r$.
+
+\pg+
+
+Dimostriamo adesso che $u \in {\cal N}$ e che $I(u) = m$.
+
+\pg+
+
+Sappiamo che $0 < C \leq \|u_k\|^2 = \|u_k\|_p^p + \lambda \|u_k\|_r^r$, e passando al limite 
+$$
+0<C \leq \|u\|_p^p + \lambda \|u\|_r^r.
+$$
+Questo implica $u \neq 0$. Allo stesso modo, $\|u\|^2 \leq \|u\|_p^p + \lambda \|u\|_r^r$.
+
+\pg+
+
+Se $\|u\|^2 = \|u\|_p^p + \lambda \|u\|_r^r$, allora $u \in {\cal N}$. Se, per assurdo, fosse $\|u\|^2 < \|u\|_p^p + \lambda \|u\|_r^r$, potremmo definire
+$$
+\gamma(t) = I'(tu)[tu] = t^2 \|u\|^2 - t^p \|u\|_p^p - \lambda \|u\|_r^r,
+$$
+e concludere che $\gamma(1) < 0$. Essendo $\gamma(t)>0$ per $t \sim 0$, esisterebbe $t \in (0,1)$ tale che $\gamma(t)=0$.
+
+\pg;
+
+Pertanto,
+$$
+\eqalign{%
+0 &< m \leq I(tu) = \left( \frac12 - \frac1p \right) \|tu\|^2 + \left( \frac1r - \frac1p \right) \|tu\|_p^p \cr
+&= t^2 \left( \frac12 - \frac1p \right) \|u\|^2 + t^p \left( \frac1r - \frac1p \right) \|u\|_p^p \cr
+&<  \left( \frac12 - \frac1p \right) \|u\|^2 +  \left( \frac1r - \frac1p \right) \|u\|_p^p \cr
+&\leq \liminf_{k \to +\infty} \left( \frac12 - \frac1p \right) \|u_k\|^2 + \lim_{k \to +\infty}  \left( \frac1r - \frac1p \right) \|u_k\|_p^p \cr
+&= \liminf_{k \to +\infty} \left( \left( \frac12 - \frac1p \right) \|u_k\|^2 +  \left( \frac1r - \frac1p \right) \|u_k\|_p^p \right) \cr
+&= \liminf_{k \to +\infty} I(u_k) = m. \cr
+}
+$$
+\pg+
+Questa contraddizione mostra che necessariamente $u \in {\cal N}$. \`E ora immediato concludere che $I(u) \leq \liminf_{k \to +\infty} I(u_k) =m$.
+
+\pg;
+
+
+
 
 
 
