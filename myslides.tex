@@ -3787,6 +3787,59 @@ Questa contraddizione mostra che necessariamente $u \in {\cal N}$. \`E ora immed
 
 \pg;
 
+Abbiamo finito? Purtroppo no. Riflettiamo un attimo.
+
+\pg+
+
+* Stiamo cercando una funzione~$u \in H_r$ tale
+  che
+  $$
+  \int_{\R^N} \nabla u \cdot \nabla v \, dx + \alpha \int_{\R^N} uv\,
+  dx = \int_{\R^N} |u|^{p-2}uv\, dx + \lambda \int_{\R^N} |u|^{r-2} uv
+  \, dx
+  $$
+  per ogni $v \in H^1(\R^N)$.
+  
+  \pg+
+  
+  * Abbiamo trovato una funzione $u \in H_r$ tale che $I(u) = \min_{\cal N} I$. Come sopra, dobbiamo dimostrare che $u$ \`e un punto critico di $I$ su $H^1(\R^N)$.
+  
+  \pg+
+  
+  {\bf Lemma.} Il minimo $u$ \`e un punto critico di $I$ in $H^1(\R^N)$.
+  
+  {\em Dim.} Fissiamo $v \in H^1(\R^N)$ ed un numero $\ge>0$ tale che $u+sv \neq 0$ per $-\ge<s<\ge$. Definiamo una funzione $\varphi \colon (-\ge,\ge) \times (0,+\infty) \to \R$ come
+ 
+ \pg;
+ 
+ $$
+ \eqalign{%
+ \varphi(s,t) &=  I'(t(u+sv))[t(u+sv)] \cr
+ &= t^2 \|u+sv\|^2 - t^p \|u+sv\|_p^p - \lambda t^r \|u+sv\|_r^r. \cr
+ }
+ $$
+ \pg+
+ Risulta $\varphi(0,1)=\|u\|^2 - \|u\|_p^p - \lambda \|u\|_r^r=0$ e
+ $$
+ \eqalign{%
+ {\partial \varphi \over \partial t} (0,1) &=  2 \|u\|^2 -p \|u\|_p^p - r\lambda \|u\|_r^r \cr
+ &= (2-r) \|u\|^2 + (r-p) \|u\|_p^p <0. \cr
+ }
+ $$
+ \pg+
+ Per il teorema della funzione implicita, esiste una funzione di classe $C^1$ $t \colon (-\ge_0,\ge_0) \to \R$ tale che $t(0)=1$ e $\varphi(s,t(s))=0$ per ogni $s \in (-\ge_0,\ge_0)$. Definendo $\gamma(s) = I(t(s)(u+sv))$, vediamo che $\gamma$ \`e derivabile e possiede in $s=0$ un punto di minimo.
+ \pg+
+ Pertanto
+ $$
+0= \gamma'(0)= I'(t'(0)u+t(0)v) = I'(u)[v].
+$$
+\pg+
+Per l'arbitrariet\`a di $v \in H^1(\R^N)$, la dimostrazione \`e conclusa.
+
+\pg+
+
+* Come conseguenza del teorema di Ni, la soluzione trovata soddisfa $\lim_{|x| \to +\infty} u(x) =0$.
+
 
 
 
