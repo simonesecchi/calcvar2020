@@ -4,7 +4,7 @@
 \def\cases#1{\left\{\,\vcenter{\normalbaselines\m@th
     \ialign{$##\hfil$&\quad{##}\hfil\crcr#1\crcr}}\right.}
 
-\def\R{{\bbchar R}}
+\def\R{{\bbchar R}}!!
 
 \def\ge{{\varepsilon}}
 
@@ -3805,13 +3805,18 @@ Abbiamo finito? Purtroppo no. Riflettiamo un attimo.
   
   \pg+
   
-  * Abbiamo trovato una funzione $u \in H_r$ tale che $I(u) = \min_{\cal N} I$. Come sopra, dobbiamo dimostrare che $u$ \`e un punto critico di $I$ su $H^1(\R^N)$.
+  * Abbiamo trovato una funzione $u \in H_r$ tale che $I(u) =
+    \min_{\cal N} I$. Come sopra, dobbiamo dimostrare che $u$ \`e un
+    punto critico di $I$ su $H^1(\R^N)$.
   
   \pg+
   
-  {\bf Lemma.} Il minimo $u$ \`e un punto critico di $I$ in $H^1(\R^N)$.
+  {\bf Lemma.} Il minimo $u$ \`e un punto critico di $I$ in
+  $H^1(\R^N)$.
   
-  {\em Dim.} Fissiamo $v \in H^1(\R^N)$ ed un numero $\ge>0$ tale che $u+sv \neq 0$ per $-\ge<s<\ge$. Definiamo una funzione $\varphi \colon (-\ge,\ge) \times (0,+\infty) \to \R$ come
+  {\em Dim.} Fissiamo $v \in H^1(\R^N)$ ed un numero $\ge>0$ tale che
+  $u+sv \neq 0$ per $-\ge<s<\ge$. Definiamo una funzione $\varphi
+  \colon (-\ge,\ge) \times (0,+\infty) \to \R$ come
  
  \pg;
  
@@ -3830,9 +3835,12 @@ Abbiamo finito? Purtroppo no. Riflettiamo un attimo.
  }
  $$
  \pg+
- Per il teorema della funzione implicita, esiste una funzione di classe $C^1$ $t \colon (-\ge_0,\ge_0) \to \R$ tale che $t(0)=1$ e $\varphi(s,t(s))=0$ per ogni $s \in (-\ge_0,\ge_0)$. Definendo $\gamma(s) = I(t(s)(u+sv))$, vediamo che $\gamma$ \`e derivabile e possiede in $s=0$ un punto di minimo.
- \pg+
- Pertanto
+
+Per il teorema della funzione implicita, esiste una funzione di classe
+ $C^1$ $t \colon (-\ge_0,\ge_0) \to \R$ tale che $t(0)=1$ e
+ $\varphi(s,t(s))=0$ per ogni $s \in (-\ge_0,\ge_0)$. Definendo
+ $\gamma(s) = I(t(s)(u+sv))$, vediamo che $\gamma$ \`e derivabile e
+ possiede in $s=0$ un punto di minimo.  \pg+ Pertanto
  $$
 0= \gamma'(0)= I'(t'(0)u+t(0)v) = I'(u)[v].
 $$
@@ -3841,7 +3849,96 @@ Per l'arbitrariet\`a di $v \in H^1(\R^N)$, la dimostrazione \`e conclusa.
 
 \pg+
 
-* Come conseguenza del teorema di Ni, la soluzione trovata soddisfa $\lim_{|x| \to +\infty} u(x) =0$.
+* Come conseguenza del teorema di Ni, la soluzione trovata soddisfa
+  $\lim_{|x| \to +\infty} u(x) =0$.
+
+\pg;
+
+\sec Un ritorno al principio variazionale di Ekeland
+
+* In conclusione del nostro corso, torniamo sui nostri passi e
+  mostriamo alcune conseguenze notevoli del principio variazionale di
+  Ekeland.
+
+\pg+
+
+{\bf Teorema.} ($\ge$-principle) Siano $(X,d)$ uno spazio metrico
+completo e $F \colon X \to \R \cup \{+\infty\}$ una funzione
+semicontinua inferiormente e limitata dal basso. Allora, per ogni $x_0
+\in X$ e $\ge>0$ tali che $F(x_0) \leq \inf_X F+\ge$, esiste un punto
+$x_\ge \in X$ tale che
+$$
+F(x_\ge) + \ge d(x,x_\ge) \leq F(x_0)
+$$
+e
+$$
+F(x) > F(x_\ge) - \ge d(x,x_\ge)
+$$
+per ogni $x \neq x_\ge$.
+
+\pg+
+
+* La prima affermazione \`e quella che precedentemente abbiamo
+  spezzato in $d(x_0,x_\ge) \leq 1$ e $F(x_\ge) \leq F(x_0)$.
+
+\pg;
+
+* Questo $\ge$-principio ha varie conseguenze.
+
+\pg+
+
+{\bf Teorema.} (Punto fisso di Banach) Sia $(X,d)$ uno spazio metrico
+completo, e sia $f \colon X \to X$ una contrazione. Allora $f$
+possiede un punto fisso.
+
+\pg+
+
+{\em Dim.} Per ipotesi, esiste $0<L<1$ tale che
+$$
+d(f(x),f(y)) \leq L d(x,y)
+$$
+per ogni $x$, $y \in X$. Applichiamo l'$\ge$-principio con
+$$
+F(x) = d(x,f(x)),
+$$
+$\ge = 1-L$
+e qualunque $x_0$ tale che $F(x_0) \leq \inf_X F + \ge$. Sia $x_\ge$
+come nella tesi dell'$\ge$-principio: affermo che $x_\ge$ \`e un punto
+fisso di $f$.
+
+\pg+
+
+Se non lo fosse, per $x = f(x_\ge) \neq x_\ge$, risulterebbe
+$$
+L d(x_\ge,f(x_\ge)) \geq d(f(x_\ge),f \circ f(x_\ge)) >
+d(f(x_\ge),x_\ge) - \ge d(f(x_\ge),x_\ge),
+$$
+cio\`e $1-\ge > 1-\ge$.
+
+\pg;
+
+* Si consideri il problema di Cauchy (in uno spazio di Banach $E$
+$$
+\cases{%
+x'=f(t,x) \cr
+x(0)=\xi \cr
+}
+$$
+dove $\|f(t,x)-f(t,y)\| \leq k \|x-y\|$. Allora esiste una soluzione
+definita in $[0,T]$, con $T<1/k$.
+
+\pg+
+
+Infatti, sia $X=C([0,T],E)$, e definiamo $S \colon X \to X$ come
+$$
+Sx(t)=\xi + \int_0^t f(s,x(s))\, ds.
+$$
+Allora $S$ \`e un'applicazione lipschitziana con costante
+$L=kT<1$. Definiamo $F \colon X \to \R$,
+$F(x)=\|x-Sx\|_X$. Applichiamo l'$\ge$-principio con $\ge=1-kT$,
+ottenendo un punto $x_\ge\in X$ come nella tesi. Ripetendo l'argomento
+dell'esempio precedente, $x_\ge$ \`e un punto fisso di $S$, dunque una
+soluzione del problema di Cauchy.
 
 
 

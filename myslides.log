@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdfcsplain 2020.2.29)  18 MAR 2020 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdfcsplain 2020.2.22)  19 MAR 2020 11:34
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
  encTeX v. Jun. 2004, reencoding enabled
-**myslides.tex
+**myslides
 (./myslides.tex The format: csplain <Mar. 2019>.
 The cs-fonts are preloaded and A4 size implicitly defined.
 The utf8->iso8859-2 re-encoding of Czech+Slovak alphabet activated by encTeX
-(./ctuslides2.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
+(./ctuslides2.tex (c:/texlive/2019/texmf-dist/tex/csplain/opmac/opmac.tex
 This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \tmpnum=\count28
 \tmpdim=\dimen16
@@ -21,7 +19,7 @@ This is OPmac (Olsak's Plain macros), version <Jul. 2019>
 \titskip=\skip18
 \ptunit=\dimen22
 \fontdim=\dimen23
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ams-math.tex
 FONT: AMS math fonts - \mathchardef's prepared, 12 math families preloaded.
 \ptmunit=\dimen24
 )
@@ -63,23 +61,22 @@ The \^, \`, \', \v, \" and \r expands to characters by ISO-8859-2.
 (./myslides.ref)
 \openout0 = `myslides.ref'.
 
-)
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
+) (c:/texlive/2019/texmf-dist/tex/csplain/base/t1code.tex
 Font encoding set to Cork.
 The \^,\`,\',\v,\",\r,\c,\~,\H,\u,\. and \k expands to characters by Cork.
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
-(/usr/local/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
+(c:/texlive/2019/texmf-dist/tex/csplain/base/t1enc-u.tex))
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/lmfonts.tex
+(c:/texlive/2019/texmf-dist/tex/csplain/fonts/ff-mac.tex)
 FONT: Latin Modern - {\caps \sans \ttset \slant \nbold \ttprop \ttlight \ttcond
  \quotset \upital \dunhill } {\rm \bf \it \bi } +AMS
 )
 \faculty=\toks14
 \department=\toks15
 \verbbox=\count48
-) [1.1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2.1] [3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1]
-[14.1] [15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1]
-[25.1] [26.1] [26.2] [26.3]
+) [1.1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2.1]
+[3.1] [4.1] [5.1] [6.1] [7.1] [8.1] [9.1] [10.1] [11.1] [12.1] [13.1] [14.1]
+[15.1] [16.1] [17.1] [18.1] [19.1] [20.1] [21.1] [22.1] [23.1] [24.1] [25.1]
+[26.1] [26.2] [26.3]
 Overfull \hbox (34.83157pt too wide) detected at line 563
 [] [] |
 
@@ -546,27 +543,26 @@ Overfull \hbox (34.83157pt too wide) detected at line 574
 [157.1] [157.2] [157.3] [157.4] [158.1] [158.2] [158.3] [159.1] [159.2]
 [159.3] [160.1] [160.2] [161.1] [162.1] [162.2] [162.3] [163.1] [163.2]
 [164.1] [164.2] [165.1] [165.2] [165.3] [165.4] [166.1] [166.2] [167.1]
-[167.2] [167.3] [167.4] [168.1] [168.2] [168.3] [168.4] [168.5] [168.6] ){/usr/
-local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/
-2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf
--dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/en
-c/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm
-/lm-mathex.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12
-.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
-ri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on myslides.pdf (363 pages, 593703 bytes).
+[167.2] [167.3] [167.4] [168.1] [168.2] [168.3] [168.4] [168.5] [168.6]
+[169.1] [169.2] [169.3] [170.1] [170.2] [170.3] [170.4] [171.1] [171.2] ){c:/te
+xlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2019/texmf-dist/
+fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm
+/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/tex
+live/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/texlive/2019/texmf-di
+st/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
+lic/lm/lmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2019/te
+xmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type
+1/public/lm/lmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2019
+/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/texlive/2019/texmf-dist/fonts/t
+ype1/public/lm/lmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lms
+y8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on myslides.pdf (372 pages, 602848 bytes).
 PDF statistics:
- 1683 PDF objects out of 1728 (max. 8388607)
- 1292 compressed objects within 13 object streams
- 363 named destinations out of 1000 (max. 500000)
+ 1722 PDF objects out of 1728 (max. 8388607)
+ 1321 compressed objects within 14 object streams
+ 372 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
