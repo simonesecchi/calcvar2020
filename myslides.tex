@@ -3940,6 +3940,61 @@ ottenendo un punto $x_\ge\in X$ come nella tesi. Ripetendo l'argomento
 dell'esempio precedente, $x_\ge$ \`e un punto fisso di $S$, dunque una
 soluzione del problema di Cauchy.
 
+\pg;
+
+* E finalmente accenniamo alla dimostrazione del Teorema del Passo di
+  Montagna attraverso il principio di Ekeland.
+
+\pg+
+
+{\bf Teorema.} (Ambrosetti e Rabinowitz)  Sia $X$ uno spazio di
+Banach, e sia $F \in C^1(X)$ un funzionale. Supponiamo che esistano
+$\rho>0$ e $\alpha >F(0)$ tali che $\inf_{\|u\|=\rho}
+F(u) \geq \alpha$, ed esista $\bar x \in X$ con $\|\bar x\|> \rho$,
+$F(\bar x) < \alpha$. Allora esiste una successione $\{x_n\}_{n}$ in
+$X$ tale che $F(x_n) \to c \geq \alpha$, $F'(x_n) \to 0$.
+
+\pg+
+
+{\em Cenno di dim.} Consideriamo lo spazio
+$$
+C = \left\{ \gamma \in C([0,1],X) \mid \gamma(0)=0,\ \gamma(1)
+= \bar{x} \right\},
+$$
+dotato della topologia della convergenza uniforme. Poniamo
+$\psi \colon C \to \R$,
+$$
+\psi(\gamma) = \max_{t \in [0,1]} F(\gamma(t)).
+$$
+
+\pg;
+
+La funzione $\tilde{\psi} \colon C \times [0,1] \to \R$,
+$\tilde{\psi}(\gamma,t)=F(\gamma(t))$ \`e continua, la funzione
+$\psi$ \`e semicontinua inferiormente.
+
+\pg+
+
+Per ipotesi, $c = \inf_C \psi \geq \alpha$, quindi $\psi$ \`e limitata
+dal basso. Per l'$\ge$-principio, per ogni $\ge > 0$ esiste
+$\gamma_\ge \in C$ tale che $\psi(\gamma_\ge) \leq c + \ge^2$ e
+$$
+\psi(\gamma) \geq \psi(\gamma_\ge) - \ge \|\gamma-\gamma_\ge\|
+$$
+per ogni $\gamma \in C$.
+
+\pg+
+
+Definiamo
+$$
+I_\ge = \left\{ t \in [0,1] \mid F(\gamma_\ge(t)) = \max_{s \in [0,1]}
+F(\gamma_\ge(s)) \right\}.
+$$
+Dalle propriet\`a di $\gamma_\ge$ segue l'esistenza di almeno un
+istante $t_\ge \in I_\ge$ tale che
+$\|F'(\gamma_\ge(t_\ge))\| \leq \ge$. Infine, \`e sufficiente porre
+$x_\ge = \gamma_\ge(t_\ge)$.
+ 
 
 
 
