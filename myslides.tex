@@ -3209,7 +3209,7 @@ $$
 esiste $t>0$ tale che $tu \in {\cal N}$. Infatti, $tu \in {\cal N}$
 equivale a
 $$
-\|tu\|^2 = \int_\Omega {tu}^p \, dx,
+\|tu\|^2 = \int_\Omega |tu|^p \, dx,
 $$
 cio\`e
 $$
@@ -3243,7 +3243,7 @@ $$
 per ogni $u \in {\cal N}$, sicch\'e
 $$
 m = \left( \frac12 - \frac1p \right) \inf_{u \in {\cal N}} \|u\|^2
-\geq \left( \frac12 - \frac1p \right) {1 \over C^{{1 \over p-2}}} >0.
+\geq \left( \frac12 - \frac1p \right) {1 \over C^{{2 \over p-2}}} >0.
 $$
 
 \pg;
@@ -3373,7 +3373,7 @@ $$
 \eqalign{%
 0&=\gamma'(0) = I'(t(0)u)[t'(0)u+t(0)v] \cr
 &= t'(0)I'(u)[u]+I'(u)[v] \cr
-&= I'(u)[u]. \cr
+&= I'(u)[v]. \cr
 }
 $$
 \pg+
@@ -3493,7 +3493,7 @@ dello spazio considerato.
 \pg;
 
 {\em Dim.} Per densit\`a, basta dimostrare la disuguaglianza per le
-funzioni $u \in C_0^\infty(\Omega) \cap D_r$. Sia $\varphi
+funzioni $u \in C_0^\infty(\R^N) \cap D_r$. Sia $\varphi
 \colon[0,+\infty) \to \R$, definita da $\varphi(r)=u(x)$ se
 $r=|x|$. Questa definizione \`e ben posta, poich\'e $u(x)$ dipende
 solo dalla norma di $x$. Inoltre $\varphi$ \`e una funzione di classe
