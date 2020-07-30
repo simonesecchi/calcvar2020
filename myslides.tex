@@ -1569,7 +1569,7 @@ Identificando $L^2(\Omega)$ con il suo duale, risulta $H_0^1(\Omega) \subset L^2
 
 Per $\lambda \in \R$ e $f \in H^{-1}(\Omega)$ fissati, sia $J$ il funzionale definito su $H_0^1(\Omega)$ come
 $$
-J(u) = \frac{1}{2} \int_\Omega \left[ |\nabla u|^2 + \lambda |u|^2 \right] \, dx - \langle f,u \rangle,
+J(u) = \frac{1}{2} \int_\Omega \left[ |\nabla u|^2 - \lambda |u|^2 \right] \, dx - \langle f,u \rangle,
 $$
 dove $\langle \phantom{\cdot},\phantom{\cdot} \rangle$ denota la dualit\`a tra $H_0^1(\Omega)$ e $H^{-1}(\Omega)$.
 
@@ -1599,11 +1599,11 @@ allora $u_n = (\tilde{A}-\lambda I)^{-1} [f+\ge_n] \to u = (\tilde{A}-\lambda I)
 \pg+
 
 Se invece $\lambda = \lambda_k \in \sigma_p(A)$, la condizione (PS)
-non pu\`o essere soddisfatta. Basta considerare la successione $\{n
-\varphi_k\}_n$, dove $\varphi_k$ \`e un'autofunzione associata
-all'autovalore $\lambda_k$. Risulta $J(n \varphi_k)=0$ e $J'(n
-\varphi_k)=0$ per ogni $n$, sebbene non esistano sottosuccessioni
-convergenti.
+non pu\`o essere soddisfatta. Basta considerare il caso $f=0$ e la
+successione $\{n \varphi_k\}_n$, dove $\varphi_k$ \`e un'autofunzione
+associata all'autovalore $\lambda_k$. Risulta $J(n \varphi_k)=0$ e
+$J'(n \varphi_k)=0$ per ogni $n$, sebbene non esistano
+sottosuccessioni convergenti.
 
 \pg;
 
@@ -2668,7 +2668,7 @@ $$
 \`E venuto il momento di inserire l'informazione che $u$ risolve (P):
 $$
 \eqalign{%
-\int_\Omega \Delta u (x\cdot \nabla u)\, dx &= \int_\Omega f(u(x))
+-\int_\Omega \Delta u (x\cdot \nabla u)\, dx &= \int_\Omega f(u(x))
 (x\cdot \nabla u)\, dx \cr
 &= \int_\Omega f(u(x)) \sum_i x_i \frac{\partial u}{\partial x_i} \,
 dx \cr
